@@ -22,7 +22,7 @@ public class BubbleBehaviour : MonoBehaviour
         {
             Vector3 distance = transform.position - other.transform.position;
             float length = distance.sqrMagnitude;
-
+            print("transform.localScale");
             print(length);
         }
     }
