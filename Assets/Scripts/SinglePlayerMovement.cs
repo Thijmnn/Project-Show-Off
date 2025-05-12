@@ -25,7 +25,7 @@ public class SinglePlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed);
-        
+        _cameraTransform.Rotate(new Vector3(0, _camMoveDirection.x,0));
     }
 
     void Interact()
