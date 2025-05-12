@@ -13,19 +13,34 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private InputActionReference move;
 
+    private PlayerInput playerInput;
 
-    void Update()
+    [SerializeField] private float rotationSpeed;
+
+    private Quaternion _rotation;
+
+    private void Start()
     {
-        _moveDirection = move.action.ReadValue<Vector2>();
+        playerInput = GetComponent<PlayerInput>();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed);
+        MovePlayer();
     }
 
-    void Attack()
+    private void MovePlayer()
     {
-        print("attacked");
+        _moveDirection = playerInput.actions["Movement"].ReadValue<Vector2>();
+        _rotation = Quaternion.LookRotation(rb.velocity);
+
+        Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
+
+        rb.velocity = new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed);
+
+        if (movementDirection.magnitude > 0.1f)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, rotationSpeed * Time.deltaTime);
+        }
     }
 }

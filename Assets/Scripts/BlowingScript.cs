@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class BlowingScript : MonoBehaviour
+{
+    private Rigidbody rb;
+
+    [SerializeField] private InputActionReference fire;
+
+    private PlayerInput playerInput;
+
+    bool fireEnabled = false;
+
+    private void Start()
+    {
+        playerInput = GetComponentInParent<PlayerInput>();
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (fireEnabled)
+        {
+            if (other.GetComponent<BubbleBehaviour>())
+            {
+                rb = other.GetComponent<Rigidbody>();
+                Vector3 force = (other.transform.position - transform.position);
+                force = new Vector3(force.x, 0, force.z).normalized;
+                print(force);
+                rb.AddForce(transform.forward, ForceMode.Force);
+
+
+
+            }
+        }  
+        
+    }
+
+    private void Update()
+    {
+        BlowBubbles();
+    }
+
+    void BlowBubbles()
+    {
+        if (playerInput.actions["Interact"].inProgress)
+        {
+            fireEnabled = true;
+        }
+        else
+        {
+            fireEnabled = false;
+        }
+    }
+}
