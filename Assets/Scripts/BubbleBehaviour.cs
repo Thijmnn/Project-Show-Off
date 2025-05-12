@@ -15,4 +15,15 @@ public class BubbleBehaviour : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.GetComponent<BubbleBehaviour>())
+        {
+            Vector3 distance = transform.position - other.transform.position;
+            float length = distance.sqrMagnitude;
+
+            print(length);
+        }
+    }
 }
