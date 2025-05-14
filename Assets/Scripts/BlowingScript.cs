@@ -41,7 +41,7 @@ public class BlowingScript : MonoBehaviour
 
     void BlowBubbles()
     {
-        if (playerInput.actions["Interact"].inProgress)
+        if (playerInput.actions["Fire"].inProgress)
         {
             fireEnabled = true;
         }
