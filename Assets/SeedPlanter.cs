@@ -118,6 +118,7 @@ public class SeedPlanter : MonoBehaviour
     {
         FinalPlant.SetActive(false);
         print("you got a seed");
+        progress = 0;
     }
 
     private void CountdownPlant()
