@@ -29,9 +29,6 @@ public class BlowingScript : MonoBehaviour
                 force = new Vector3(force.x, 0, force.z).normalized;
                 print(force);
                 rb.AddForce(transform.forward, ForceMode.Force);
-
-
-
             }
         }  
         

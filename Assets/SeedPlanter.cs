@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.AI;
@@ -26,8 +27,6 @@ public class SeedPlanter : MonoBehaviour
     bool once = true;
     int progress;
 
-    bool clicked;
-    int cooldown;
     private void Start()
     {
         _playerinput = FindObjectOfType<PlayerInput>();
@@ -35,68 +34,42 @@ public class SeedPlanter : MonoBehaviour
 
     private void Update()
     {
-        if(timer >= 0 && CountDown)
-        {
-            timer--;
-        }
-        else if (once && CountDown)
-        {
-            DoneStageOnePopUp.SetActive(true);
-            TimerStageOnePopUp.SetActive(false);
-            CountDown = false;
-            plantGrown = true;
-            once = false;
-        }
-        
+        print(progress);
+        if(CountDown) { CountdownPlant(); }
     }
     private void OnTriggerStay(Collider other)
     {
-        if (_playerinput.actions["Interact"].inProgress)
+        if (_playerinput.actions["Interact"].triggered)
         {
-            cooldown = 50;
-            clicked = true;
-            if (clicked)
+            switch (progress)
             {
-                cooldown--;
-                if(cooldown <= 0)
-                {
-                    clicked = false;
-                }
-            }
-
-            if (!clicked)
-            {
-                switch (progress)
-                {
-                    case 0:
-                        PlantBud();
-                        break;
-                    case 1:
-                        WaterBud();
-                        break;
-                    case 2:
-                        if (plantGrown)
-                        {
-                            GrowPlant();
-                        }
-                        break;
-                    case 3:
-                        WaterPlant();
-                        break;
-                    case 4:
-                        if (plantGrown)
-                        {
-                            GrowFinalPlant();
-                        }
-                        break;
-                    case 5:
-                        HarvestPlant();
-                        break;
-                }
+                case 0:
+                    PlantBud();
+                    break;
+                case 1:
+                    WaterBud();
+                    break;
+                case 2:
+                    if (plantGrown)
+                    {
+                        GrowPlant();
+                    }
+                    break;
+                case 3:
+                    WaterPlant();
+                    break;
+                case 4:
+                    if (plantGrown)
+                    {
+                        GrowFinalPlant();
+                    }
+                    break;
+                case 5:
+                    HarvestPlant();
+                    break;
             }
         }
     }
-
 
     private void PlantBud()
     {
@@ -128,7 +101,7 @@ public class SeedPlanter : MonoBehaviour
         WaterStageOnePopUp.SetActive(false);
         TimerStageOnePopUp.SetActive(true);
         CountDown = true;
-        timer = 120;
+        timer = 600;
         once = true;
         progress++;
     }
@@ -145,5 +118,21 @@ public class SeedPlanter : MonoBehaviour
     {
         FinalPlant.SetActive(false);
         print("you got a seed");
+    }
+
+    private void CountdownPlant()
+    {
+        if (timer >= 0)
+        {
+            timer--;
+        }
+        else if (once)
+        {
+            DoneStageOnePopUp.SetActive(true);
+            TimerStageOnePopUp.SetActive(false);
+            CountDown = false;
+            plantGrown = true;
+            once = false;
+        }
     }
 }

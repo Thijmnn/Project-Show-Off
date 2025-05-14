@@ -15,9 +15,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
+                    "name": "Fire",
                     "type": "Button",
                     "id": "e41b5812-d4dd-423c-8468-64fcabb337bc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelfDestruct",
+                    "type": "Button",
+                    "id": "fe919f84-2360-44a1-be07-2997336eab09",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -142,7 +151,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -153,7 +162,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e3bca3b-0666-4f31-9555-ba3e375d74f5",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelfDestruct",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f0b9f8f-74dc-4548-873a-9f98e5173b5a",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelfDestruct",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
