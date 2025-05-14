@@ -17,7 +17,7 @@ public class BubbleBehaviour : MonoBehaviour
             float length = distance.magnitude;
             float halfLength = (transform.localScale.x + other.transform.localScale.x) / 2;
 
-            if(length < (halfLength / 2))
+            if(length <= (halfLength / 2))
             {
                 if(other.transform.localScale.x > transform.localScale.x)
                 {
