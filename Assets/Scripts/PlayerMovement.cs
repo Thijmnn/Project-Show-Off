@@ -19,8 +19,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Quaternion _rotation;
 
+    private Animator anim;
+
     private void Start()
     {
+        anim = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
     }
 
@@ -40,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (movementDirection.magnitude > 0.1f)
         {
+
             transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, rotationSpeed * Time.deltaTime);
         }
     }
