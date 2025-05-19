@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
 
-    [SerializeField] float moveSpeed;
+    public float moveSpeed;
 
     private Vector2 _moveDirection;
 
@@ -19,8 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Quaternion _rotation;
 
-    private Animator anim;
-
+    Animator anim;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -32,6 +31,10 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
+    private void Update()
+    {
+        SlowMovement();
+    }
     private void MovePlayer()
     {
         _moveDirection = playerInput.actions["Movement"].ReadValue<Vector2>();
@@ -45,6 +48,18 @@ public class PlayerMovement : MonoBehaviour
         {
 
             transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    private void SlowMovement()
+    {
+        if (playerInput.actions["Fire"].triggered)
+        {
+            moveSpeed *= 0.2f;
+        }
+        else if (playerInput.actions["Fire"].WasReleasedThisFrame())
+        {
+            moveSpeed *= 5f;
         }
     }
 }
