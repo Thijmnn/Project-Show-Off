@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bubble
+  - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bubble
   - Water
   - UI
-  - 
+  - Walls
   - 
   - 
   - 
@@ -41,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Wall
+    uniqueID: 871198901
+    locked: 0
+  - name: Bubble
+    uniqueID: 155435781
+    locked: 0
+  - name: Player
+    uniqueID: 3997135357
     locked: 0
