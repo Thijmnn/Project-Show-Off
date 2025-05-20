@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,11 +13,11 @@ public class BubbleBehaviour : MonoBehaviour
     Rigidbody _rb;
     Collider _col;
 
-     public int popThreshhold;
-
     public int overlap;
 
     private int overlapThreshold;
+
+    public bool canDestroy;
     private void Start()
     {
         overlapThreshold = 100 / overlap;
@@ -73,42 +75,20 @@ public class BubbleBehaviour : MonoBehaviour
         Vector3 distance = transform.position - other.transform.position;
         float length = distance.magnitude;
         float halfLength = (transform.localScale.x + other.transform.localScale.x) / 2;
-        Rigidbody rig = other.GetComponent<Rigidbody>();
 
         if (length <= (halfLength / overlapThreshold))
         {
             if (other.transform.localScale.x > transform.localScale.x)
             {
-                if (transform.localScale.x >= popThreshhold)
-                {
-                    Destroy(gameObject);
-                    Destroy(other);
-                    print("bubblePopped!");
-                }
-                else
-                {
-                    other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
-                    _rb.mass = transform.localScale.x;
-                    rig.AddForce(_rb.velocity);
-                    Destroy(gameObject);
-                }
-                
+                _bubbleBehaviour.canDestroy = true;
+                canDestroy = false;
+                if(canDestroy) { DestroyBubble(other); }
             }
             else if (transform.localScale.x > other.transform.localScale.x)
             {
-                if (transform.localScale.x >= popThreshhold)
-                {
-                    Destroy(gameObject);
-                    Destroy(other);
-                    print("bubblePopped!");
-                }
-                else
-                { 
-                    transform.localScale = transform.localScale + (other.transform.localScale / 2);
-                    _rb.mass = transform.localScale.x;
-                    Destroy(other);
-                }
-                
+                _bubbleBehaviour.canDestroy = false;
+                canDestroy = true;
+                if (canDestroy) { DestroyOtherBubble(other); }
             }
             else if (other.transform.localScale.x == transform.localScale.x)
             {
@@ -118,38 +98,35 @@ public class BubbleBehaviour : MonoBehaviour
                 }
                 else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
                 {
-                    
-                    if (transform.localScale.x >= popThreshhold)
-                    {
-                        Destroy(gameObject);
-                        Destroy(other);
-                        print("bubblePopped!");
-                    }
-                    else
-                    {
-                        rig.AddForce(_rb.velocity);
-                        other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
-                        _rb.mass = transform.localScale.x;
-                        Destroy(gameObject);
-                    }
+                    _bubbleBehaviour.canDestroy = true;
+                    canDestroy = false;
+                    if (canDestroy) { DestroyBubble(other); }
                 }
                 else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
                 {
-                    if (transform.localScale.x >= popThreshhold)
-                    {
-                        Destroy(other);
-                        Destroy(gameObject);
-                        print("bubblePopped!");
-                    }
-                    else
-                    {
-                        Destroy(other);
-                        transform.localScale = transform.localScale + (other.transform.localScale / 2);
-                        _rb.mass = transform.localScale.x;
-                    }
+                    _bubbleBehaviour.canDestroy = false;
+                    canDestroy = true;
+                    if (canDestroy) { DestroyOtherBubble(other); }
                 }
             }
         }
     }
 
+    private void DestroyBubble(GameObject _other)
+    {
+        _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
+        _rb.mass = transform.localScale.x;
+        BubbleSpawner.Instance.bubblesLeft--;
+        Destroy(gameObject);
+    }
+
+    private void DestroyOtherBubble(GameObject _other)
+    {
+        transform.localScale = transform.localScale + (_other.transform.localScale / 2);
+        _rb.mass = transform.localScale.x;
+        BubbleSpawner.Instance.bubblesLeft--;
+        Destroy(_other);
+    }
 }
+
+    

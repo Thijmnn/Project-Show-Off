@@ -14,7 +14,9 @@ public class LeaveGameScript : MonoBehaviour
     {
         if (playerInput.actions["SelfDestruct"].triggered)
         {
+            MultipleTargetCamera.Instance.targets.Remove(gameObject.transform);
             Destroy(gameObject, 0.2f);
+            
         }
     }
 }
