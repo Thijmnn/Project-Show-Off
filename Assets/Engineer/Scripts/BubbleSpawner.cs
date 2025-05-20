@@ -31,11 +31,12 @@ public class BubbleSpawner : MonoBehaviour
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
             _bubble.popThreshhold = waves[currentWaveIndex].popThreshold;
             _bubble.overlap = waves[currentWaveIndex].overlap;
+
             Bounds _bounds = bounds.bounds;
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
 
-            Instantiate(bubble, new Vector3(offsetX, 2.5f, offsetZ), Quaternion.identity); 
+            Instantiate(bubble, new Vector3(offsetX, 1f, offsetZ), Quaternion.identity); 
       }  
     }
 

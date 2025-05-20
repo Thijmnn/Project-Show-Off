@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1185686860554520383}
   - component: {fileID: 7668127336004830654}
   - component: {fileID: 3669508637227397211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 7744553721064323579}
   - component: {fileID: 5191533526292327572}
   - component: {fileID: 4619527685162650157}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 3012059363516885350}
   - component: {fileID: 8155124941434217930}
   - component: {fileID: 9223358143351844573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
