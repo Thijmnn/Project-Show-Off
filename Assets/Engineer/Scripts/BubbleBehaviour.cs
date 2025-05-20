@@ -11,27 +11,16 @@ public class BubbleBehaviour : MonoBehaviour
     Rigidbody _rb;
     Collider _col;
 
-    public Collider[] playerColliders;
-    public Collider[] collObjs;
-    public List <Collider> ignoreColliders;
+     public int popThreshhold;
 
-    LayerMask layer = 6;
+    public int overlap;
+
+    private int overlapThreshold;
     private void Start()
     {
+        overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<Collider>();
-    }
-    public void Update()
-    {
-        _rb.mass = transform.localScale.x;
-
-        if(transform.localScale.x >= 20)
-        {
-            Destroy(gameObject);
-            print("bubblePopped!");
-        }
-
-        IgnoreColisions();
     }
 
     private void OnTriggerStay(Collider other)
@@ -86,19 +75,40 @@ public class BubbleBehaviour : MonoBehaviour
         float halfLength = (transform.localScale.x + other.transform.localScale.x) / 2;
         Rigidbody rig = other.GetComponent<Rigidbody>();
 
-        if (length <= (halfLength / 2))
+        if (length <= (halfLength / overlapThreshold))
         {
             if (other.transform.localScale.x > transform.localScale.x)
             {
-                Destroy(gameObject);
-                other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
+                if (transform.localScale.x >= popThreshhold)
+                {
+                    Destroy(gameObject);
+                    Destroy(other);
+                    print("bubblePopped!");
+                }
+                else
+                {
+                    other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
+                    _rb.mass = transform.localScale.x;
+                    rig.AddForce(_rb.velocity);
+                    Destroy(gameObject);
+                }
                 
-                rig.AddForce(_rb.velocity);
             }
             else if (transform.localScale.x > other.transform.localScale.x)
             {
-                Destroy(other);
-                transform.localScale = transform.localScale + (other.transform.localScale / 2);
+                if (transform.localScale.x >= popThreshhold)
+                {
+                    Destroy(gameObject);
+                    Destroy(other);
+                    print("bubblePopped!");
+                }
+                else
+                { 
+                    transform.localScale = transform.localScale + (other.transform.localScale / 2);
+                    _rb.mass = transform.localScale.x;
+                    Destroy(other);
+                }
+                
             }
             else if (other.transform.localScale.x == transform.localScale.x)
             {
@@ -108,58 +118,38 @@ public class BubbleBehaviour : MonoBehaviour
                 }
                 else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
                 {
-                    Destroy(gameObject);
-                    other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
-                    rig.AddForce(_rb.velocity);
+                    
+                    if (transform.localScale.x >= popThreshhold)
+                    {
+                        Destroy(gameObject);
+                        Destroy(other);
+                        print("bubblePopped!");
+                    }
+                    else
+                    {
+                        rig.AddForce(_rb.velocity);
+                        other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
+                        _rb.mass = transform.localScale.x;
+                        Destroy(gameObject);
+                    }
                 }
                 else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
                 {
-                    Destroy(other);
-                    transform.localScale = transform.localScale + (other.transform.localScale / 2);
-                }
-            }
-        }
-    }
-
-
-
-
-    void Awake()
-    {
-
-        playerColliders = GetComponents<Collider>();
-        
-        collObjs = FindObjectsOfType<Collider>();
-
-        foreach (Collider go in collObjs)
-        {
-            if (go.gameObject.layer == layer)
-            {
-                ignoreColliders.Add(go);
-            }
-        }
-    }
-
-    void IgnoreColisions()
-    {
-
-        
-        foreach (Collider playerColl in playerColliders)
-        {
-            
-            if (playerColl != null && playerColl.isTrigger == false)
-            {
-                
-                foreach (Collider ignoreColl in ignoreColliders)
-                {
-                    
-                    if (ignoreColl != null && ignoreColl.isTrigger == false)
+                    if (transform.localScale.x >= popThreshhold)
                     {
-                        
-                        Physics.IgnoreCollision(playerColl, ignoreColl, false);
+                        Destroy(other);
+                        Destroy(gameObject);
+                        print("bubblePopped!");
+                    }
+                    else
+                    {
+                        Destroy(other);
+                        transform.localScale = transform.localScale + (other.transform.localScale / 2);
+                        _rb.mass = transform.localScale.x;
                     }
                 }
             }
         }
     }
+
 }

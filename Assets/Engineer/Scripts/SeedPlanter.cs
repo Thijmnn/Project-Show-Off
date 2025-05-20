@@ -22,11 +22,13 @@ public class SeedPlanter : MonoBehaviour
     public GameObject TimerStageOnePopUp;
 
     bool CountDown;
-    int timer = 120;
+    int timer = 1000;
     bool plantGrown;
     bool once = true;
-    int progress;
+    int progress = 0;
 
+
+    bool insideCollider;
     private void Start()
     {
         _playerinput = FindObjectOfType<PlayerInput>();
@@ -34,10 +36,95 @@ public class SeedPlanter : MonoBehaviour
 
     private void Update()
     {
-        print(progress);
+
         if(CountDown) { CountdownPlant(); }
+
+        if(insideCollider) { CheckInput(); }
+        
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
+    {
+        PlantStageOnePopUp.SetActive(true);
+        insideCollider = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        insideCollider = false;
+    }
+
+    private void PlantBud()
+    {
+        PlantStageOnePopUp.SetActive(false);
+        stageOnePlant.SetActive(true);
+        WaterStageOnePopUp.SetActive(true);
+        progress = 1;
+    }
+
+    private void WaterBud()
+    {
+        WaterStageOnePopUp.SetActive(false);
+        TimerStageOnePopUp.SetActive(true);
+        CountDown = true;
+        timer = 1000;
+        once = true;
+        progress = 2;
+    }
+
+    private void GrowPlant()
+    {
+        DoneStageOnePopUp.SetActive(false);
+        stageOnePlant.SetActive(false);
+        WaterStageOnePopUp.SetActive(true);
+        stageTwoPlant.SetActive(true);
+        progress = 3;
+        plantGrown = false;
+    }
+
+    private void WaterPlant()
+    {
+        WaterStageOnePopUp.SetActive(false);
+        TimerStageOnePopUp.SetActive(true);
+        CountDown = true;
+        timer = 1000;
+        once = true;
+        progress = 4;
+    }
+
+    private void GrowFinalPlant()
+    {
+        DoneStageOnePopUp.SetActive(true);
+        stageTwoPlant.SetActive(false);
+        FinalPlant.SetActive(true);
+        progress = 5;
+    }
+
+    private void HarvestPlant()
+    {
+        FinalPlant.SetActive(false);
+        DoneStageOnePopUp.SetActive(false);
+        print("you got a seed");
+        progress = 0;
+    }
+
+    private void CountdownPlant()
+    {
+        if (timer >= 0)
+        {
+            timer--;
+        }
+        else if (once)
+        {
+            DoneStageOnePopUp.SetActive(true);
+            TimerStageOnePopUp.SetActive(false);
+            CountDown = false;
+            plantGrown = true;
+            once = false;
+        }
+    }
+
+
+    private void CheckInput()
     {
         if (_playerinput.actions["Interact"].triggered)
         {
@@ -68,72 +155,6 @@ public class SeedPlanter : MonoBehaviour
                     HarvestPlant();
                     break;
             }
-        }
-    }
-
-    private void PlantBud()
-    {
-        stageOnePlant.SetActive(true);
-        WaterStageOnePopUp.SetActive(true);
-        progress++;
-    }
-
-    private void WaterBud()
-    {
-        WaterStageOnePopUp.SetActive(false);
-        TimerStageOnePopUp.SetActive(true);
-        CountDown = true;
-        progress++;
-    }
-
-    private void GrowPlant()
-    {
-        DoneStageOnePopUp.SetActive(false);
-        stageOnePlant.SetActive(false);
-        WaterStageOnePopUp.SetActive(true);
-        stageTwoPlant.SetActive(true);
-        progress++;
-        plantGrown = false;
-    }
-
-    private void WaterPlant()
-    {
-        WaterStageOnePopUp.SetActive(false);
-        TimerStageOnePopUp.SetActive(true);
-        CountDown = true;
-        timer = 600;
-        once = true;
-        progress++;
-    }
-
-    private void GrowFinalPlant()
-    {
-        DoneStageOnePopUp.SetActive(false);
-        stageTwoPlant.SetActive(false);
-        FinalPlant.SetActive(true);
-        progress++;
-    }
-
-    private void HarvestPlant()
-    {
-        FinalPlant.SetActive(false);
-        print("you got a seed");
-        progress = 0;
-    }
-
-    private void CountdownPlant()
-    {
-        if (timer >= 0)
-        {
-            timer--;
-        }
-        else if (once)
-        {
-            DoneStageOnePopUp.SetActive(true);
-            TimerStageOnePopUp.SetActive(false);
-            CountDown = false;
-            plantGrown = true;
-            once = false;
         }
     }
 }
