@@ -1267,6 +1267,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1392,6 +1393,24 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904ecbc044203c14b95b3f27587dd396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets: []
+  offset: {x: 0, y: 20, z: -10}
+  smoothTime: 0.5
+  minZoom: 70
+  maxZoom: 50
+  zoomLimiter: 10
 --- !u!1 &344711577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,9 +4544,9 @@ MonoBehaviour:
     - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
     - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
     - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    popThreshold: 3
     overlap: 60
   bounds: {fileID: 1211636959}
+  bubblesLeft: 0
 --- !u!1 &1277847198
 GameObject:
   m_ObjectHideFlags: 0

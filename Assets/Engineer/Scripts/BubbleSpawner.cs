@@ -1,3 +1,4 @@
+using Adobe.Substance.Connector;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,14 +10,36 @@ public class BubbleSpawner : MonoBehaviour
     [SerializeField] Collider bounds;
     bool once = true;
     int currentWaveIndex;
-    int enemiesLeft;
+    public int bubblesLeft;
+
+    public static BubbleSpawner Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(Instance);
+        }
+    }
     private void Start()
     {
-        enemiesLeft = waves[currentWaveIndex].bubbles.Length;
+        bubblesLeft = waves[currentWaveIndex].bubbles.Length;
     }
     void Update()
     {
         WaveSpawner();
+
+        if(bubblesLeft == 1)
+        {
+            BubbleBehaviour lastBubble = FindObjectOfType<BubbleBehaviour>();
+            Destroy(lastBubble.gameObject);
+            bubblesLeft = 0;
+            print("you popped a bubble"); 
+        }
     }
 
     private void WaveSpawner()
@@ -29,7 +52,6 @@ public class BubbleSpawner : MonoBehaviour
       foreach(GameObject bubble in waves[currentWaveIndex].bubbles)
       {
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
-            _bubble.popThreshhold = waves[currentWaveIndex].popThreshold;
             _bubble.overlap = waves[currentWaveIndex].overlap;
 
             Bounds _bounds = bounds.bounds;
@@ -45,11 +67,10 @@ public class BubbleSpawner : MonoBehaviour
     {
         public GameObject[] bubbles;
         [Header("Hover for more information")]
-        [Tooltip("Size of the bubble needed to pop" +
-            "should always be less then half of the amount of bubbles spawned")]
-       
-        public int popThreshold;
-        [Tooltip("percentage overlapped")]
+
+        [Tooltip("percentage overlapped" +
+            "100 = 100% overlap 1 = 1% overlapped" +
+            "CANT BE 0 !!!!")]
         public int overlap;
     }
 }

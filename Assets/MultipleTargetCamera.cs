@@ -8,9 +8,17 @@ public class MultipleTargetCamera : MonoBehaviour
     public List<Transform> targets;
     private Transform[] transforms;
     public Vector3 offset;
+    [Tooltip("Time taken to smooth out")]
+    public float smoothTime = 0.5f;
+    private Vector3 velocity;
 
+    public float minZoom = 60f;
+    public float maxZoom = 40;
+    public float zoomLimiter = 50f;
+
+    private Camera cam;
     public static MultipleTargetCamera Instance { get; private set; }
-
+    
     private void Awake()
     {
         if(Instance == null)
@@ -22,20 +30,29 @@ public class MultipleTargetCamera : MonoBehaviour
             Destroy(Instance);
         }
     }
+    private void Start()
+    { 
+        cam = GetComponent<Camera>();
+    }
     public void Update()
     {
-        if(targets.Count <= 2)
+        if(targets.Count <= 1)
         {
             transforms = FindObjectsOfType<Transform>();
             foreach(Transform t in transforms)
             {
                 if (t.TryGetComponent<PlayerMovement>(out PlayerMovement _player))
                 {
-                    targets.Add(_player.gameObject.transform);
+                    if (!targets.Contains(_player.gameObject.transform))
+                    {
+                        targets.Add(_player.gameObject.transform);
+                    }
                 }
-            }
-            
-            
+            }  
+        }
+        else
+        {
+            return;
         }
     }
     private void LateUpdate()
@@ -44,11 +61,34 @@ public class MultipleTargetCamera : MonoBehaviour
         {
             return;
         }
+        if(targets.Count == 1) { Move(); }
+        else
+        {
+            Move();
+            Zoom();
+        }
+    }
+
+    void Move()
+    {
         Vector3 centerPoint = GetCenterPoint();
 
         Vector3 newpostion = centerPoint + offset;
 
-        transform.position = newpostion;    
+        transform.position = Vector3.SmoothDamp(transform.position, newpostion, ref velocity, smoothTime);
+    }
+
+    void Zoom()
+    {
+        float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance() - zoomLimiter);
+        cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, newZoom, Time.deltaTime);
+    }
+
+    float GetGreatestDistance()
+    {
+        Vector3 distance = targets[0].position - targets[1].position;
+        float length = distance.magnitude;
+        return length /2;
     }
 
     Vector3 GetCenterPoint()

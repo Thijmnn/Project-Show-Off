@@ -25,9 +25,6 @@ public class BlowingScript : MonoBehaviour
             if (other.GetComponent<BubbleBehaviour>())
             {
                 rb = other.GetComponent<Rigidbody>();
-                Vector3 force = (other.transform.position - transform.position);
-                force = new Vector3(force.x, 0, force.z).normalized;
-                print(force);
                 rb.AddForce(transform.forward, ForceMode.Force);
             }
         }  
