@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     private void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
     }
 
@@ -46,8 +46,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (movementDirection.magnitude > 0.1f)
         {
-
+            anim.SetBool("IsWalking", true);
             transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetBool("IsWalking", false);
         }
     }
 
@@ -55,11 +59,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerInput.actions["Fire"].triggered)
         {
-            moveSpeed *= 0.2f;
+            moveSpeed *= 0.4f;
         }
         else if (playerInput.actions["Fire"].WasReleasedThisFrame())
         {
-            moveSpeed *= 5f;
+            moveSpeed *= 2.5f;
         }
     }
 }
