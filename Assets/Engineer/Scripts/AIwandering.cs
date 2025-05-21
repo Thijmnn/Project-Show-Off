@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 
 public class Wander : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class Wander : MonoBehaviour
     private NavMeshAgent agent;
     private float wanderTimer;
     private float wanderTime;
+
+    bool playerInRange;
+
+    PlayerInput _playerInput;
 
     void Start()
     {
@@ -20,14 +25,19 @@ public class Wander : MonoBehaviour
     {
         wanderTimer += Time.deltaTime;
 
-        if (wanderTimer >= wanderTime)
+        if (wanderTimer >= wanderTime && !playerInRange)
         {
             SetNewDestination();
         }
 
-        if (agent.remainingDistance <= agent.stoppingDistance)
+        if (agent.remainingDistance <= agent.stoppingDistance && !playerInRange)
         {
             SetNewDestination();
+        }
+
+        if(playerInRange && _playerInput.actions["Interact"].triggered)
+        {
+            InteractWithPlayer();
         }
     }
 
@@ -45,4 +55,26 @@ public class Wander : MonoBehaviour
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
         wanderTimer = 0;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.GetComponent<PlayerMovement>())
+        {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<PlayerMovement>())
+        {
+            playerInRange = false;
+        }
+    }
+
+    private void InteractWithPlayer()
+    {
+        //INTERACT
+    }
+
 }
