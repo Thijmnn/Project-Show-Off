@@ -8,7 +8,6 @@ public class BubbleSpawner : MonoBehaviour
 {
     public Wave[] waves;
     [SerializeField] Collider bounds;
-    bool once = true;
     int currentWaveIndex;
     public int bubblesLeft;
 
@@ -25,10 +24,6 @@ public class BubbleSpawner : MonoBehaviour
             Destroy(Instance);
         }
     }
-    private void Start()
-    {
-        bubblesLeft = waves[currentWaveIndex].bubbles.Length;
-    }
     void Update()
     {
         WaveSpawner();
@@ -38,13 +33,22 @@ public class BubbleSpawner : MonoBehaviour
             BubbleBehaviour lastBubble = FindObjectOfType<BubbleBehaviour>();
             Destroy(lastBubble.gameObject);
             bubblesLeft = 0;
+            currentWaveIndex++;
             print("you popped a bubble"); 
         }
     }
 
     private void WaveSpawner()
     {
-        if (once) { SpawnNextWave(); once = false; }
+        if (bubblesLeft == 0 && currentWaveIndex <= waves.Length) 
+        {
+            bubblesLeft = waves[currentWaveIndex].bubbles.Length;
+            SpawnNextWave();
+        }
+        else
+        {
+            print("no more waves left");
+        }
         
     }
     private void SpawnNextWave()
@@ -58,7 +62,7 @@ public class BubbleSpawner : MonoBehaviour
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
 
-            Instantiate(bubble, new Vector3(offsetX, 1f, offsetZ), Quaternion.identity); 
+            Instantiate(bubble, new Vector3(offsetX, 2.5f, offsetZ), Quaternion.identity); 
       }  
     }
 

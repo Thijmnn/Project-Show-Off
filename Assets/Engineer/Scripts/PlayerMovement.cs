@@ -31,10 +31,6 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
-    private void Update()
-    {
-        SlowMovement();
-    }
     private void MovePlayer()
     {
         _moveDirection = playerInput.actions["Movement"].ReadValue<Vector2>();
@@ -52,18 +48,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("IsWalking", false);
-        }
-    }
-
-    private void SlowMovement()
-    {
-        if (playerInput.actions["Fire"].triggered)
-        {
-            moveSpeed *= 0.4f;
-        }
-        else if (playerInput.actions["Fire"].WasReleasedThisFrame())
-        {
-            moveSpeed *= 2.5f;
         }
     }
 }

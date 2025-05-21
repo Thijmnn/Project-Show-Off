@@ -13,6 +13,13 @@ public class BlowingScript : MonoBehaviour
 
     bool fireEnabled = false;
 
+    PlayerMovement _playerMov;
+
+    bool slowed;
+    private void Awake()
+    {
+        _playerMov = GetComponentInParent<PlayerMovement>();
+    }
     private void Start()
     {
         playerInput = GetComponentInParent<PlayerInput>();
@@ -41,10 +48,14 @@ public class BlowingScript : MonoBehaviour
         if (playerInput.actions["Fire"].inProgress)
         {
             fireEnabled = true;
+            if(!slowed) { _playerMov.moveSpeed *= 0.5f; slowed = true; }
+            
         }
         else
         {
             fireEnabled = false;
+            if (slowed) { _playerMov.moveSpeed *= 2f; slowed = false; }
+            
         }
     }
 }
