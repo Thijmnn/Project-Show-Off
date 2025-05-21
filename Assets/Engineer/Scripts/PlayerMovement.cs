@@ -50,4 +50,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", false);
         }
     }
+
+
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6715729742415859771
+--- !u!1 &4911683638924491058
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 741854143798937004}
-  - component: {fileID: 701377762065361567}
-  - component: {fileID: 2242206637546367396}
-  - component: {fileID: 5210532909555700951}
-  - component: {fileID: 7798275034712762809}
-  - component: {fileID: 892523759761794710}
+  - component: {fileID: 4020903393278386617}
+  - component: {fileID: 3050920055198273393}
+  - component: {fileID: 8058558853967969406}
+  - component: {fileID: 8524998944619132448}
+  - component: {fileID: 3245628889894778516}
+  - component: {fileID: 9162894564791248572}
   m_Layer: 3
-  m_Name: RangeBubble
+  m_Name: Speed Bubble 1
   m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &741854143798937004
+--- !u!4 &4020903393278386617
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715729742415859771}
+  m_GameObject: {fileID: 4911683638924491058}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.62, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &701377762065361567
+--- !u!33 &3050920055198273393
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715729742415859771}
+  m_GameObject: {fileID: 4911683638924491058}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2242206637546367396
+--- !u!23 &8058558853967969406
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715729742415859771}
+  m_GameObject: {fileID: 4911683638924491058}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d927601db7d22c5418a6e5b1ef2a86b0, type: 2}
+  - {fileID: 2100000, guid: 94773b7da6250054689a1d574f55e36a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5210532909555700951
+--- !u!65 &8524998944619132448
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715729742415859771}
+  m_GameObject: {fileID: 4911683638924491058}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -107,13 +107,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7798275034712762809
+--- !u!54 &3245628889894778516
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715729742415859771}
+  m_GameObject: {fileID: 4911683638924491058}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0.2
@@ -134,13 +134,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &892523759761794710
+--- !u!114 &9162894564791248572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715729742415859771}
+  m_GameObject: {fileID: 4911683638924491058}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e82824c7c8754845b4f82e73b1ebe90, type: 3}
@@ -149,3 +149,5 @@ MonoBehaviour:
   DestroySelf: 0
   overlap: 60
   canDestroy: 0
+  animalSpawn: {fileID: 494547625923305654, guid: 0bee9be4b45a7b0448a3c81a4801889e,
+    type: 3}

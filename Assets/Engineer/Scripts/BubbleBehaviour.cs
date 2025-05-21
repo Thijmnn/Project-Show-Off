@@ -85,15 +85,17 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 _bubbleBehaviour.canDestroy = true;
                 canDestroy = false;
-                if(canDestroy) { DestroyBubble(other); }
-                if(animalSpawn != null) { SpawnAnimal(); }
+                if (animalSpawn != null) { SpawnAnimal(); }
+                if (canDestroy) { DestroyBubble(other); }
+               
             }
             else if (transform.localScale.x > other.transform.localScale.x)
             {
                 _bubbleBehaviour.canDestroy = false;
                 canDestroy = true;
-                if (canDestroy) { DestroyOtherBubble(other); }
                 if (animalSpawn != null) { SpawnAnimal(); }
+                if (canDestroy) { DestroyOtherBubble(other); }
+                
             }
             else if (other.transform.localScale.x == transform.localScale.x)
             {
@@ -105,15 +107,17 @@ public class BubbleBehaviour : MonoBehaviour
                 {
                     _bubbleBehaviour.canDestroy = true;
                     canDestroy = false;
-                    if (canDestroy) { DestroyBubble(other); }
                     if (animalSpawn != null) { SpawnAnimal(); }
+                    if (canDestroy) { DestroyBubble(other); }
+                    
                 }
                 else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
                 {
                     _bubbleBehaviour.canDestroy = false;
                     canDestroy = true;
-                    if (canDestroy) { DestroyOtherBubble(other); }
                     if (animalSpawn != null) { SpawnAnimal(); }
+                    if (canDestroy) { DestroyOtherBubble(other); }
+                    
                 }
             }
         }
