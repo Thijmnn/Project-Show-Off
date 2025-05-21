@@ -18,6 +18,9 @@ public class BubbleBehaviour : MonoBehaviour
     private int overlapThreshold;
 
     public bool canDestroy;
+
+    public GameObject animalSpawn;
+
     private void Start()
     {
         overlapThreshold = 100 / overlap;
@@ -82,13 +85,17 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 _bubbleBehaviour.canDestroy = true;
                 canDestroy = false;
-                if(canDestroy) { DestroyBubble(other); }
+                if (animalSpawn != null) { SpawnAnimal(); }
+                if (canDestroy) { DestroyBubble(other); }
+               
             }
             else if (transform.localScale.x > other.transform.localScale.x)
             {
                 _bubbleBehaviour.canDestroy = false;
                 canDestroy = true;
+                if (animalSpawn != null) { SpawnAnimal(); }
                 if (canDestroy) { DestroyOtherBubble(other); }
+                
             }
             else if (other.transform.localScale.x == transform.localScale.x)
             {
@@ -100,13 +107,17 @@ public class BubbleBehaviour : MonoBehaviour
                 {
                     _bubbleBehaviour.canDestroy = true;
                     canDestroy = false;
+                    if (animalSpawn != null) { SpawnAnimal(); }
                     if (canDestroy) { DestroyBubble(other); }
+                    
                 }
                 else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
                 {
                     _bubbleBehaviour.canDestroy = false;
                     canDestroy = true;
+                    if (animalSpawn != null) { SpawnAnimal(); }
                     if (canDestroy) { DestroyOtherBubble(other); }
+                    
                 }
             }
         }
@@ -126,6 +137,14 @@ public class BubbleBehaviour : MonoBehaviour
         _rb.mass = transform.localScale.x;
         BubbleSpawner.Instance.bubblesLeft--;
         Destroy(_other);
+    }
+
+    private void SpawnAnimal()
+    {
+        GameObject _animalSpawn = animalSpawn;
+
+        Instantiate(_animalSpawn.transform, transform.position ,Quaternion.identity);
+        animalSpawn = null;
     }
 }
 
