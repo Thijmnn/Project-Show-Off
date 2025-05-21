@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SelfDestruct",
+                    "name": "Interact",
                     "type": "Button",
                     "id": "fe919f84-2360-44a1-be07-2997336eab09",
                     "expectedControlType": "Button",
@@ -173,18 +173,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SelfDestruct",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "4f0b9f8f-74dc-4548-873a-9f98e5173b5a",
-                    "path": "<Gamepad>/leftTrigger",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SelfDestruct",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

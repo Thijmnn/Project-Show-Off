@@ -93,6 +93,7 @@ public class BubbleBehaviour : MonoBehaviour
                 _bubbleBehaviour.canDestroy = false;
                 canDestroy = true;
                 if (canDestroy) { DestroyOtherBubble(other); }
+                if (animalSpawn != null) { SpawnAnimal(); }
             }
             else if (other.transform.localScale.x == transform.localScale.x)
             {
@@ -112,6 +113,7 @@ public class BubbleBehaviour : MonoBehaviour
                     _bubbleBehaviour.canDestroy = false;
                     canDestroy = true;
                     if (canDestroy) { DestroyOtherBubble(other); }
+                    if (animalSpawn != null) { SpawnAnimal(); }
                 }
             }
         }
@@ -137,7 +139,8 @@ public class BubbleBehaviour : MonoBehaviour
     {
         GameObject _animalSpawn = animalSpawn;
 
-        Instantiate(_animalSpawn.transform, _animalSpawn.transform);
+        Instantiate(_animalSpawn.transform, transform.position ,Quaternion.identity);
+        animalSpawn = null;
     }
 }
 

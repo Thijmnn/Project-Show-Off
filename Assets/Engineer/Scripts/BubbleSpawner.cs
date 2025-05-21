@@ -45,7 +45,7 @@ public class BubbleSpawner : MonoBehaviour
             bubblesLeft = waves[currentWaveIndex].bubbles.Length;
             SpawnNextWave();
         }
-        else
+        else if(bubblesLeft == 0 && currentWaveIndex > waves.Length)
         {
             print("no more waves left");
         }
