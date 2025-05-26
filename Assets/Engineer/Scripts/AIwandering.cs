@@ -17,7 +17,7 @@ public class Wander : MonoBehaviour
     PlayerInput _playerInput;
     public PlayerMovement _playerMovement;
 
-
+    public Collider BlowrangeColl;
     private void Awake()
     {
         
@@ -70,7 +70,8 @@ public class Wander : MonoBehaviour
     {
         if(other.GetComponent<PlayerMovement>())
         {
-            _playerMovement = other.GetComponent<PlayerMovement>();
+            _playerMovement = other.GetComponentInParent<PlayerMovement>();
+            BlowrangeColl = other.GetComponentInChildren<Collider>();
             _playerInput = other.GetComponent<PlayerInput>();
             playerInRange = true;
         }
