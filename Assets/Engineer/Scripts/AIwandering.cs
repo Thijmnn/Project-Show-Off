@@ -15,13 +15,25 @@ public class Wander : MonoBehaviour
 
     PlayerInput _playerInput;
 
-    void Start()
+    private void Awake()
     {
+        
         agent = GetComponent<NavMeshAgent>();
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
     }
 
     void Update()
+    {
+        if (!playerInRange){ Move(); }
+        else
+        {
+            InteractWithPlayer();
+        }
+            
+    }
+
+
+    private void Move()
     {
         wanderTimer += Time.deltaTime;
 
@@ -35,12 +47,7 @@ public class Wander : MonoBehaviour
             SetNewDestination();
         }
 
-        if(playerInRange && _playerInput.actions["Interact"].triggered)
-        {
-            InteractWithPlayer();
-        }
     }
-
     private void SetNewDestination()
     {
         Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
@@ -60,6 +67,7 @@ public class Wander : MonoBehaviour
     {
         if(other.GetComponent<PlayerMovement>())
         {
+            _playerInput = other.GetComponent<PlayerInput>();
             playerInRange = true;
         }
     }
@@ -74,7 +82,17 @@ public class Wander : MonoBehaviour
 
     private void InteractWithPlayer()
     {
-        //INTERACT
+        if (playerInRange && _playerInput.actions["Interact"].triggered)
+        {
+            GiveBoost();
+        }
+        agent.SetDestination(transform.position);
+        transform.LookAt(_playerInput.transform.position);
+    }
+
+    public static void GiveBoost()
+    {
+
     }
 
 }
