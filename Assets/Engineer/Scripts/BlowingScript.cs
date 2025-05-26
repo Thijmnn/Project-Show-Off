@@ -16,6 +16,8 @@ public class BlowingScript : MonoBehaviour
     PlayerMovement _playerMov;
 
     bool slowed;
+
+    public float blowMulti;
     private void Awake()
     {
         _playerMov = GetComponentInParent<PlayerMovement>();
@@ -32,7 +34,7 @@ public class BlowingScript : MonoBehaviour
             if (other.GetComponent<BubbleBehaviour>())
             {
                 rb = other.GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward, ForceMode.Force);
+                rb.AddForce(transform.forward * blowMulti, ForceMode.Force);
             }
         }  
         

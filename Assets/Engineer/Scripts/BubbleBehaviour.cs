@@ -31,7 +31,10 @@ public class BubbleBehaviour : MonoBehaviour
         _ren = GetComponent<Renderer>();
     }
 
-
+    public void Update()
+    {
+        _rb.drag = _rb.mass;
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<BubbleBehaviour>())
