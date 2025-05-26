@@ -20,12 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion _rotation;
 
     Animator anim;
+    
+
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
     }
-
     private void FixedUpdate()
     {
         MovePlayer();
@@ -50,6 +51,4 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", false);
         }
     }
-
-
 }
