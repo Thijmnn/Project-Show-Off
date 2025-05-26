@@ -158,6 +158,7 @@ Transform:
   - {fileID: 7432040109379257202}
   - {fileID: 9162741576350353695}
   - {fileID: 1449719555285042245}
+  - {fileID: 7809955433207643391}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8850955190354796311
@@ -332,7 +333,7 @@ GameObject:
   - component: {fileID: 5191533526292327572}
   - component: {fileID: 4619527685162650157}
   m_Layer: 6
-  m_Name: Cube
+  m_Name: Wind hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +349,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02, y: 0.21399999, z: 0.474}
-  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
+  m_LocalScale: {x: 0.785896, y: 0.785896, z: 0.785896}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7122689350344087754}
@@ -604,6 +605,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5895239922818719475, guid: 1fff995a1e1a55644b3e7e3cc328ed94,
     type: 3}
   m_PrefabInstance: {fileID: 3959772809362546049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5590360991362300390
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2480722996513387724}
+    m_Modifications:
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6289416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_Name
+      value: Temp wind particle and sounds
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a30322828c44ed640afeb901f8f4602b, type: 3}
+--- !u!4 &7809955433207643391 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5590360991362300390}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7663261662929941470
 PrefabInstance:
