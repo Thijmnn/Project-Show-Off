@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 7744553721064323579}
   - component: {fileID: 5191533526292327572}
   - component: {fileID: 4262505405445149214}
+  - component: {fileID: 3846158398695017559}
   m_Layer: 6
   m_Name: Wind hitbox
   m_TagString: Untagged
@@ -307,6 +308,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5030248, y: 1, z: 5.858339}
   m_Center: {x: 0.6512006, y: 0, z: 2.4291692}
+--- !u!114 &3846158398695017559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360183979929314052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785f42c7197e56342984141081118131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
 --- !u!1 &7477766493013971318
 GameObject:
   m_ObjectHideFlags: 0
