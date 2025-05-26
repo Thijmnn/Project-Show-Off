@@ -89,7 +89,7 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 _bubbleBehaviour.canDestroy = true;
                 canDestroy = false;
-                if (animalSpawn != null) { SpawnAnimal(); }
+                SpawnAnimal();
                 if (canDestroy) { DestroyBubble(other); }
                
             }
@@ -97,7 +97,7 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 _bubbleBehaviour.canDestroy = false;
                 canDestroy = true;
-                if (animalSpawn != null) { SpawnAnimal(); }
+                SpawnAnimal();
                 if (canDestroy) { DestroyOtherBubble(other); }
                 
             }
@@ -105,7 +105,7 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 if (DestroySelf == _bubbleBehaviour.DestroySelf)
                 {
-                    if (animalSpawn != null) { SpawnAnimal(); }
+                    
                     RollRandom();
                     
                 }
@@ -113,6 +113,7 @@ public class BubbleBehaviour : MonoBehaviour
                 {
                     _bubbleBehaviour.canDestroy = true;
                     canDestroy = false;
+                    SpawnAnimal();
                     if (canDestroy) { DestroyBubble(other); }
                     
                 }
@@ -120,6 +121,7 @@ public class BubbleBehaviour : MonoBehaviour
                 {
                     _bubbleBehaviour.canDestroy = false;
                     canDestroy = true;
+                    SpawnAnimal();
                     if (canDestroy) { DestroyOtherBubble(other); }
                     
                 }
@@ -133,6 +135,7 @@ public class BubbleBehaviour : MonoBehaviour
         _rb.mass = transform.localScale.x;
         BubbleSpawner.Instance.bubblesLeft--;
         _ren.material = OriginalColor;
+        
         Destroy(gameObject);
     }
 
@@ -147,8 +150,11 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void SpawnAnimal()
     {
-        Instantiate(animalSpawn.transform, transform.position ,Quaternion.identity);
-        animalSpawn = null;
+        if (animalSpawn != null) {
+            Instantiate(animalSpawn.transform, transform.position, Quaternion.identity);
+            animalSpawn = null;
+        }
+        
     }
 }
 
