@@ -17,7 +17,7 @@ public class BubbleBehaviour : MonoBehaviour
 
     private int overlapThreshold;
 
-    public bool canDestroy;
+    [HideInInspector] public bool canDestroy;
 
     public GameObject animalSpawn;
 
