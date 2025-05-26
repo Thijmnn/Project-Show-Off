@@ -20,6 +20,19 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion _rotation;
 
     Animator anim;
+
+    bool once = true;
+    float originalSpeed;
+
+    public float boostDuration;
+    public float moveSpeedIncrease;
+
+    SpeedBoost1 boostSpeed;
+    private void Awake()
+    {
+        boostSpeed = FindObjectOfType<SpeedBoost1>();
+        boostSpeed.GiveSpeed.AddListener(IncreaseSpeed);
+    }
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -51,5 +64,23 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void IncreaseSpeed()
+    {
+        StartCoroutine(SpeedIncrease(boostDuration,moveSpeedIncrease));
+    }
 
+    private IEnumerator SpeedIncrease(float boostDur, float speedInc)
+    {
+        if (once)
+        {
+            originalSpeed = moveSpeed;
+            moveSpeed *= speedInc;
+            once = false;
+        }    
+        
+        yield return new WaitForSeconds(boostDur);
+
+        moveSpeed = originalSpeed;
+        once = true;
+    }
 }

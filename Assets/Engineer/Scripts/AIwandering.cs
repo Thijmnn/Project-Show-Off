@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Wander : MonoBehaviour
@@ -14,6 +15,8 @@ public class Wander : MonoBehaviour
     bool playerInRange;
 
     PlayerInput _playerInput;
+    public PlayerMovement _playerMovement;
+
 
     private void Awake()
     {
@@ -22,7 +25,7 @@ public class Wander : MonoBehaviour
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
     }
 
-    void Update()
+    public virtual void Update()
     {
         if (!playerInRange){ Move(); }
         else
@@ -67,6 +70,7 @@ public class Wander : MonoBehaviour
     {
         if(other.GetComponent<PlayerMovement>())
         {
+            _playerMovement = other.GetComponent<PlayerMovement>();
             _playerInput = other.GetComponent<PlayerInput>();
             playerInRange = true;
         }
@@ -90,7 +94,7 @@ public class Wander : MonoBehaviour
         transform.LookAt(_playerInput.transform.position);
     }
 
-    public static void GiveBoost()
+    public virtual void GiveBoost()
     {
 
     }
