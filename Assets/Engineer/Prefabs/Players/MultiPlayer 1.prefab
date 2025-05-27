@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1427811093565575118}
   - component: {fileID: 3719778168765911736}
   - component: {fileID: 6852505372501619078}
-  - component: {fileID: 7827199603769919914}
   m_Layer: 0
   m_Name: MultiPlayer 1
   m_TagString: Untagged
@@ -189,18 +188,6 @@ CapsuleCollider:
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7827199603769919914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6194086790440854022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 492b1b3e2e4df5f4fb7602c2f32927b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6360183979929314052
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
+  blowMulti: 4
 --- !u!1 &7477766493013971318
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Temp wind particle and sounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
