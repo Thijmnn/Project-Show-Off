@@ -23,15 +23,19 @@ public class PlayerMovement : MonoBehaviour
     
     float originalSpeed;
 
+    public float sprintMulti;
+    private float newSpeed;
     private void Start()
     {
         originalSpeed = moveSpeed;
+        newSpeed = moveSpeed * sprintMulti;
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
     }
     private void FixedUpdate()
     {
         MovePlayer();
+        IncreaseSpeed();
     }
 
     private void MovePlayer()
@@ -51,6 +55,18 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("IsWalking", false);
+        }
+    }
+
+    private void IncreaseSpeed()
+    {
+        if (playerInput.actions["Sprint"].inProgress)
+        {
+            moveSpeed = newSpeed;
+        }
+        else
+        {
+            moveSpeed = originalSpeed;
         }
     }
 }
