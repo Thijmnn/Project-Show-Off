@@ -310,6 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
   blowMulti: 4
+  soundVortex: {fileID: 2958868340287651357}
 --- !u!1 &7477766493013971318
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +541,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a30322828c44ed640afeb901f8f4602b, type: 3}
+--- !u!1 &2958868340287651357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5590360991362300390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7809955433207643391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2447278298953188633, guid: a30322828c44ed640afeb901f8f4602b,
