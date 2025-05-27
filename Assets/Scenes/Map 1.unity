@@ -3849,6 +3849,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 240786439}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &245473242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245473243}
+  m_Layer: 0
+  m_Name: SpawnLoc2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245473243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245473242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.4, y: 2, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &247566762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5987,11 +6018,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
-  offset: {x: 0, y: 20, z: -10}
-  smoothTime: 1
-  minZoom: 70
-  maxZoom: 50
-  zoomLimiter: 10
+  offset: {x: 0, y: 30, z: -15}
+  smoothTime: 3
+  minZoom: 90
+  maxZoom: 40
+  zoomLimiter: 15
 --- !u!1001 &333992369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12732,6 +12763,37 @@ Transform:
   - {fileID: 1837939457}
   - {fileID: 1694301375}
   m_Father: {fileID: 1651980746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &659130559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659130560}
+  m_Layer: 0
+  m_Name: SpawnLoc1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659130560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659130559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.6, y: 2, z: 13.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &659925734
 PrefabInstance:
@@ -20450,6 +20512,8 @@ MonoBehaviour:
   playerManager: {fileID: 1112338508}
   player1: {fileID: 6194086790440854022, guid: 2eb13bd0830ba9848a8c862879ecae76, type: 3}
   player2: {fileID: 6194086790440854022, guid: 2eb13bd0830ba9848a8c862879ecae76, type: 3}
+  spawnLoc1: {fileID: 659130559}
+  spawnLoc2: {fileID: 245473242}
 --- !u!4 &1127767883
 Transform:
   m_ObjectHideFlags: 0
@@ -37771,6 +37835,8 @@ SceneRoots:
   - {fileID: 1328740712}
   - {fileID: 10842565}
   - {fileID: 1127767883}
+  - {fileID: 659130560}
+  - {fileID: 245473243}
   - {fileID: 1269319109}
   - {fileID: 1959984108}
   - {fileID: 134107592}
