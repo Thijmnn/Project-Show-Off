@@ -13,6 +13,7 @@ public class BubbleSpawner : MonoBehaviour
 
     public static BubbleSpawner Instance { get; private set; }
 
+    public float bubbleHeight;
     private void Awake()
     {
         if (Instance == null)
@@ -62,7 +63,7 @@ public class BubbleSpawner : MonoBehaviour
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
 
-            Instantiate(bubble, new Vector3(offsetX, 6.5f, offsetZ), Quaternion.identity); 
+            Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); 
       }  
     }
 
