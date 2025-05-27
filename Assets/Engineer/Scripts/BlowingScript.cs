@@ -18,6 +18,8 @@ public class BlowingScript : MonoBehaviour
     bool slowed;
 
     public float blowMulti;
+
+    public GameObject soundVortex;
     private void Awake()
     {
         _playerMov = GetComponentInParent<PlayerMovement>();
@@ -50,11 +52,13 @@ public class BlowingScript : MonoBehaviour
         if (playerInput.actions["Fire"].inProgress)
         {
             fireEnabled = true;
-            if(!slowed) { _playerMov.moveSpeed *= 0.5f; slowed = true; }
+            soundVortex.SetActive(true);
+            if (!slowed) { _playerMov.moveSpeed *= 0.5f; slowed = true; }
             
         }
         else
         {
+            soundVortex.SetActive(false);
             fireEnabled = false;
             if (slowed) { _playerMov.moveSpeed *= 2f; slowed = false; }
             

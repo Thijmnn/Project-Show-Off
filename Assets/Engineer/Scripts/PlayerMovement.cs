@@ -21,9 +21,11 @@ public class PlayerMovement : MonoBehaviour
 
     Animator anim;
     
+    float originalSpeed;
 
     private void Start()
     {
+        originalSpeed = moveSpeed;
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
     }
