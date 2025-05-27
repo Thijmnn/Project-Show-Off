@@ -609,6 +609,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1072,6 +1083,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1292,6 +1314,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1419,6 +1452,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1731,7 +1775,7 @@ GameObject:
   - component: {fileID: 60635584}
   m_Layer: 0
   m_Name: Fences
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1895,6 +1939,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2924,6 +2979,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3127,6 +3193,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f184316487cd44b99e506e47d99681, type: 3}
+--- !u!1 &125490863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125490864}
+  m_Layer: 0
+  m_Name: SpawnLoc1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &125490864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125490863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.9, y: 2, z: 10.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &127059700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3448,6 +3545,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3891,6 +3999,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4433,6 +4552,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4512,84 +4642,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f184316487cd44b99e506e47d99681, type: 3}
---- !u!1001 &197645809
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 394668005030379638, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: magnetRange
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 394668005030379638, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: pullVelocity
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1181100506857537681, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_Name
-      value: Frog 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.357625
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.7994342
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517588732817839119, guid: 83b28eea853b8c54a93e5ce0aa7f23cb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 83b28eea853b8c54a93e5ce0aa7f23cb, type: 3}
 --- !u!4 &202307363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 00f184316487cd44b99e506e47d99681,
@@ -4680,6 +4732,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4843,6 +4906,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5266,6 +5340,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5361,6 +5446,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5772,6 +5868,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6295,6 +6402,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6384,6 +6502,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6652,6 +6781,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7033,6 +7173,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8703,6 +8854,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9196,6 +9358,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9561,6 +9734,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9975,6 +10159,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10064,6 +10259,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10371,6 +10577,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11714,6 +11931,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11877,6 +12105,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12091,6 +12330,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12470,6 +12720,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12559,6 +12820,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12648,6 +12920,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12811,6 +13094,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12980,6 +13274,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13223,6 +13528,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14043,6 +14359,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14132,6 +14459,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14917,6 +15255,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15074,6 +15423,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15163,6 +15523,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15326,6 +15697,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15559,6 +15941,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16130,6 +16523,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16421,6 +16825,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16578,6 +16993,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16666,6 +17092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FencePost
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462647779686439617, guid: fa89db7e4d951444f928574961544144,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17158,6 +17589,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17421,6 +17863,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17817,6 +18270,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 659925734}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &660882615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660882616}
+  m_Layer: 0
+  m_Name: SpawnLoc2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660882616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660882615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.85, y: 2, z: -17.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662755163
 GameObject:
   m_ObjectHideFlags: 0
@@ -18357,6 +18841,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18600,6 +19095,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19079,6 +19585,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19428,6 +19945,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20437,6 +20965,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20532,6 +21071,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20727,6 +21277,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21542,7 +22103,7 @@ GameObject:
   - component: {fileID: 832575518}
   m_Layer: 0
   m_Name: Global Volume
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21820,6 +22381,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21983,6 +22555,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22264,6 +22847,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23227,6 +23821,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23696,6 +24301,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24675,6 +25291,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25321,6 +25948,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25410,6 +26048,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26717,6 +27366,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27506,6 +28166,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27885,6 +28556,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28475,6 +29157,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28518,6 +29211,8 @@ MonoBehaviour:
   playerManager: {fileID: 1112338508}
   player1: {fileID: 6194086790440854022, guid: 2eb13bd0830ba9848a8c862879ecae76, type: 3}
   player2: {fileID: 6194086790440854022, guid: 2eb13bd0830ba9848a8c862879ecae76, type: 3}
+  spawnLoc1: {fileID: 125490863}
+  spawnLoc2: {fileID: 660882615}
 --- !u!4 &1127767883
 Transform:
   m_ObjectHideFlags: 0
@@ -28527,7 +29222,7 @@ Transform:
   m_GameObject: {fileID: 1127767881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.80047, y: -79.96118, z: 184.33885}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29049,6 +29744,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29138,6 +29844,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29227,6 +29944,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29622,6 +30350,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29646,7 +30385,7 @@ GameObject:
   - component: {fileID: 1168009532}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30707,6 +31446,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31336,6 +32086,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32312,6 +33073,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32797,6 +33569,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33128,6 +33911,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33771,6 +34565,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33795,7 +34600,7 @@ GameObject:
   - component: {fileID: 1376517834}
   m_Layer: 0
   m_Name: Terrain_(53.00, 0.00, -49.10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -34233,6 +35038,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34396,6 +35212,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36591,6 +37418,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37008,6 +37846,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37135,6 +37984,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37292,6 +38152,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37544,6 +38415,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37913,6 +38795,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38374,6 +39267,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePost
       objectReference: {fileID: 0}
+    - target: {fileID: 6462647779686439617, guid: fa89db7e4d951444f928574961544144,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38501,6 +39399,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38590,6 +39499,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39213,6 +40133,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39766,7 +40697,7 @@ GameObject:
   - component: {fileID: 1657264612}
   m_Layer: 0
   m_Name: Terrain_(-47.00, 0.00, -149.10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -40388,6 +41319,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41103,6 +42045,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41916,6 +42869,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42365,6 +43329,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42454,6 +43429,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43571,6 +44557,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43811,7 +44808,7 @@ GameObject:
   - component: {fileID: 1858812209}
   m_Layer: 0
   m_Name: Terrain_(-147.00, 0.00, -49.10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -44045,6 +45042,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44214,6 +45222,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44435,6 +45454,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44988,6 +46018,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45947,6 +46988,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46099,6 +47151,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47111,6 +48174,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47498,6 +48572,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47815,6 +48900,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48064,6 +49160,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48153,6 +49260,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48457,6 +49575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FencePost
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462647779686439617, guid: fa89db7e4d951444f928574961544144,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48772,7 +49895,7 @@ GameObject:
   - component: {fileID: 2085095063}
   m_Layer: 0
   m_Name: Terrain_(-147.00, 0.00, -149.10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -49440,6 +50563,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49899,6 +51033,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4230180670906127259, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6527988694775372386, guid: 1c1d87fbd6bc1ac4ab7b51379471c8ba,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50223,4 +51368,5 @@ SceneRoots:
   - {fileID: 1168009534}
   - {fileID: 60635584}
   - {fileID: 1651980746}
-  - {fileID: 197645809}
+  - {fileID: 125490864}
+  - {fileID: 660882616}
