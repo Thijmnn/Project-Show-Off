@@ -39,5 +39,6 @@ public class SpeedBoost1 : Wander
         _playerMovement.newSpeed = originalSprintSpeed;
         _playerMovement.originalSpeed = originalSpeed;
 
+        gameObject.SetActive(false);
     }
 }

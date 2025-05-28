@@ -40,6 +40,7 @@ public class MagnetBoost : Wander
         yield return new WaitForSeconds(boostDur);
 
         magnetic = false;
+        gameObject.SetActive(false);
 
     }
 

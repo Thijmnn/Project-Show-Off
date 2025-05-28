@@ -41,6 +41,7 @@ public class RangeBoost : Wander
 
         _blowScript.blowMulti *= 0.5f;
         BlowrangeColl.transform.localScale = originalScale;
+        gameObject.SetActive(false);
 
     }
 }
