@@ -29,12 +29,15 @@ public class PlayerMovement : MonoBehaviour
     private float newSpeed;
 
     public float smoothTime = 0.5f;
+
+    private BlowingScript _blow;
     private void Start()
     {
         originalSpeed = moveSpeed;
         newSpeed = moveSpeed * sprintMulti;
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
+        _blow = FindObjectOfType<BlowingScript>();
     }
     private void FixedUpdate()
     {
@@ -64,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void IncreaseSpeed()
     {
-        if (playerInput.actions["Sprint"].inProgress)
+        if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
         {
             moveSpeed = newSpeed;
         }
