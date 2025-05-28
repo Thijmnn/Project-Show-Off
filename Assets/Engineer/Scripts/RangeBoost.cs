@@ -36,12 +36,12 @@ public class RangeBoost : Wander
         BlowrangeColl.transform.localScale = new Vector3(BlowrangeColl.transform.localScale.x * RangeInc, BlowrangeColl.transform.localScale.y, BlowrangeColl.transform.localScale.z * RangeInc);
 
         _blowScript.blowMulti *= 2;
-
+        gameObject.SetActive(false);
         yield return new WaitForSeconds(boostDur);
 
         _blowScript.blowMulti *= 0.5f;
         BlowrangeColl.transform.localScale = originalScale;
-        gameObject.SetActive(false);
+        
 
     }
 }

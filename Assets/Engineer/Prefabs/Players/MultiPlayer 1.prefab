@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6194086790440854022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.4, y: 2, z: -15}
+  m_LocalPosition: {x: -5.6, y: 2, z: 13.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -140,7 +140,8 @@ MonoBehaviour:
   rotationSpeed: 8
   originalSpeed: 0
   sprintMulti: 1.5
-  smoothTime: 0.5
+  newSpeed: 0
+  smoothTime: 0.2
 --- !u!54 &3719778168765911736
 Rigidbody:
   m_ObjectHideFlags: 0

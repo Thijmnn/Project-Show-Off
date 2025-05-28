@@ -35,12 +35,12 @@ public class MagnetBoost : Wander
     private IEnumerator SpeedIncrease(float boostDur)
     {
         magnetic = true;
-        
+        gameObject.SetActive(false);
 
         yield return new WaitForSeconds(boostDur);
 
         magnetic = false;
-        gameObject.SetActive(false);
+        
 
     }
 
