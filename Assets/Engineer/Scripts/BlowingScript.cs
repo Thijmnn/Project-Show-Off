@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,13 +21,19 @@ public class BlowingScript : MonoBehaviour
     public float blowMulti;
 
     public GameObject soundVortex;
+
+    bool startedUp;
+    float startUpDelay = 0.2f;
     private void Awake()
     {
+        
         _playerMov = GetComponentInParent<PlayerMovement>();
     }
     private void Start()
     {
+        Invoke(nameof(EnableInputCheck), startUpDelay);
         playerInput = GetComponentInParent<PlayerInput>();
+        
     }
 
     private void OnTriggerStay(Collider other)
@@ -44,24 +51,30 @@ public class BlowingScript : MonoBehaviour
 
     private void Update()
     {
+        
         BlowBubbles();
     }
 
+    void EnableInputCheck() => startedUp = true;
+
     void BlowBubbles()
     {
-        if (playerInput.actions["Fire"].inProgress)
-        {
-            fireEnabled = true;
-            soundVortex.SetActive(true);
-            if (!slowed) { _playerMov.moveSpeed *= 0.5f; slowed = true; }
-            
+        if (startedUp) {
+            if (playerInput.actions["Fire"].inProgress)
+            {
+                fireEnabled = true;
+                soundVortex.SetActive(true);
+                if (!slowed) { _playerMov.originalSpeed *= 0.4f; slowed = true; }
+
+            }
+            else
+            {
+                soundVortex.SetActive(false);
+                fireEnabled = false;
+                if (slowed) { _playerMov.originalSpeed *= 2.5f; slowed = false; }
+
+            }
         }
-        else
-        {
-            soundVortex.SetActive(false);
-            fireEnabled = false;
-            if (slowed) { _playerMov.moveSpeed *= 2f; slowed = false; }
-            
-        }
+        
     }
 }
