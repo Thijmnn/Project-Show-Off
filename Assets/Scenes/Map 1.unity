@@ -3077,7 +3077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets: []
   offset: {x: 0, y: 30, z: -15}
-  smoothTime: 2
+  smoothTime: 3
   minZoom: 90
   maxZoom: 40
   zoomLimiter: 15
@@ -12626,8 +12626,7 @@ MonoBehaviour:
     - {fileID: 4911683638924491058, guid: a61feeecf72b61847b687c8ffb55081b, type: 3}
     - {fileID: 4911683638924491058, guid: a61feeecf72b61847b687c8ffb55081b, type: 3}
     overlap: 60
-  spawnAreas:
-  - {fileID: 1269319111}
+  bounds: {fileID: 1269319111}
   bubblesLeft: 0
   bubbleHeight: 1.5
 --- !u!65 &1269319111

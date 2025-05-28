@@ -7,7 +7,7 @@ using UnityEngine;
 public class BubbleSpawner : MonoBehaviour
 {
     public Wave[] waves;
-    [SerializeField] List<Collider> spawnAreas;
+    [SerializeField] Collider bounds;
     int currentWaveIndex;
     public int bubblesLeft;
 
@@ -59,9 +59,7 @@ public class BubbleSpawner : MonoBehaviour
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
             _bubble.overlap = waves[currentWaveIndex].overlap;
 
-            Collider area = spawnAreas[Random.Range(0, spawnAreas.Count)];
-            Bounds _bounds = area.bounds;
-
+            Bounds _bounds = bounds.bounds;
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
 

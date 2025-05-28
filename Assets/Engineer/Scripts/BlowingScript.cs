@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -28,14 +27,11 @@ public class BlowingScript : MonoBehaviour
     public bool canSprint;
     private void Awake()
     {
-        
         _playerMov = GetComponentInParent<PlayerMovement>();
     }
     private void Start()
     {
-        Invoke(nameof(EnableInputCheck), startUpDelay);
         playerInput = GetComponentInParent<PlayerInput>();
-        
     }
 
     private void OnTriggerStay(Collider other)
@@ -53,11 +49,8 @@ public class BlowingScript : MonoBehaviour
 
     private void Update()
     {
-        
         BlowBubbles();
     }
-
-    void EnableInputCheck() => startedUp = true;
 
     void BlowBubbles()
     {
@@ -77,6 +70,12 @@ public class BlowingScript : MonoBehaviour
                 canSprint = true;
             }
         }
-        
+        else
+        {
+            soundVortex.SetActive(false);
+            fireEnabled = false;
+            if (slowed) { _playerMov.moveSpeed *= 2f; slowed = false; }
+            
+        }
     }
 }
