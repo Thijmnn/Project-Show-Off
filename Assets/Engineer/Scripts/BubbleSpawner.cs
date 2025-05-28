@@ -1,4 +1,3 @@
-using Adobe.Substance.Connector;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,49 +6,22 @@ using UnityEngine;
 public class BubbleSpawner : MonoBehaviour
 {
     public Wave[] waves;
-    [SerializeField] List<Collider> spawnAreas;
+    [SerializeField] Collider bounds;
+    bool once = true;
     int currentWaveIndex;
-    public int bubblesLeft;
-
-    public static BubbleSpawner Instance { get; private set; }
-
-    public float bubbleHeight;
-    private void Awake()
+    int enemiesLeft;
+    private void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(Instance);
-        }
+        enemiesLeft = waves[currentWaveIndex].bubbles.Length;
     }
     void Update()
     {
         WaveSpawner();
-
-        if(bubblesLeft == 1)
-        {
-            BubbleBehaviour lastBubble = FindObjectOfType<BubbleBehaviour>();
-            Destroy(lastBubble.gameObject);
-            bubblesLeft = 0;
-            currentWaveIndex++;
-            print("you popped a bubble"); 
-        }
     }
 
     private void WaveSpawner()
     {
-        if (bubblesLeft == 0 && currentWaveIndex < waves.Length) 
-        {
-            bubblesLeft = waves[currentWaveIndex].bubbles.Length;
-            SpawnNextWave();
-        }
-        else if(bubblesLeft == 0 && currentWaveIndex > waves.Length)
-        {
-            print("no more waves left");
-        }
+        if (once) { SpawnNextWave(); once = false; }
         
     }
     private void SpawnNextWave()
@@ -57,15 +29,14 @@ public class BubbleSpawner : MonoBehaviour
       foreach(GameObject bubble in waves[currentWaveIndex].bubbles)
       {
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
+            _bubble.popThreshhold = waves[currentWaveIndex].popThreshold;
             _bubble.overlap = waves[currentWaveIndex].overlap;
 
-            Collider area = spawnAreas[Random.Range(0, spawnAreas.Count)];
-            Bounds _bounds = area.bounds;
-
+            Bounds _bounds = bounds.bounds;
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
 
-            Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); 
+            Instantiate(bubble, new Vector3(offsetX, 1f, offsetZ), Quaternion.identity); 
       }  
     }
 
@@ -74,10 +45,11 @@ public class BubbleSpawner : MonoBehaviour
     {
         public GameObject[] bubbles;
         [Header("Hover for more information")]
-
-        [Tooltip("percentage overlapped" +
-            "100 = 100% overlap 1 = 1% overlapped" +
-            "CANT BE 0 !!!!")]
+        [Tooltip("Size of the bubble needed to pop" +
+            "should always be less then half of the amount of bubbles spawned")]
+       
+        public int popThreshold;
+        [Tooltip("percentage overlapped")]
         public int overlap;
     }
 }

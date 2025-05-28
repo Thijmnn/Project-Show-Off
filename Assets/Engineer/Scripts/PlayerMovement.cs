@@ -20,31 +20,21 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion _rotation;
 
     Animator anim;
-
-    [HideInInspector] public float originalSpeed;
-
-    private Vector3 velocity;
-
-    public float sprintMulti;
-    [HideInInspector] public float newSpeed;
-
-    public float smoothTime = 0.5f;
-
-    private BlowingScript _blow;
     private void Start()
     {
-        originalSpeed = moveSpeed;
-        newSpeed = moveSpeed * sprintMulti;
-        anim = GetComponentInChildren<Animator>();
+        anim = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
-        _blow = FindObjectOfType<BlowingScript>();
     }
+
     private void FixedUpdate()
     {
         MovePlayer();
-        IncreaseSpeed();
     }
 
+    private void Update()
+    {
+        SlowMovement();
+    }
     private void MovePlayer()
     {
         _moveDirection = playerInput.actions["Movement"].ReadValue<Vector2>();
@@ -52,28 +42,24 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
 
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed) , ref velocity, smoothTime);
+        rb.velocity = new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed);
 
         if (movementDirection.magnitude > 0.1f)
         {
-            anim.SetBool("IsWalking", true);
+
             transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, rotationSpeed * Time.deltaTime);
-        }
-        else
-        {
-            anim.SetBool("IsWalking", false);
         }
     }
 
-    private void IncreaseSpeed()
+    private void SlowMovement()
     {
-        if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
+        if (playerInput.actions["Fire"].triggered)
         {
-            moveSpeed = newSpeed;
+            moveSpeed *= 0.2f;
         }
-        else
+        else if (playerInput.actions["Fire"].WasReleasedThisFrame())
         {
-            moveSpeed = originalSpeed;
+            moveSpeed *= 5f;
         }
     }
 }
