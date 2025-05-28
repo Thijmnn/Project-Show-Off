@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion _rotation;
 
     Animator anim;
-    
-    float originalSpeed;
+
+    [HideInInspector] public float originalSpeed;
 
     private Vector3 velocity;
 
