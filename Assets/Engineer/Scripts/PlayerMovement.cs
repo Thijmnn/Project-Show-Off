@@ -76,4 +76,13 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = originalSpeed;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        /*if (other.GetComponent)
+        {
+            
+
+        }*/
+    }
 }
