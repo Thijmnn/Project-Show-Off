@@ -32,6 +32,7 @@ public class BlowingScript : MonoBehaviour
     private void Start()
     {
         playerInput = GetComponentInParent<PlayerInput>();
+        Invoke(nameof(EnableInputCheck), startUpDelay);
     }
 
     private void OnTriggerStay(Collider other)
@@ -50,7 +51,10 @@ public class BlowingScript : MonoBehaviour
     private void Update()
     {
         BlowBubbles();
+        
     }
+
+    void EnableInputCheck() => startedUp = true;
 
     void BlowBubbles()
     {
