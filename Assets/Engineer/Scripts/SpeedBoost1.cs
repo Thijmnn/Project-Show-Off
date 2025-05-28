@@ -9,6 +9,7 @@ public class SpeedBoost1 : Wander
     bool canInteract = true;
 
     float originalSpeed;
+    float originalSprintSpeed;
     public float boostDuration;
     public float moveSpeedIncrease;
     public override void GiveBoost()
@@ -29,12 +30,17 @@ public class SpeedBoost1 : Wander
 
     private IEnumerator SpeedIncrease(float boostDur, float speedInc)
     {
+        originalSprintSpeed = _playerMovement.newSpeed;
         originalSpeed = _playerMovement.originalSpeed;
         _playerMovement.originalSpeed *= speedInc;
+        _playerMovement.newSpeed *= speedInc;
 
+        mesh.enabled = false;
         yield return new WaitForSeconds(boostDur);
 
+        _playerMovement.newSpeed = originalSprintSpeed;
         _playerMovement.originalSpeed = originalSpeed;
 
+        
     }
 }
