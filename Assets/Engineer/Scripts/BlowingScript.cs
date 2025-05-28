@@ -24,6 +24,8 @@ public class BlowingScript : MonoBehaviour
 
     bool startedUp;
     float startUpDelay = 0.2f;
+
+    public bool canSprint;
     private void Awake()
     {
         
@@ -64,15 +66,15 @@ public class BlowingScript : MonoBehaviour
             {
                 fireEnabled = true;
                 soundVortex.SetActive(true);
-                if (!slowed) { _playerMov.originalSpeed *= 0.4f; slowed = true; }
-
+                if (!slowed) { _playerMov.originalSpeed *= 0.5f; slowed = true; }
+                canSprint = false;
             }
             else
             {
                 soundVortex.SetActive(false);
                 fireEnabled = false;
-                if (slowed) { _playerMov.originalSpeed *= 2.5f; slowed = false; }
-
+                if (slowed) { _playerMov.originalSpeed *= 2f; slowed = false; }
+                canSprint = true;
             }
         }
         
