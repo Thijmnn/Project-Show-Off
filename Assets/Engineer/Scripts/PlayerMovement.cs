@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
 
     public float sprintMulti;
-    private float newSpeed;
+    [HideInInspector] public float newSpeed;
 
     public float smoothTime = 0.5f;
 
