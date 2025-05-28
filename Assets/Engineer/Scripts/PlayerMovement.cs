@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     Animator anim;
     
-    [HideInInspector] public float originalSpeed;
+    float originalSpeed;
 
     private Vector3 velocity;
 
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void IncreaseSpeed()
+    private void IncreaseSpeed()
     {
         if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
         {
@@ -74,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             moveSpeed = originalSpeed;
-            
         }
     }
 }

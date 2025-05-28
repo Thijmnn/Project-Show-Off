@@ -29,12 +29,12 @@ public class SpeedBoost1 : Wander
 
     private IEnumerator SpeedIncrease(float boostDur, float speedInc)
     {
-        originalSpeed = _playerMovement.originalSpeed;
-        _playerMovement.originalSpeed *= speedInc;
+        originalSpeed = _playerMovement.moveSpeed;
+        _playerMovement.moveSpeed *= speedInc;
 
         yield return new WaitForSeconds(boostDur);
 
-        _playerMovement.originalSpeed = originalSpeed;
+        _playerMovement.moveSpeed = originalSpeed;
 
     }
 }
