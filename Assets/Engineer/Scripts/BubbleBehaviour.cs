@@ -17,17 +17,24 @@ public class BubbleBehaviour : MonoBehaviour
 
     private int overlapThreshold;
 
-    public bool canDestroy;
+    [HideInInspector] public bool canDestroy;
 
     public GameObject animalSpawn;
 
+    Renderer _ren;
+    public Material OriginalColor;
     private void Start()
     {
         overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<Collider>();
+        _ren = GetComponent<Renderer>();
     }
 
+    public void Update()
+    {
+        _rb.drag = _rb.mass;
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<BubbleBehaviour>())
@@ -85,7 +92,7 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 _bubbleBehaviour.canDestroy = true;
                 canDestroy = false;
-                if (animalSpawn != null) { SpawnAnimal(); }
+                SpawnAnimal();
                 if (canDestroy) { DestroyBubble(other); }
                
             }
@@ -93,7 +100,7 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 _bubbleBehaviour.canDestroy = false;
                 canDestroy = true;
-                if (animalSpawn != null) { SpawnAnimal(); }
+                SpawnAnimal();
                 if (canDestroy) { DestroyOtherBubble(other); }
                 
             }
@@ -101,13 +108,15 @@ public class BubbleBehaviour : MonoBehaviour
             {
                 if (DestroySelf == _bubbleBehaviour.DestroySelf)
                 {
+                    
                     RollRandom();
+                    
                 }
                 else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
                 {
                     _bubbleBehaviour.canDestroy = true;
                     canDestroy = false;
-                    if (animalSpawn != null) { SpawnAnimal(); }
+                    SpawnAnimal();
                     if (canDestroy) { DestroyBubble(other); }
                     
                 }
@@ -115,7 +124,7 @@ public class BubbleBehaviour : MonoBehaviour
                 {
                     _bubbleBehaviour.canDestroy = false;
                     canDestroy = true;
-                    if (animalSpawn != null) { SpawnAnimal(); }
+                    SpawnAnimal();
                     if (canDestroy) { DestroyOtherBubble(other); }
                     
                 }
@@ -128,6 +137,8 @@ public class BubbleBehaviour : MonoBehaviour
         _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
         _rb.mass = transform.localScale.x;
         BubbleSpawner.Instance.bubblesLeft--;
+        _ren.material = OriginalColor;
+        
         Destroy(gameObject);
     }
 
@@ -136,15 +147,17 @@ public class BubbleBehaviour : MonoBehaviour
         transform.localScale = transform.localScale + (_other.transform.localScale / 2);
         _rb.mass = transform.localScale.x;
         BubbleSpawner.Instance.bubblesLeft--;
+        _ren.material = OriginalColor;
         Destroy(_other);
     }
 
     private void SpawnAnimal()
     {
-        GameObject _animalSpawn = animalSpawn;
-
-        Instantiate(_animalSpawn.transform, transform.position ,Quaternion.identity);
-        animalSpawn = null;
+        if (animalSpawn != null) {
+            Instantiate(animalSpawn.transform, transform.position, Quaternion.identity);
+            animalSpawn = null;
+        }
+        
     }
 }
 

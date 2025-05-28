@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8806900747423356549}
   - component: {fileID: 8741511264278466162}
   - component: {fileID: 1353668560982728704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8610562086263607063}
   - component: {fileID: 5348451795534180635}
   - component: {fileID: 1875455661706860636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,9 +176,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3264666277763192479}
   - component: {fileID: 6527988694775372386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FencePanel
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,7 +193,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.199562, y: 1.154377, z: -4.7520027}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.3265557}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4408363383265801198}
@@ -208,7 +208,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4230180670906127259}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 089bb2a0543dbb6468f66c96ee3f73f8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 4408363383265801198}
   - component: {fileID: 5369306630890990224}
   - component: {fileID: 625043781032845881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4028949594730629352}
   - component: {fileID: 2664501059796732983}
   - component: {fileID: 4532753376317854930}
-  - component: {fileID: 6071823731796241032}
-  m_Layer: 0
+  - component: {fileID: -3573030077815496544}
+  m_Layer: 4
   m_Name: Rabbit 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,11 +101,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 8, y: 1, z: 8}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &4532753376317854930
 NavMeshAgent:
@@ -129,7 +129,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6071823731796241032
+--- !u!114 &-3573030077815496544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,9 +138,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 494547625923305654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cb5fcc031f20840a4a0772085f46c9, type: 3}
+  m_Script: {fileID: 11500000, guid: c2c73a60275a8d74abd2ed1a33dfebfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wanderRadius: 10
   minWanderTime: 3
   maxWanderTime: 7
+  _playerMovement: {fileID: 0}
+  BlowrangeColl: {fileID: 0}
+  GiveSpeed:
+    m_PersistentCalls:
+      m_Calls: []
+  boostDuration: 10
+  moveSpeedIncrease: 2

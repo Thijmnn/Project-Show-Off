@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 4206301572075257405}
   - component: {fileID: 418941415486975670}
   - component: {fileID: 3391424964736911168}
-  - component: {fileID: 8599700550846361365}
-  m_Layer: 0
+  - component: {fileID: 3727625112075440163}
+  - component: {fileID: -6958457847905003395}
+  m_Layer: 4
   m_Name: HedgeHog 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,11 +102,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 8, y: 1, z: 8}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &3391424964736911168
 NavMeshAgent:
@@ -129,7 +130,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8599700550846361365
+--- !u!114 &3727625112075440163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,9 +139,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 5336011050413897252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cb5fcc031f20840a4a0772085f46c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 779d62048dd9ce640a39ab2a746169f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wanderRadius: 10
   minWanderTime: 3
   maxWanderTime: 7
+  _playerMovement: {fileID: 0}
+  BlowrangeColl: {fileID: 0}
+  GiveRange:
+    m_PersistentCalls:
+      m_Calls: []
+  boostDuration: 10
+  rangeIncrease: 1.5
+--- !u!54 &-6958457847905003395
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336011050413897252}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

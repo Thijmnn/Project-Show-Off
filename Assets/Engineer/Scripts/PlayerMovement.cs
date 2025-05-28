@@ -20,15 +20,29 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion _rotation;
 
     Animator anim;
+
+    [HideInInspector] public float originalSpeed;
+
+    private Vector3 velocity;
+
+    public float sprintMulti;
+    private float newSpeed;
+
+    public float smoothTime = 0.5f;
+
+    private BlowingScript _blow;
     private void Start()
     {
+        originalSpeed = moveSpeed;
+        newSpeed = moveSpeed * sprintMulti;
         anim = GetComponentInChildren<Animator>();
         playerInput = GetComponent<PlayerInput>();
+        _blow = FindObjectOfType<BlowingScript>();
     }
-
     private void FixedUpdate()
     {
         MovePlayer();
+        IncreaseSpeed();
     }
 
     private void MovePlayer()
@@ -38,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
 
-        rb.velocity = new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed);
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed) , ref velocity, smoothTime);
 
         if (movementDirection.magnitude > 0.1f)
         {
@@ -51,5 +65,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    private void IncreaseSpeed()
+    {
+        if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
+        {
+            moveSpeed = newSpeed;
+        }
+        else
+        {
+            moveSpeed = originalSpeed;
+        }
+    }
 }

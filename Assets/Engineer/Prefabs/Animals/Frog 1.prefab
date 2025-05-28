@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7711064660631592823}
   - component: {fileID: 6208770896818371998}
   - component: {fileID: 5113362297311692900}
-  - component: {fileID: 8246725475061041789}
-  m_Layer: 0
+  - component: {fileID: 394668005030379638}
+  m_Layer: 4
   m_Name: Frog 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,11 +101,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 8, y: 1, z: 8}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &5113362297311692900
 NavMeshAgent:
@@ -129,7 +129,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8246725475061041789
+--- !u!114 &394668005030379638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,9 +138,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1181100506857537681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cb5fcc031f20840a4a0772085f46c9, type: 3}
+  m_Script: {fileID: 11500000, guid: afc9d7eb76a2c3f47a300d097822a6e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wanderRadius: 10
   minWanderTime: 3
   maxWanderTime: 7
+  _playerMovement: {fileID: 0}
+  BlowrangeColl: {fileID: 0}
+  GiveMagnet:
+    m_PersistentCalls:
+      m_Calls: []
+  boostDuration: 7
+  pullVelocity: 0.2
+  bubbles: []
+  magnetRange: 10
+  magnetic: 0

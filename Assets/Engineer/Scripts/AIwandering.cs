@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class Wander : MonoBehaviour
 {
@@ -10,27 +12,47 @@ public class Wander : MonoBehaviour
     private float wanderTimer;
     private float wanderTime;
 
-    void Start()
+    bool playerInRange;
+
+    PlayerInput _playerInput;
+    [HideInInspector] public PlayerMovement _playerMovement;
+
+    [HideInInspector] public Collider BlowrangeColl;
+
+    [HideInInspector] public BlowingScript _blowScript;
+    private void Awake()
     {
+        
         agent = GetComponent<NavMeshAgent>();
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
     }
 
-    void Update()
+    public virtual void Update()
+    {
+        if (!playerInRange){ Move(); }
+        else
+        {
+            InteractWithPlayer();
+        }
+            
+    }
+
+
+    private void Move()
     {
         wanderTimer += Time.deltaTime;
 
-        if (wanderTimer >= wanderTime)
+        if (wanderTimer >= wanderTime && !playerInRange)
         {
             SetNewDestination();
         }
 
-        if (agent.remainingDistance <= agent.stoppingDistance)
+        if (agent.remainingDistance <= agent.stoppingDistance && !playerInRange)
         {
             SetNewDestination();
         }
+
     }
-
     private void SetNewDestination()
     {
         Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
@@ -45,4 +67,40 @@ public class Wander : MonoBehaviour
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
         wanderTimer = 0;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.GetComponent<PlayerMovement>())
+        {
+            _playerMovement = other.GetComponentInParent<PlayerMovement>();
+            BlowrangeColl = other.GetComponentInChildren<BoxCollider>();
+            _playerInput = other.GetComponent<PlayerInput>();
+            _blowScript = other.GetComponentInChildren<BlowingScript>();
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<PlayerMovement>())
+        {
+            playerInRange = false;
+        }
+    }
+
+    private void InteractWithPlayer()
+    {
+        if (playerInRange && _playerInput.actions["Interact"].triggered)
+        {
+            GiveBoost();
+        }
+        agent.SetDestination(transform.position);
+        transform.LookAt(_playerInput.transform.position);
+    }
+
+    public virtual void GiveBoost()
+    {
+
+    }
+
 }
