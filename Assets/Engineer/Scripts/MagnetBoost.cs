@@ -16,6 +16,8 @@ public class MagnetBoost : Wander
     public float magnetRange;
 
     public bool magnetic;
+
+    
     public override void GiveBoost()
     {
         GiveMagnet.AddListener(IncreaseSpeed);
@@ -35,7 +37,7 @@ public class MagnetBoost : Wander
     private IEnumerator SpeedIncrease(float boostDur)
     {
         magnetic = true;
-        gameObject.SetActive(false);
+        mesh.enabled = false;
 
         yield return new WaitForSeconds(boostDur);
 

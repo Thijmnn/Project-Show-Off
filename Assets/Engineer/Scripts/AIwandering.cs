@@ -20,9 +20,11 @@ public class Wander : MonoBehaviour
     [HideInInspector] public Collider BlowrangeColl;
 
     [HideInInspector] public BlowingScript _blowScript;
+
+    public MeshRenderer mesh;
     private void Awake()
     {
-        
+        mesh = GetComponent<MeshRenderer>();
         agent = GetComponent<NavMeshAgent>();
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
     }

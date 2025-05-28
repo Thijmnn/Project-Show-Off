@@ -35,7 +35,7 @@ public class SpeedBoost1 : Wander
         _playerMovement.originalSpeed *= speedInc;
         _playerMovement.newSpeed *= speedInc;
 
-        gameObject.SetActive(false);
+        mesh.enabled = false;
         yield return new WaitForSeconds(boostDur);
 
         _playerMovement.newSpeed = originalSprintSpeed;
