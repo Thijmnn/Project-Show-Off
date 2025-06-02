@@ -21,14 +21,11 @@ public class BubbleBehaviour : MonoBehaviour
 
     public GameObject animalSpawn;
 
-    Renderer _ren;
-    public Material OriginalColor;
     private void Start()
     {
         overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<Collider>();
-        _ren = GetComponent<Renderer>();
     }
 
     public void Update()
@@ -137,7 +134,7 @@ public class BubbleBehaviour : MonoBehaviour
         _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
         _rb.mass = transform.localScale.x;
         BubbleSpawner.Instance.bubblesLeft--;
-        _ren.material = OriginalColor;
+
         
         Destroy(gameObject);
     }
@@ -147,7 +144,7 @@ public class BubbleBehaviour : MonoBehaviour
         transform.localScale = transform.localScale + (_other.transform.localScale / 2);
         _rb.mass = transform.localScale.x;
         BubbleSpawner.Instance.bubblesLeft--;
-        _ren.material = OriginalColor;
+
         Destroy(_other);
     }
 
