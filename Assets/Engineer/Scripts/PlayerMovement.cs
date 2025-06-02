@@ -32,7 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     private BlowingScript _blow;
 
-    private FlowerAnimation _flowerAnimation;
+    FlowerAnimation _flowerAnimation;
+
     private void Start()
     {
         originalSpeed = moveSpeed;
@@ -87,6 +88,5 @@ public class PlayerMovement : MonoBehaviour
 
             _flowerAnimation.UpdateFlower();
         }
-
     }
 }
