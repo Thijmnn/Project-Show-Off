@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FlowerAnimation : MonoBehaviour
 {
-    bool openFlower;   
+    bool openFlower;
     public Animator animator;
 
     public List<GameObject> flowers;
@@ -32,13 +32,13 @@ public class FlowerAnimation : MonoBehaviour
             flowers[0].SetActive(false);
             flowers[1].SetActive(true);
             openFlower = false;
-        }    
-        else if(normalizedTime > 1.0f && !openFlower)
+        }
+        else if (normalizedTime > 1.0f && !openFlower)
         {
             flowers[1].SetActive(false);
             flowers[2].SetActive(true);
         }
 
-        
+
     }
 }
