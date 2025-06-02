@@ -6,39 +6,33 @@ using UnityEngine;
 public class FlowerAnimation : MonoBehaviour
 {
     bool openFlower;   
-    public Animator animator;
+    Animator animator;
 
-    public List<GameObject> flowers;
+    GameObject[] flowers;
 
-    float normalizedTime;
-    private void Start()
+    public void Start()
     {
-        flowers[0].SetActive(true);
-        flowers[1].SetActive(false);
-        flowers[2].SetActive(false);
+        flowers = FindObjectsOfType<GameObject>();
+        animator = GetComponentInChildren<Animator>();
     }
     public void UpdateFlower()
     {
         openFlower = true;
     }
 
+
     private void Update()
     {
-        AnimatorStateInfo animStateInfo = animator.GetCurrentAnimatorStateInfo(0);
-        normalizedTime = animStateInfo.normalizedTime;
-
         if (openFlower)
         {
             flowers[0].SetActive(false);
             flowers[1].SetActive(true);
-            openFlower = false;
-        }    
-        else if(normalizedTime > 1.0f && !openFlower)
+            animator.Play("Flower1_Inside_Animation");
+        }
+        else if(this.animator.GetCurrentAnimatorStateInfo(0).IsName("Flower1_Inside_Animation"))
         {
             flowers[1].SetActive(false);
             flowers[2].SetActive(true);
         }
-
-        
     }
 }
