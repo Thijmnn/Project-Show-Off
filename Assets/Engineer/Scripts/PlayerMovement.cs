@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     public float smoothTime = 0.5f;
 
     private BlowingScript _blow;
+
+    private FlowerAnimation _flowerAnimation;
     private void Start()
     {
         originalSpeed = moveSpeed;
@@ -79,10 +81,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        /*if (other.GetComponent)
+        if (other.GetComponent<FlowerAnimation>())
         {
-            
+            _flowerAnimation = other.GetComponent<FlowerAnimation>();
 
-        }*/
+            _flowerAnimation.UpdateFlower();
+        }
+
     }
 }
