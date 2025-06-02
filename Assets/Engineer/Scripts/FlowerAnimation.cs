@@ -12,7 +12,7 @@ public class FlowerAnimation : MonoBehaviour
 
     public void Start()
     {
-        flowers = GetComponentsInChildren<GameObject>();
+        flowers = FindObjectsOfType<GameObject>();
         animator = GetComponentInChildren<Animator>();
     }
     public void UpdateFlower()
@@ -25,13 +25,14 @@ public class FlowerAnimation : MonoBehaviour
     {
         if (openFlower)
         {
-            flowers[0].SetActive(true);
+            flowers[0].SetActive(false);
             flowers[1].SetActive(true);
             animator.Play("Flower1_Inside_Animation");
         }
-        else if(openFlower)
+        else if(this.animator.GetCurrentAnimatorStateInfo(0).IsName("Flower1_Inside_Animation"))
         {
-
+            flowers[1].SetActive(false);
+            flowers[2].SetActive(true);
         }
     }
 }
