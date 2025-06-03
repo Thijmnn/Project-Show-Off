@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BubbleSpawner : MonoBehaviour
 {
@@ -54,8 +55,8 @@ public class BubbleSpawner : MonoBehaviour
     }
     private void SpawnNextWave()
     {
-      foreach(GameObject bubble in waves[currentWaveIndex].bubbles)
-      {
+        foreach (GameObject bubble in waves[currentWaveIndex].bubbles)
+        {
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
             _bubble.overlap = waves[currentWaveIndex].overlap;
 
@@ -64,9 +65,25 @@ public class BubbleSpawner : MonoBehaviour
 
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
+            Vector3 spawnPos = new Vector3(offsetX, 0, offsetZ) + _bounds.center;
 
-            Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); 
-      }  
+            if (IsPositionValid(spawnPos)) { Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); }
+            
+        }  
+    }
+
+    private bool IsPositionValid(Vector3 position)
+    {
+        float checkRadius = 0.5f; 
+        Collider[] colliders = Physics.OverlapSphere(position, checkRadius);
+        foreach (Collider collider in colliders)
+        {
+            if (collider.CompareTag("Wall"))
+            {
+                return false; 
+            }
+        }
+        return true; 
     }
 
     [System.Serializable]
