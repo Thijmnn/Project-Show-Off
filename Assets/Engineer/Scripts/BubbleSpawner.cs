@@ -65,25 +65,31 @@ public class BubbleSpawner : MonoBehaviour
 
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
-            Vector3 spawnPos = new Vector3(offsetX, 0, offsetZ) + _bounds.center;
+            Vector3 spawnPos = new Vector3(offsetX, bubbleHeight, offsetZ) + _bounds.center;
 
             if (IsPositionValid(spawnPos)) { Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); }
+            else { }
             
         }  
     }
 
+    private void RollNewPostion()
+    {
+
+    }
     private bool IsPositionValid(Vector3 position)
     {
-        float checkRadius = 0.5f; 
-        Collider[] colliders = Physics.OverlapSphere(position, checkRadius);
+        float checkRadius = 0.5f;
+        int wallLayerMask = LayerMask.GetMask("Walls");
+        Collider[] colliders = Physics.OverlapSphere(position, checkRadius, wallLayerMask, QueryTriggerInteraction.Collide);
         foreach (Collider collider in colliders)
         {
             if (collider.CompareTag("Wall"))
             {
-                return false; 
+                return false;
             }
         }
-        return true; 
+        return true;
     }
 
     [System.Serializable]
