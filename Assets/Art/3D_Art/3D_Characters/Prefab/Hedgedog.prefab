@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1112403240539690425}
   - component: {fileID: 3625027596960278270}
   - component: {fileID: 2762951506914005487}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hedgedog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 1676289252098813802}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.182281, y: 1.5244493, z: 9.13595}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.182281, y: 1.5114, z: 9.13595}
+  m_LocalScale: {x: 1.3094, y: 1.3094, z: 1.3094}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5301378110231897693}
@@ -55,8 +55,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8, y: 1, z: 8}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 8, y: 0.9779597, z: 8}
+  m_Center: {x: 0, y: 0.011020123, z: 0}
 --- !u!114 &1112403240539690425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +138,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2079958539425822787}
     m_Modifications:
+    - target: {fileID: -8711370005010593696, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -203,15 +208,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7465968381282210360, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6569030693522023209, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5808353180664954131, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4642867466118221982, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1348986676810084687, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dcb3373c316e2aa45a8d37671ba40e8f, type: 2}
+    - target: {fileID: -770467356353802644, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
       propertyPath: m_Name
       value: HedgedogMesh_LowPoly
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2836138686270257080, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
@@ -233,6 +268,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e10c3efff0a4c94eae232fe96374e2d, type: 2}
+    - target: {fileID: 7727560463788807382, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8861813623321958372, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
