@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8142333235004095775}
-  m_Layer: 0
+  - component: {fileID: 8522657522569887074}
+  - component: {fileID: 2010874530903644720}
+  - component: {fileID: 1449604166997071107}
+  m_Layer: 1
   m_Name: Bunny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1906672191141098263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.182281, y: 1.5244493, z: 9.13595}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33,6 +36,73 @@ Transform:
   - {fileID: 5705848145648217834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8522657522569887074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906672191141098263}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8, y: 0.75690055, z: 8.091607}
+  m_Center: {x: 0, y: 0.21990907, z: 0.045803547}
+--- !u!195 &2010874530903644720
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906672191141098263}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.65
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.72
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1449604166997071107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906672191141098263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c73a60275a8d74abd2ed1a33dfebfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderRadius: 10
+  minWanderTime: 3
+  maxWanderTime: 7
+  _playerMovement: {fileID: 0}
+  BlowrangeColl: {fileID: 0}
+  _blowScript: {fileID: 0}
+  mesh: {fileID: 0}
+  GiveSpeed:
+    m_PersistentCalls:
+      m_Calls: []
+  boostDuration: 10
+  moveSpeedIncrease: 2
 --- !u!1001 &5234739491474999553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44,17 +114,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6627188
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.22344935
+      value: 0.756
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.22805023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
         type: 3}
@@ -106,6 +176,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e4d8f5969430cd45b60ec68807b06cb, type: 2}
+    - target: {fileID: -3220217276697713944, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -844994339068078160, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -115,6 +190,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BunnyMesh_Wings_LowPoly
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1896837328441881308, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100260828536229401, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026445303710285726, guid: 652e02bc9b0d1544c825597c6dd2b2b5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -138,17 +233,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.64376736
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23638177
+      value: 0.756
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.2027607
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
@@ -185,6 +280,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8308613705739793368, guid: 51567c998457edb4aa48371a72cde302,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1852281759563963957, guid: 51567c998457edb4aa48371a72cde302,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1094220847890379905, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -194,6 +299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BunnyMesh_LowPoly
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51567c998457edb4aa48371a72cde302,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5089281789765897105, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
