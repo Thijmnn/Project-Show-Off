@@ -65,18 +65,35 @@ public class BubbleSpawner : MonoBehaviour
 
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
-            Vector3 spawnPos = new Vector3(offsetX, bubbleHeight, offsetZ) + _bounds.center;
+            Vector3 spawnPos = GetValidSpawnPosition();
 
-            if (IsPositionValid(spawnPos)) { Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); }
-            else { }
+            if (spawnPos != Vector3.zero) { Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); }
+            else { print("Failed to spawn bubble"); }
             
         }  
     }
 
-    private void RollNewPostion()
+    private Vector3 GetValidSpawnPosition()
     {
+        const int maxAttempts = 15;
+        for (int attempt = 0; attempt < maxAttempts; attempt++)
+        {
+            Collider area = spawnAreas[Random.Range(0, spawnAreas.Count)];
+            Bounds bounds = area.bounds;
 
+            float offsetX = Random.Range(-bounds.extents.x, bounds.extents.x);
+            float offsetZ = Random.Range(-bounds.extents.z, bounds.extents.z);
+            Vector3 spawnPos = new Vector3(offsetX, bubbleHeight, offsetZ) + bounds.center;
+
+            if (IsPositionValid(spawnPos))
+            {
+                return spawnPos;
+            }
+        }
+        return Vector3.zero; 
     }
+
+
     private bool IsPositionValid(Vector3 position)
     {
         float checkRadius = 0.5f;
