@@ -67,7 +67,7 @@ public class BubbleSpawner : MonoBehaviour
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
             Vector3 spawnPos = GetValidSpawnPosition();
 
-            if (spawnPos != Vector3.zero) { Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); }
+            if (spawnPos != Vector3.zero) { Instantiate(bubble, spawnPos, Quaternion.identity); }
             else { print("Failed to spawn bubble"); }
             
         }  
