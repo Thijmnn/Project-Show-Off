@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BubbleSpawner : MonoBehaviour
 {
@@ -54,8 +55,8 @@ public class BubbleSpawner : MonoBehaviour
     }
     private void SpawnNextWave()
     {
-      foreach(GameObject bubble in waves[currentWaveIndex].bubbles)
-      {
+        foreach (GameObject bubble in waves[currentWaveIndex].bubbles)
+        {
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
             _bubble.overlap = waves[currentWaveIndex].overlap;
 
@@ -64,9 +65,48 @@ public class BubbleSpawner : MonoBehaviour
 
             float offsetX = Random.Range(-_bounds.extents.x, _bounds.extents.x);
             float offsetZ = Random.Range(-_bounds.extents.z, _bounds.extents.z);
+            Vector3 spawnPos = GetValidSpawnPosition();
 
-            Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); 
-      }  
+            if (spawnPos != Vector3.zero) { Instantiate(bubble, new Vector3(offsetX, bubbleHeight, offsetZ), Quaternion.identity); }
+            else { print("Failed to spawn bubble"); }
+            
+        }  
+    }
+
+    private Vector3 GetValidSpawnPosition()
+    {
+        const int maxAttempts = 15;
+        for (int attempt = 0; attempt < maxAttempts; attempt++)
+        {
+            Collider area = spawnAreas[Random.Range(0, spawnAreas.Count)];
+            Bounds bounds = area.bounds;
+
+            float offsetX = Random.Range(-bounds.extents.x, bounds.extents.x);
+            float offsetZ = Random.Range(-bounds.extents.z, bounds.extents.z);
+            Vector3 spawnPos = new Vector3(offsetX, bubbleHeight, offsetZ) + bounds.center;
+
+            if (IsPositionValid(spawnPos))
+            {
+                return spawnPos;
+            }
+        }
+        return Vector3.zero; 
+    }
+
+
+    private bool IsPositionValid(Vector3 position)
+    {
+        float checkRadius = 0.5f;
+        int wallLayerMask = LayerMask.GetMask("Walls");
+        Collider[] colliders = Physics.OverlapSphere(position, checkRadius, wallLayerMask, QueryTriggerInteraction.Collide);
+        foreach (Collider collider in colliders)
+        {
+            if (collider.CompareTag("Wall"))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     [System.Serializable]

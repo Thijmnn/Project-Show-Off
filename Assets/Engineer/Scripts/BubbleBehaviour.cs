@@ -132,9 +132,9 @@ public class BubbleBehaviour : MonoBehaviour
     private void DestroyBubble(GameObject _other)
     {
         _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
-        _rb.mass = transform.localScale.x;
+        _rb.mass = transform.localScale.x /2;
         BubbleSpawner.Instance.bubblesLeft--;
-
+        BlowingScript.Instance.RemoveBubble(this.gameObject);
         
         Destroy(gameObject);
     }
@@ -142,9 +142,9 @@ public class BubbleBehaviour : MonoBehaviour
     private void DestroyOtherBubble(GameObject _other)
     {
         transform.localScale = transform.localScale + (_other.transform.localScale / 2);
-        _rb.mass = transform.localScale.x;
+        _rb.mass = transform.localScale.x /2;
         BubbleSpawner.Instance.bubblesLeft--;
-
+        BlowingScript.Instance.RemoveBubble(_other);
         Destroy(_other);
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class BlowingScript : MonoBehaviour
 {
-    private Rigidbody rb;
+    public static BlowingScript Instance { get; private set; }
 
     [SerializeField] private InputActionReference fire;
 
@@ -22,11 +22,24 @@ public class BlowingScript : MonoBehaviour
     public GameObject soundVortex;
 
     bool startedUp;
+
     float startUpDelay = 0.2f;
 
     public bool canSprint;
+
+
+    private List<GameObject> bubblesInTrigger = new List<GameObject>();
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(Instance);
+        }
+
         _playerMov = GetComponentInParent<PlayerMovement>();
     }
     private void Start()
@@ -35,23 +48,55 @@ public class BlowingScript : MonoBehaviour
         Invoke(nameof(EnableInputCheck), startUpDelay);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (fireEnabled)
+        if (other.GetComponent<BubbleBehaviour>())
         {
-            if (other.GetComponent<BubbleBehaviour>())
-            {
-                rb = other.GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward * blowMulti, ForceMode.Force);
-            }
-        }  
-        
+            bubblesInTrigger.Add(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        RemoveBubble(other.gameObject);
     }
 
     private void Update()
     {
         BlowBubbles();
-        
+
+
+        Blowing();
+
+    }
+
+
+    private void Blowing()
+    {
+        if (fireEnabled && bubblesInTrigger.Count > 0)
+        {
+            GameObject closestBubble = null;
+            float shortestDistance = float.MaxValue;
+
+            foreach (GameObject bubble in bubblesInTrigger)
+            {
+                float distance = Vector3.Distance(transform.position, bubble.transform.position);
+                if (distance < shortestDistance)
+                {
+                    shortestDistance = distance;
+                    closestBubble = bubble;
+                }
+            }
+
+            if (closestBubble != null)
+            {
+                Rigidbody rb = closestBubble.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddForce(transform.forward * blowMulti, ForceMode.Force);
+                }
+            }
+        }
     }
 
     void EnableInputCheck() => startedUp = true;
@@ -80,6 +125,14 @@ public class BlowingScript : MonoBehaviour
             fireEnabled = false;
             if (slowed) { _playerMov.moveSpeed *= 2f; slowed = false; }
             
+        }
+    }
+
+    public void RemoveBubble(GameObject other)
+    {
+        if (bubblesInTrigger.Contains(other))
+        {
+            bubblesInTrigger.Remove(other);
         }
     }
 }
