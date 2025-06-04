@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     FlowerAnimation _flowerAnimation;
 
+
+    public bool animationPlaying;
     private void Start()
     {
         originalSpeed = moveSpeed;
@@ -44,8 +46,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        MovePlayer();
-        IncreaseSpeed();
+        if (!animationPlaying) {
+            MovePlayer();
+            IncreaseSpeed();
+        }
+        
     }
 
     private void MovePlayer()
