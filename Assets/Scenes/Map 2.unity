@@ -4954,7 +4954,7 @@ GameObject:
   - component: {fileID: 359227286}
   - component: {fileID: 359227285}
   - component: {fileID: 359227284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4976,7 +4976,7 @@ TerrainCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: fcd5ad137db549c4394b607857c0d05c, type: 2}
@@ -18281,7 +18281,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 101cb679ecf828844bfa968acf048d88, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 49f18b7b27c772845a23aab3c6ef3ff7, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1959984108
 Transform:
@@ -19909,3 +19909,4 @@ SceneRoots:
   - {fileID: 1891219721}
   - {fileID: 587181944}
   - {fileID: 220784876}
+  - {fileID: 155241431}
