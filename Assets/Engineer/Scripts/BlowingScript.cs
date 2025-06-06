@@ -7,7 +7,7 @@ public class BlowingScript : MonoBehaviour
 {
     public static BlowingScript Instance { get; private set; }
 
-    [SerializeField] private InputActionReference fire;
+    public InputActionReference fire;
 
     private PlayerInput playerInput;
 
