@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         IncreaseSpeed();
+        
     }
 
     private void MovePlayer()
