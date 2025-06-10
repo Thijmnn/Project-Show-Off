@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_PineTree
+  m_Name: M_PineTree_Green
   m_Shader: {fileID: -6465566751694194690, guid: 3e26a4f61bcaaad498a9e70438a43e2f,
     type: 3}
   m_Parent: {fileID: 0}
@@ -86,10 +86,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 9b100647f412ff54a833565349683b43, type: 3}
+        m_Texture: {fileID: 2800000, guid: 300a949c66e20f447bc38577e576652d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_10a5051a989e468282b85dff7cf1441e_Out_0_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f4f1adf846b7e114aa60ee657e57c2b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_17890fe279bb4ed6b32f6d8c68536804_Out_0_Texture2D:
         m_Texture: {fileID: 2800000, guid: f4f1adf846b7e114aa60ee657e57c2b9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -145,7 +149,7 @@ Material:
     - _UseOpacityMap: 0
     - _UseRoughnessMap: 0
     - _WindHeight: 0.5
-    - _WindNoiseSpeed: 4.5
+    - _WindNoiseSpeed: 1.2
     - _WindSpeed: 0
     - _WorkflowMode: 1
     - _ZTest: 4
@@ -155,9 +159,9 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OverlayColor: {r: 0.24769577, g: 0.5861692, b: 0.7798742, a: 0}
+    - _OverlayColor: {r: 0.10086615, g: 0.6289307, b: 0.61317664, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _UvOffset: {r: 0, g: 0, b: 0, a: 0}
     - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
-    - _WindNoiseContrast: {r: 0, g: 1, b: 0, a: 0}
+    - _WindNoiseContrast: {r: 0, g: 7, b: 0, a: 0}
   m_BuildTextureStacks: []
