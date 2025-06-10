@@ -22,6 +22,8 @@ public class Wander : MonoBehaviour
     [HideInInspector] public BlowingScript _blowScript;
 
     public MeshRenderer mesh;
+
+    public bool BoostGiven;
     private void Awake()
     {
         mesh = GetComponent<MeshRenderer>();
@@ -102,7 +104,10 @@ public class Wander : MonoBehaviour
 
     public virtual void GiveBoost()
     {
-
+        if (BoostGiven)
+        {
+            return;
+        }
     }
 
 }
