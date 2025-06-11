@@ -22,7 +22,14 @@ public class optionsScript : MonoBehaviour
     {
         if(playerInput.actions["Menu"].triggered)
         {
-            optionsSwitch.Invoke();
+            StartCoroutine(SwitchScreen());
         }
+    }
+
+    IEnumerator SwitchScreen()
+    {
+        yield return new WaitForSeconds(0.2f);
+        optionsSwitch.Invoke();
+        yield return new WaitForSeconds(0.2f);
     }
 }
