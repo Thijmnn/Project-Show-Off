@@ -13,7 +13,8 @@ public class optionsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerInput = gameObject.GetComponent<PlayerInput>();
+        playerInput = gameObject.GetComponentInParent<PlayerInput>();
+
     }
 
     // Update is called once per frame
