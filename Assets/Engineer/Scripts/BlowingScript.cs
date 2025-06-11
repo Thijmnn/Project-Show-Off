@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class BlowingScript : MonoBehaviour
 {
-    public static BlowingScript Instance { get; private set; }
 
     public InputActionReference fire;
 
@@ -30,16 +29,7 @@ public class BlowingScript : MonoBehaviour
 
     private List<GameObject> bubblesInTrigger = new List<GameObject>();
     private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(Instance);
-        }
-
+    { 
         _playerMov = GetComponentInParent<PlayerMovement>();
     }
     private void Start()
