@@ -11,7 +11,7 @@ public class optionsScript : MonoBehaviour
     public InputActionReference menu;
     private PlayerInput playerInput;
 
-    public UnityEvent noteSpawn;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +27,7 @@ public class optionsScript : MonoBehaviour
             StartCoroutine(SwitchScreen());
         }
 
-        if (Input.GetKey(KeyCode.O)) 
-        { 
-            noteSpawn.Invoke();
-        }
+       
     }
 
     IEnumerator SwitchScreen()
