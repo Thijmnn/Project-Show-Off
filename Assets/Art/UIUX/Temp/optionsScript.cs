@@ -10,6 +10,8 @@ public class optionsScript : MonoBehaviour
     public UnityEvent optionsSwitch;
     public InputActionReference menu;
     private PlayerInput playerInput;
+
+    public UnityEvent noteSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,11 @@ public class optionsScript : MonoBehaviour
         if(playerInput.actions["Menu"].triggered)
         {
             StartCoroutine(SwitchScreen());
+        }
+
+        if (Input.GetKey(KeyCode.O)) 
+        { 
+            noteSpawn.Invoke();
         }
     }
 
