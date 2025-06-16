@@ -11,6 +11,8 @@ public class optionsScript : MonoBehaviour
     public InputActionReference menu;
     private PlayerInput playerInput;
 
+    public UnityEvent PopUpShow;
+
    
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,11 @@ public class optionsScript : MonoBehaviour
         if(playerInput.actions["Menu"].triggered)
         {
             StartCoroutine(SwitchScreen());
+        }
+
+        if(Input.GetKey(KeyCode.O))
+        {
+            PopUpShow.Invoke();
         }
 
        

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.Events;
 
 public class NotificationsAppear : MonoBehaviour
 {
@@ -8,24 +10,18 @@ public class NotificationsAppear : MonoBehaviour
     public GameObject noteRabbit, noteHedgehog, noteFrog;
     public GameObject noteFrame;
 
+   
+
     [SerializeField]
     int rabbitLength = 20;
     [SerializeField]
     int hedgehogLength = 20;
     [SerializeField]
     int frogLength = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
+ 
+    
     public void showNoteRabbit()
     {
         StartCoroutine(RabbitPower());
@@ -41,20 +37,49 @@ public class NotificationsAppear : MonoBehaviour
 
     IEnumerator RabbitPower()
     {
+        int rabbitCount = rabbitLength;
         var noteRabbitInstance = Instantiate(noteRabbit,noteFrame.transform);
+        TMP_Text rabbitTimer = noteRabbitInstance.GetComponentInChildren<TMP_Text>();
+        for (var i = 0; i < rabbitLength; ++i)
+        {
+            rabbitCount -= 1;
+            rabbitTimer.text = rabbitCount.ToString();
+
+            yield return new WaitForSeconds(1);
+        }
+
         yield return new WaitForSeconds(rabbitLength);
         Destroy(noteRabbitInstance);
     }
     IEnumerator HedgehogPower()
     {
+        int hedgeCount = hedgehogLength;
         var noteHedgehogInstance = Instantiate(noteHedgehog,noteFrame.transform);
-        yield return new WaitForSeconds(hedgehogLength);
+        TMP_Text hedgeTimer = noteHedgehogInstance.GetComponentInChildren<TMP_Text>();
+        for (var i = 0; i < hedgehogLength; ++i)
+        {
+            hedgeCount -= 1;
+            hedgeTimer.text = hedgeCount.ToString();
+
+            yield return new WaitForSeconds(1);
+        }
+
+
         Destroy(noteHedgehogInstance);
     }
     IEnumerator FrogPowers()
     {
+        int frogCount = frogLength;
         var noteFrogInstance = Instantiate(noteFrog,noteFrame.transform);
-        yield return new WaitForSeconds(frogLength);
+        TMP_Text frogTimer = noteFrogInstance.GetComponentInChildren<TMP_Text>();
+
+        for (var i = 0;  i < frogLength; ++i)
+        {
+            frogCount -= 1;
+            frogTimer.text = frogCount.ToString();
+
+            yield return new WaitForSeconds(1);
+        }
         Destroy(noteFrogInstance);
     }
 
