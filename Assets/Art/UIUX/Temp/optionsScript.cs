@@ -10,6 +10,8 @@ public class optionsScript : MonoBehaviour
     public UnityEvent optionsSwitch;
     public InputActionReference menu;
     private PlayerInput playerInput;
+
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class optionsScript : MonoBehaviour
         {
             StartCoroutine(SwitchScreen());
         }
+
+       
     }
 
     IEnumerator SwitchScreen()

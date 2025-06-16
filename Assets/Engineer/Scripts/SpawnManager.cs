@@ -14,22 +14,29 @@ public class SpawnManager : MonoBehaviour
     public GameObject spawnLoc2;
 
 
-    PlayerInput player1Input; 
+    PlayerInput player1Input;
+
+    public GameObject joinText1;
+    public GameObject joinText2;
     private void Update()
     {
         if(playerManager.playerCount == 0)
         {
+            /*joinText1.SetActive(true);
+            joinText2.SetActive(true);*/
             player1Input = player1.GetComponent<PlayerInput>();
             playerManager.playerPrefab = player1;
             player1.transform.position = spawnLoc1.transform.position;
         }
         else if(playerManager.playerCount == 1)
         {
+            joinText1.SetActive(false);
             playerManager.playerPrefab = player2;
             player2.transform.position = spawnLoc2.transform.position;
         }
         else
         {
+            joinText2.SetActive(false);
             /*playerManager.gameObject.SetActive(false);*/
         }
 
