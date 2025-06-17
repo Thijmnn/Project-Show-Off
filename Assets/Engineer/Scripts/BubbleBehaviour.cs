@@ -190,7 +190,7 @@ public class BubbleBehaviour : MonoBehaviour
         BubbleSpawner.Instance.bubblesLeft--;
         foreach (BlowingScript blower in blowingScripts)
         {
-            blower.RemoveBubble(_other.gameObject);
+            blower.RemoveBubble(_other);
         }
         Destroy(_other);
     }
