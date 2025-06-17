@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1684228544525308052}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hedgehog Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +96,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8378514857095153510, guid: 1119cd9beff5b494ea8781eff47461da,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 0da47067f25536e4284d32429f792cbe,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -119,6 +125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hedgedog
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676289252098813802, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2079958539425822787, guid: 9a057c536c19c284288bd6e28d818da0,
         type: 3}
@@ -184,6 +195,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381711907141299271, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676599964312147296, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275673295059505114, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817048269925858535, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260768493531548118, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231701368231046270, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024607985643979611, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696338761648528737, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181288535443386068, guid: 9a057c536c19c284288bd6e28d818da0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
