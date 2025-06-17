@@ -48,22 +48,6 @@ public class BubbleBehaviour : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Wall"))
-        {
-            _col.isTrigger = false;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Wall"))
-        {
-            _col.isTrigger = true;
-        }
-    }
-
     private void RollRandom()
     {
         

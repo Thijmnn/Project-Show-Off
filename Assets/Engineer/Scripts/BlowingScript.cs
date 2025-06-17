@@ -83,6 +83,7 @@ public class BlowingScript : MonoBehaviour
                 Rigidbody rb = closestBubble.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
+                    print("PUSH");
                     rb.AddForce(transform.forward * blowMulti, ForceMode.Force);
                 }
             }

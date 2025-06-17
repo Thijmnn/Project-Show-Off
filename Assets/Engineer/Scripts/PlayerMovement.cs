@@ -75,10 +75,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
         {
+            anim.SetBool("IsRunning",true);
             moveSpeed = newSpeed;
         }
         else
         {
+            anim.SetBool("IsRunning", false);
             moveSpeed = originalSpeed;
         }
     }
