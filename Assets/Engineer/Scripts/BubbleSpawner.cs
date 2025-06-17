@@ -1,9 +1,6 @@
-using Adobe.Substance.Connector;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class BubbleSpawner : MonoBehaviour
 {
