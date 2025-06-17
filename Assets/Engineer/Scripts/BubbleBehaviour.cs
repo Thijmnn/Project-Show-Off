@@ -31,8 +31,10 @@ public class BubbleBehaviour : MonoBehaviour
     public void Update()
     {
         _rb.drag = _rb.mass;
+        print(_rb.IsSleeping());
+        _rb.WakeUp();
     }
-    private void OnTriggerStay(Collider other)
+/*    private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<BubbleBehaviour>())
         {
@@ -40,24 +42,56 @@ public class BubbleBehaviour : MonoBehaviour
             CheckOverlap(_bubbleBehaviour, other.gameObject);
         }
         
-    }
+    }*/
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Wall"))
+        if (collision.gameObject.GetComponent<BubbleBehaviour>())
         {
-            _col.isTrigger = false;
+            _bubbleBehaviour = collision.gameObject.GetComponent<BubbleBehaviour>();
+            if (collision.gameObject.transform.localScale.x > transform.localScale.x)
+            {
+                _bubbleBehaviour.canDestroy = true;
+                canDestroy = false;
+                SpawnAnimal();
+                if (canDestroy) { DestroyBubble(collision.gameObject); }
+
+            }
+            else if (transform.localScale.x > collision.gameObject.transform.localScale.x)
+            {
+                _bubbleBehaviour.canDestroy = false;
+                canDestroy = true;
+                SpawnAnimal();
+                if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
+
+            }
+            else if (collision.gameObject.transform.localScale.x == transform.localScale.x)
+            {
+                if (DestroySelf == _bubbleBehaviour.DestroySelf)
+                {
+
+                    RollRandom();
+
+                }
+                else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
+                {
+                    _bubbleBehaviour.canDestroy = true;
+                    canDestroy = false;
+                    SpawnAnimal();
+                    if (canDestroy) { DestroyBubble(collision.gameObject); }
+
+                }
+                else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
+                {
+                    _bubbleBehaviour.canDestroy = false;
+                    canDestroy = true;
+                    SpawnAnimal();
+                    if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
+
+                }
+            }
         }
     }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Wall"))
-        {
-            _col.isTrigger = true;
-        }
-    }
-
     private void RollRandom()
     {
         
@@ -77,7 +111,7 @@ public class BubbleBehaviour : MonoBehaviour
 
 
 
-    private void CheckOverlap(BubbleBehaviour _bubbleBehaviour, GameObject other)
+/*    private void CheckOverlap(BubbleBehaviour _bubbleBehaviour, GameObject other)
     {
         Vector3 distance = transform.position - other.transform.position;
         float length = distance.magnitude;
@@ -127,7 +161,7 @@ public class BubbleBehaviour : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 
     private void DestroyBubble(GameObject _other)
     {
@@ -144,7 +178,14 @@ public class BubbleBehaviour : MonoBehaviour
         transform.localScale = transform.localScale + (_other.transform.localScale / 2);
         _rb.mass = transform.localScale.x /2;
         BubbleSpawner.Instance.bubblesLeft--;
+<<<<<<< HEAD
         BlowingScript.Instance.RemoveBubble(_other);
+=======
+        foreach (BlowingScript blower in blowingScripts)
+        {
+            blower.RemoveBubble(_other);
+        }
+>>>>>>> main
         Destroy(_other);
     }
 

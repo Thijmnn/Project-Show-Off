@@ -8723,13 +8723,22 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
+<<<<<<< HEAD:Assets/Scenes/Map1Artist.unity
   m_LocalRotation: {x: 0.5679227, y: 0, z: 0, w: 0.8230819}
   m_LocalPosition: {x: 3.5, y: 32.39, z: -16.78}
+=======
+  m_LocalRotation: {x: 0.6067587, y: -0, z: -0, w: 0.79488605}
+  m_LocalPosition: {x: 25.8, y: 32.39, z: -13.10873}
+>>>>>>> main:Assets/Scenes/Artist Maps/SamCameraScene.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Map1Artist.unity
   m_LocalEulerAnglesHint: {x: 69.211, y: 0, z: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 434.711, y: 0, z: 0}
+>>>>>>> main:Assets/Scenes/Artist Maps/SamCameraScene.unity
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8787,12 +8796,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
+<<<<<<< HEAD:Assets/Scenes/Map1Artist.unity
   offset: {x: 0, y: 20, z: -10}
   smoothTime: 1
   minZoom: 70
   maxZoom: 50
   zoomLimiter: 10
 --- !u!1001 &333992369
+=======
+  offset: {x: 0, y: 15, z: -1.5}
+  smoothTime: 2.12
+  minZoom: 80
+  maxZoom: 40
+  zoomLimiter: 15
+--- !u!114 &330585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcdf9a0130ced644aae579c616d9991f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanMove: 0
+--- !u!95 &330585551
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &331401385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6510853996377700007, guid: 0ce4b94f3588a2e479c033d254c09f4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 91434204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &332125749
+>>>>>>> main:Assets/Scenes/Artist Maps/SamCameraScene.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11316,7 +11374,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.33953366, g: 0.4190817, b: 0.6603774, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.65
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11325,7 +11383,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.62
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -11358,8 +11416,8 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 13374
+  m_BounceIntensity: 3.58
+  m_ColorTemperature: 13077
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -27935,7 +27993,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1127767883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Map1Artist.unity
 --- !u!1001 &1115635407
+=======
+--- !u!1 &1112888555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1112888557}
+  - component: {fileID: 1112888556}
+  - component: {fileID: 1112888558}
+  m_Layer: 0
+  m_Name: CutsceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &1112888556
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112888555}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: c2f328f01def647408736d34aa330e22, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 2614253907463439500, guid: c2f328f01def647408736d34aa330e22, type: 2}
+    value: {fileID: 330585551}
+  - key: {fileID: -7082773307738775894, guid: c2f328f01def647408736d34aa330e22, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1112888557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112888555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0117497, y: -0.023657296, z: -2.884997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1112888558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112888555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f57c10a7d0d33c46a1fe3cb0b249a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1112888556}
+  bubblepopCutscene: 0
+--- !u!1001 &1114872818
+>>>>>>> main:Assets/Scenes/Artist Maps/SamCameraScene.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -28438,10 +28568,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 1112338508}
+<<<<<<< HEAD:Assets/Scenes/Map1Artist.unity
   player1: {fileID: 6194086790440854022, guid: 2eb13bd0830ba9848a8c862879ecae76, type: 3}
   player2: {fileID: 6194086790440854022, guid: 2eb13bd0830ba9848a8c862879ecae76, type: 3}
   spawnLoc1: {fileID: 0}
   spawnLoc2: {fileID: 0}
+=======
+  player1: {fileID: 8208394644406901780, guid: 58bc0c6fcc57fe444916656abfe84ea3, type: 3}
+  player2: {fileID: 5661267410920916322, guid: 4afd642f564b10d4abdaa27fb14fc618, type: 3}
+  spawnLoc1: {fileID: 659130559}
+  spawnLoc2: {fileID: 245473242}
+  joinText1: {fileID: 0}
+  joinText2: {fileID: 0}
+>>>>>>> main:Assets/Scenes/Artist Maps/SamCameraScene.unity
 --- !u!4 &1127767883
 Transform:
   m_ObjectHideFlags: 0

@@ -60,11 +60,13 @@ public class PlayerMovement : MonoBehaviour
         if (movementDirection.magnitude > 0.1f)
         {
             anim.SetBool("IsWalking", true);
+            anim.SetBool("IsIdle", false);
             transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, rotationSpeed * Time.deltaTime);
         }
         else
         {
             anim.SetBool("IsWalking", false);
+            anim.SetBool("IsIdle", true);
         }
     }
 
@@ -72,10 +74,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
         {
-            moveSpeed = newSpeed;
+            Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
+            if (movementDirection.magnitude > 0.1f) {
+                anim.SetBool("IsRunning", true);
+                anim.SetBool("IsWalking", false);
+            }
+            else
+            {
+                anim.SetBool("IsRunning", false);
+            }
+                moveSpeed = newSpeed;
         }
         else
         {
+            anim.SetBool("IsRunning", false);
+            
             moveSpeed = originalSpeed;
         }
     }
