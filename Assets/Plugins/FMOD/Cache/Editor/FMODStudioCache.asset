@@ -1,32 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8252340990132861138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODUnity/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-<<<<<<< HEAD
-<<<<<<< HEAD
-  lastModified: 638857719310409554
-=======
-  lastModified: 638857718328746014
->>>>>>> origin/main
-=======
-  lastModified: 638857719710427991
->>>>>>> Sam
-  FileSizes: []
-  Exists: 1
---- !u!114 &-186992295553695007
+--- !u!114 &-7582768733332393061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,55 +15,12 @@ MonoBehaviour:
   Path: Assets/FMODUnity/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-<<<<<<< HEAD
-<<<<<<< HEAD
-  lastModified: 638857719310409554
-=======
-  lastModified: 638857718328756014
->>>>>>> origin/main
-=======
-  lastModified: 638857719710447978
->>>>>>> Sam
+  lastModified: 638857733419176377
   FileSizes:
   - Name: 
     Value: 770
   Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -186992295553695007}
-  - {fileID: -8252340990132861138}
-  EditorEvents:
-  - {fileID: 9109149440213525280}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -8252340990132861138}
-  StringsBanks:
-  - {fileID: -186992295553695007}
-  cacheVersion: 131848
-<<<<<<< HEAD
-<<<<<<< HEAD
-  cacheTime: 638857719310409554
-=======
-  cacheTime: 638857718328756014
->>>>>>> origin/main
-=======
-  cacheTime: 638857719710447978
->>>>>>> Sam
-  SerializableEventsDict:
-  - key: event:/FireFlies
-    index: 0
---- !u!114 &9109149440213525280
+--- !u!114 &-6391843113317573359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +39,7 @@ MonoBehaviour:
     Data3: -361935721
     Data4: -1985841274
   Banks:
-  - {fileID: -8252340990132861138}
+  - {fileID: 8796399631849386084}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -116,3 +47,48 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13609
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -7582768733332393061}
+  - {fileID: 8796399631849386084}
+  EditorEvents:
+  - {fileID: -6391843113317573359}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 8796399631849386084}
+  StringsBanks:
+  - {fileID: -7582768733332393061}
+  cacheVersion: 131848
+  cacheTime: 638857733419176377
+  SerializableEventsDict:
+  - key: event:/FireFlies
+    index: 0
+--- !u!114 &8796399631849386084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODUnity/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638857733191497444
+  FileSizes: []
+  Exists: 1
