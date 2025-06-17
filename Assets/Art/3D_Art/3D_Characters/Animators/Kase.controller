@@ -68,7 +68,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsWalking
+    m_ConditionEvent: IsIdle
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: IsBlowing
@@ -213,7 +213,7 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: IsIdle
     m_EventTreshold: 0
-  - m_ConditionMode: 1
+  - m_ConditionMode: 2
     m_ConditionEvent: IsBlowing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -684,16 +684,16 @@ AnimatorStateMachine:
     m_Position: {x: 780, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6299847189587044999}
-    m_Position: {x: 300, y: 20, z: 0}
+    m_Position: {x: 360, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8654217883087306787}
-    m_Position: {x: 370, y: 240, z: 0}
+    m_Position: {x: 360, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2902810715346682649}
     m_Position: {x: 970, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6593163541398907291}
-    m_Position: {x: 540, y: -30, z: 0}
+    m_Position: {x: 570, y: -30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8152245642599006841}
     m_Position: {x: 780, y: 240, z: 0}

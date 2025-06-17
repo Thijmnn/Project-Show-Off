@@ -26,6 +26,7 @@ public class BlowingScript : MonoBehaviour
 
     public bool canSprint;
 
+    Animator animator;
 
     private List<GameObject> bubblesInTrigger = new List<GameObject>();
     private void Awake()
@@ -36,6 +37,7 @@ public class BlowingScript : MonoBehaviour
     {
         playerInput = GetComponentInParent<PlayerInput>();
         Invoke(nameof(EnableInputCheck), startUpDelay);
+        animator = GetComponentInParent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -97,6 +99,7 @@ public class BlowingScript : MonoBehaviour
         if (startedUp) {
             if (playerInput.actions["Fire"].inProgress)
             {
+                animator.SetBool("IsBlowing",true);
                 fireEnabled = true;
                 soundVortex.SetActive(true);
                 if (!slowed) { _playerMov.originalSpeed *= 0.5f; slowed = true; }
@@ -104,6 +107,7 @@ public class BlowingScript : MonoBehaviour
             }
             else
             {
+                animator.SetBool("IsBlowing", false);
                 soundVortex.SetActive(false);
                 fireEnabled = false;
                 if (slowed) { _playerMov.originalSpeed *= 2f; slowed = false; }
