@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8506024965268525696}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bunny Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,6 +98,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8524998944619132448, guid: a61feeecf72b61847b687c8ffb55081b,
         type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 0da47067f25536e4284d32429f792cbe,
+        type: 2}
+    - target: {fileID: 8524998944619132448, guid: a61feeecf72b61847b687c8ffb55081b,
+        type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -120,10 +126,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8506024965268525696}
     m_Modifications:
+    - target: {fileID: 964899013831128735, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669155450328342181, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1906672191141098263, guid: 45c8fd6ecbbd65842824124e487d07be,
         type: 3}
       propertyPath: m_Name
       value: Bunny
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906672191141098263, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011695782696643561, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928325596638786640, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978366143749503965, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7179812136714389272, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8142333235004095775, guid: 45c8fd6ecbbd65842824124e487d07be,
         type: 3}
@@ -189,6 +230,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052303788206342719, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065895993371489094, guid: 45c8fd6ecbbd65842824124e487d07be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

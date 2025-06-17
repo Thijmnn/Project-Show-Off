@@ -37,8 +37,10 @@ public class BubbleBehaviour : MonoBehaviour
     public void Update()
     {
         _rb.drag = _rb.mass;
+        print(_rb.IsSleeping());
+        _rb.WakeUp();
     }
-    private void OnTriggerStay(Collider other)
+/*    private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<BubbleBehaviour>())
         {
@@ -46,8 +48,56 @@ public class BubbleBehaviour : MonoBehaviour
             CheckOverlap(_bubbleBehaviour, other.gameObject);
         }
         
-    }
+    }*/
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<BubbleBehaviour>())
+        {
+            _bubbleBehaviour = collision.gameObject.GetComponent<BubbleBehaviour>();
+            if (collision.gameObject.transform.localScale.x > transform.localScale.x)
+            {
+                _bubbleBehaviour.canDestroy = true;
+                canDestroy = false;
+                SpawnAnimal();
+                if (canDestroy) { DestroyBubble(collision.gameObject); }
+
+            }
+            else if (transform.localScale.x > collision.gameObject.transform.localScale.x)
+            {
+                _bubbleBehaviour.canDestroy = false;
+                canDestroy = true;
+                SpawnAnimal();
+                if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
+
+            }
+            else if (collision.gameObject.transform.localScale.x == transform.localScale.x)
+            {
+                if (DestroySelf == _bubbleBehaviour.DestroySelf)
+                {
+
+                    RollRandom();
+
+                }
+                else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
+                {
+                    _bubbleBehaviour.canDestroy = true;
+                    canDestroy = false;
+                    SpawnAnimal();
+                    if (canDestroy) { DestroyBubble(collision.gameObject); }
+
+                }
+                else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
+                {
+                    _bubbleBehaviour.canDestroy = false;
+                    canDestroy = true;
+                    SpawnAnimal();
+                    if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
+
+                }
+            }
+        }
+    }
     private void RollRandom()
     {
         
@@ -67,7 +117,7 @@ public class BubbleBehaviour : MonoBehaviour
 
 
 
-    private void CheckOverlap(BubbleBehaviour _bubbleBehaviour, GameObject other)
+/*    private void CheckOverlap(BubbleBehaviour _bubbleBehaviour, GameObject other)
     {
         Vector3 distance = transform.position - other.transform.position;
         float length = distance.magnitude;
@@ -117,7 +167,7 @@ public class BubbleBehaviour : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 
     private void DestroyBubble(GameObject _other)
     {
