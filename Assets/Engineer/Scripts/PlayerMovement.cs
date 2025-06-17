@@ -46,16 +46,13 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         IncreaseSpeed();
-        
     }
 
     private void MovePlayer()
     {
         _moveDirection = playerInput.actions["Movement"].ReadValue<Vector2>();
-        if (rb.velocity != Vector3.zero)
-        {
-            _rotation = Quaternion.LookRotation(rb.velocity);
-        }
+        _rotation = Quaternion.LookRotation(rb.velocity);
+
         Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed) , ref velocity, smoothTime);

@@ -22,10 +22,13 @@ public class Wander : MonoBehaviour
     [HideInInspector] public BlowingScript _blowScript;
 
     public MeshRenderer mesh;
+<<<<<<< HEAD
+=======
 
     public bool BoostGiven;
 
     Animator _anim;
+>>>>>>> main
     private void Awake()
     {
         mesh = GetComponent<MeshRenderer>();
@@ -110,10 +113,7 @@ public class Wander : MonoBehaviour
 
     public virtual void GiveBoost()
     {
-        if (BoostGiven)
-        {
-            return;
-        }
+
     }
 
 }

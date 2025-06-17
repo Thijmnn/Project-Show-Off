@@ -21,17 +21,11 @@ public class BubbleBehaviour : MonoBehaviour
 
     public GameObject animalSpawn;
 
-    BlowingScript[] blowingScripts;
     private void Start()
     {
         overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<Collider>();
-    }
-
-    private void FixedUpdate()
-    {
-        blowingScripts = FindObjectsOfType<BlowingScript>();
     }
 
     public void Update()
@@ -174,11 +168,7 @@ public class BubbleBehaviour : MonoBehaviour
         _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
         _rb.mass = transform.localScale.x /2;
         BubbleSpawner.Instance.bubblesLeft--;
-        foreach(BlowingScript blower in blowingScripts)
-        {
-            blower.RemoveBubble(this.gameObject);
-        }
-        
+        BlowingScript.Instance.RemoveBubble(this.gameObject);
         
         Destroy(gameObject);
     }
@@ -188,10 +178,14 @@ public class BubbleBehaviour : MonoBehaviour
         transform.localScale = transform.localScale + (_other.transform.localScale / 2);
         _rb.mass = transform.localScale.x /2;
         BubbleSpawner.Instance.bubblesLeft--;
+<<<<<<< HEAD
+        BlowingScript.Instance.RemoveBubble(_other);
+=======
         foreach (BlowingScript blower in blowingScripts)
         {
             blower.RemoveBubble(_other);
         }
+>>>>>>> main
         Destroy(_other);
     }
 

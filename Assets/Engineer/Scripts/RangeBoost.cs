@@ -16,7 +16,6 @@ public class RangeBoost : Wander
     public float rangeIncrease;
     public override void GiveBoost()
     {
-        base.GiveBoost();
         GiveRange.AddListener(IncreaseRange);
         if (canInteract) { GiveRange?.Invoke(); canInteract = false; }
         else
@@ -37,11 +36,9 @@ public class RangeBoost : Wander
         BlowrangeColl.transform.localScale = new Vector3(BlowrangeColl.transform.localScale.x * RangeInc, BlowrangeColl.transform.localScale.y, BlowrangeColl.transform.localScale.z * RangeInc);
 
         _blowScript.blowMulti *= 2;
-
-        BoostGiven = true;
+        mesh.enabled = false;
         yield return new WaitForSeconds(boostDur);
 
-        BoostGiven = false;
         _blowScript.blowMulti *= 0.5f;
         BlowrangeColl.transform.localScale = originalScale;
         

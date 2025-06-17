@@ -20,8 +20,7 @@ public class MagnetBoost : Wander
     
     public override void GiveBoost()
     {
-        base.GiveBoost();
-        GiveMagnet.AddListener(MagnetGive);
+        GiveMagnet.AddListener(IncreaseSpeed);
         if (canInteract) { GiveMagnet?.Invoke(); canInteract = false; }
         else
         {
@@ -30,19 +29,18 @@ public class MagnetBoost : Wander
 
     }
 
-    private void MagnetGive()
+    private void IncreaseSpeed()
     {
-        StartCoroutine(MagnetActive(boostDuration));
+        StartCoroutine(SpeedIncrease(boostDuration));
     }
 
-    private IEnumerator MagnetActive(float boostDur)
+    private IEnumerator SpeedIncrease(float boostDur)
     {
         magnetic = true;
-        BoostGiven = true;
+        mesh.enabled = false;
 
         yield return new WaitForSeconds(boostDur);
 
-        BoostGiven = false;
         magnetic = false;
         
 
