@@ -24,6 +24,8 @@ public class Wander : MonoBehaviour
     public MeshRenderer mesh;
 
     public bool BoostGiven;
+
+    Animator _anim;
     private void Awake()
     {
         mesh = GetComponent<MeshRenderer>();
@@ -31,6 +33,10 @@ public class Wander : MonoBehaviour
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
     }
 
+    private void Start()
+    {
+        _anim = GetComponent<Animator>();
+    }
     public virtual void Update()
     {
         if (!playerInRange){ Move(); }
