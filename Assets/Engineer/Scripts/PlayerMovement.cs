@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         IncreaseSpeed();
-        
+        Shader.SetGlobalVector("_Player", transform.position);
     }
 
     private void MovePlayer()
