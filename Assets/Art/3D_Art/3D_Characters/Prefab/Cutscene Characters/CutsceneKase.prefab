@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.94
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.550003
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.529999
+      value: 13.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_Name
-      value: KaseV1
+      value: CutsceneKase
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
@@ -134,19 +134,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4176095892038568433}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8808146260861364778}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5365289087475203969}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4363864719426085014}
     - targetCorrespondingSourceObject: {fileID: -7381439899913241558, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       insertIndex: -1
@@ -227,26 +219,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4176095892038568433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8208394644406901780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f76cf7d54e180b4793f6e2f399d1858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 8808146260861364778}
-  moveSpeed: 10
-  move: {fileID: -2976593234358298980, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
-  rotationSpeed: 5
-  originalSpeed: 0
-  sprintMulti: 2
-  newSpeed: 0
-  smoothTime: 0.1
 --- !u!54 &8808146260861364778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -295,34 +267,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.0595098, z: 1}
   m_Center: {x: 0, y: 0.6630058, z: 0}
---- !u!114 &4363864719426085014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8208394644406901780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7bb456df6b3e7a346934aa3d1a71199a,
-    type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: MultiPlayerControlls
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
