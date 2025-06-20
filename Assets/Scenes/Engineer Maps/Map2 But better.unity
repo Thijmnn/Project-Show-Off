@@ -2454,6 +2454,9 @@ MonoBehaviour:
   bubbles: []
   magnetRange: 5
   magnetic: 0
+  magnetNotification:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &100723086
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,7 +4080,7 @@ PrefabInstance:
     - target: {fileID: 5661267410920916322, guid: 4afd642f564b10d4abdaa27fb14fc618,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10177,6 +10180,9 @@ MonoBehaviour:
       m_Calls: []
   boostDuration: 10
   moveSpeedIncrease: 1.5
+  speedNotification:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &876617027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16325,6 +16331,9 @@ MonoBehaviour:
       m_Calls: []
   boostDuration: 10
   rangeIncrease: 2
+  rangeNotification:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!195 &1546057871
 NavMeshAgent:
   m_ObjectHideFlags: 0
