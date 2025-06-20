@@ -14,6 +14,9 @@ public class RangeBoost : Wander
 
     public float boostDuration;
     public float rangeIncrease;
+
+    //notifications
+    public UnityEvent rangeNotification;
     public override void GiveBoost()
     {
         base.GiveBoost();
@@ -39,6 +42,8 @@ public class RangeBoost : Wander
         _blowScript.blowMulti *= 2;
 
         BoostGiven = true;
+
+        rangeNotification.Invoke();
         yield return new WaitForSeconds(boostDur);
 
         BoostGiven = false;

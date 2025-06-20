@@ -17,6 +17,9 @@ public class MagnetBoost : Wander
 
     public bool magnetic;
 
+    //notifications
+    public UnityEvent magnetNotification;
+
     
     public override void GiveBoost()
     {
@@ -39,6 +42,9 @@ public class MagnetBoost : Wander
     {
         magnetic = true;
         BoostGiven = true;
+
+        //notifications
+        magnetNotification.Invoke();
 
         yield return new WaitForSeconds(boostDur);
 
