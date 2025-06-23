@@ -143,10 +143,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6104824175568239504}
-    - targetCorrespondingSourceObject: {fileID: 2058107804690980033, guid: e870ab965b6984d41835d0a30d9cbb98,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5841953532000169011}
   m_SourcePrefab: {fileID: 100100000, guid: e870ab965b6984d41835d0a30d9cbb98, type: 3}
 --- !u!4 &5252789654502317482 stripped
 Transform:
@@ -401,24 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
-  blowMulti: 0.5
-  soundVortex: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
-    type: 3}
-  canSprint: 0
---- !u!114 &5841953532000169011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6836019216319145202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785f42c7197e56342984141081118131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
-  blowMulti: 2
+  blowMulti: 15
   soundVortex: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
     type: 3}
   canSprint: 0

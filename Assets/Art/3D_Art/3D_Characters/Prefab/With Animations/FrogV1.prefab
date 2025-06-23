@@ -74,6 +74,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5687783043967630980}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7591773294740649112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2861040433511664156, guid: 03308d41fff24f64a9811850db104ef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5687783043967630980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6551907081781771976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -387,6 +393,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3029242204929345242}
   m_SourcePrefab: {fileID: 100100000, guid: 1a8b2d1878eff854e9e3a263e56c22e0, type: 3}
+--- !u!137 &699639537699141827 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6005711408675145227, guid: 1a8b2d1878eff854e9e3a263e56c22e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6551907081781771976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6209449135275951001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1a8b2d1878eff854e9e3a263e56c22e0,
@@ -476,6 +488,8 @@ MonoBehaviour:
   BlowrangeColl: {fileID: 0}
   _blowScript: {fileID: 0}
   BoostGiven: 0
+  trail: {fileID: 7591773294740649112}
+  matRenderer: {fileID: 699639537699141827}
   GiveMagnet:
     m_PersistentCalls:
       m_Calls: []

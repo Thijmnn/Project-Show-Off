@@ -6,27 +6,29 @@ using UnityEngine.Events;
 public class MagnetBoost : Wander
 {
 
-    public UnityEvent GiveMagnet;
+    [HideInInspector] public UnityEvent GiveMagnet;
     bool canInteract = true;
 
     public float boostDuration;
     public float pullVelocity;
+
     public BubbleBehaviour[] bubbles;
 
     public float magnetRange;
 
     public bool magnetic;
 
+
+
     public override void GiveBoost()
     {
-        base.GiveBoost();
-        GiveMagnet.AddListener(MagnetGive);
-        if (canInteract) { GiveMagnet?.Invoke(); canInteract = false; }
-        else
-        {
-            return;
-        }
+        if (!canInteract || BoostGiven) return;
 
+        if (GiveMagnet.GetPersistentEventCount() == 0)
+            GiveMagnet.AddListener(MagnetGive);
+
+        GiveMagnet?.Invoke();
+        canInteract = false;
     }
 
     private void MagnetGive()
@@ -36,17 +38,51 @@ public class MagnetBoost : Wander
 
     private IEnumerator MagnetActive(float boostDur)
     {
-        magnetic = true;
+        if (BoostGiven) yield break;
+
         BoostGiven = true;
 
-        //notifications
-        NotificationsAppear.Instance.ShowNoteFrog();
+        try
+        {
+            magnetic = true;
+            //notifications
+            NotificationsAppear.Instance.ShowNoteFrog();
 
-        yield return new WaitForSeconds(boostDur);
 
-        BoostGiven = false;
-        magnetic = false;
-        
+
+            Material outlineMat = matRenderer.materials.Length > 1 ? matRenderer.materials[1] : null;
+            if (outlineMat != null)
+            {
+                Material[] playerMats = _playerRenderer.materials;
+                Material[] updated = new Material[playerMats.Length + 1];
+
+                for (int i = 0; i < playerMats.Length; i++)
+                    updated[i] = playerMats[i];
+
+                updated[playerMats.Length] = outlineMat;
+                _playerRenderer.materials = updated;
+            }
+
+            trail.SetActive(false);
+            matRenderer.materials = new[] { matRenderer.materials[0] };
+
+            yield return new WaitForSeconds(boostDur);
+
+            Material[] revertMats = _playerRenderer.materials;
+            if (revertMats.Length > 1)
+            {
+                Material[] trimmed = new Material[revertMats.Length - 1];
+                for (int i = 0; i < trimmed.Length; i++)
+                    trimmed[i] = revertMats[i];
+                _playerRenderer.materials = trimmed;
+            }
+
+            magnetic = false;
+        }
+        finally
+        {
+            BoostGiven = false;
+        }
 
     }
 
@@ -65,6 +101,5 @@ public class MagnetBoost : Wander
                 }
             }
         }
-        
     }
 }
