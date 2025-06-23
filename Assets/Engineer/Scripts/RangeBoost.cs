@@ -42,7 +42,7 @@ public class RangeBoost : Wander
         _blowScript.blowMulti *= 2;
 
         BoostGiven = true;
-
+        rangeNotification.AddListener(NotificationsAppear.Instance.showNoteHedgehog);
         rangeNotification.Invoke();
         yield return new WaitForSeconds(boostDur);
 
