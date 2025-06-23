@@ -109,8 +109,9 @@ public class PlayerMovement : MonoBehaviour
             _flowerAnimation.UpdateFlower();
         }
     }
-    private void PlayFootsteps()
+    public void PlayFootstep()
     {
+        print("diddy blud ");
         playerSounds.PlayFootsteps();
     }
 }

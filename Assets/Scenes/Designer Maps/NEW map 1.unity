@@ -37765,57 +37765,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc9c4bf570f51db4c904c03df807db3e, type: 3}
---- !u!1 &1262277621
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1262277623}
-  - component: {fileID: 1262277622}
-  m_Layer: 0
-  m_Name: PlayerSounds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1262277622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262277621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa89ceb90ff0404b8ab68f2fa6dfaa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _footsteps:
-    Guid:
-      Data1: 1088255124
-      Data2: 1267018322
-      Data3: 57853611
-      Data4: 2066630393
-    Path: event:/Footsteps/Footsteps
---- !u!4 &1262277623
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262277621}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.045263, y: -1.203948, z: 8.459586}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1262500604
 GameObject:
   m_ObjectHideFlags: 0
@@ -63553,4 +63502,3 @@ SceneRoots:
   - {fileID: 1972254838}
   - {fileID: 2084685720}
   - {fileID: 289456217}
-  - {fileID: 1262277623}
