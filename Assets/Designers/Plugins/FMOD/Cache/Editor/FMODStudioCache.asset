@@ -60,20 +60,120 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -7582768733332393061}
-  - {fileID: 8796399631849386084}
+  - {fileID: 7318258581429494546}
+  - {fileID: 7869915305763824267}
   EditorEvents:
-  - {fileID: -6391843113317573359}
+  - {fileID: 7775563436868655680}
+  - {fileID: 3642956584959030920}
+  - {fileID: 8983688406910011947}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8796399631849386084}
+  - {fileID: 7869915305763824267}
   StringsBanks:
-  - {fileID: -7582768733332393061}
+  - {fileID: 7318258581429494546}
   cacheVersion: 131848
-  cacheTime: 638857733419176377
+  cacheTime: 638862757357182683
   SerializableEventsDict:
-  - key: event:/FireFlies
+  - key: event:/FireFlies/FireFlies Background
     index: 0
+  - key: event:/FireFlies/FireFlies Flying
+    index: 1
+  - key: event:/Flower interaction
+    index: 2
+--- !u!114 &3642956584959030920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FireFlies/FireFlies Flying
+  m_EditorClassIdentifier: 
+  Path: event:/FireFlies/FireFlies Flying
+  Guid:
+    Data1: -1853216283
+    Data2: 1298975723
+    Data3: -750898559
+    Data4: 780541791
+  Banks:
+  - {fileID: 7869915305763824267}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6500
+--- !u!114 &7318258581429494546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../CMGT/FMOD/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638862757357182683
+  FileSizes:
+  - Name: 
+    Value: 900
+  Exists: 1
+--- !u!114 &7775563436868655680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FireFlies/FireFlies Background
+  m_EditorClassIdentifier: 
+  Path: event:/FireFlies/FireFlies Background
+  Guid:
+    Data1: 162271518
+    Data2: 1324620658
+    Data3: 332567183
+    Data4: -450440866
+  Banks:
+  - {fileID: 7869915305763824267}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13556
+--- !u!114 &7869915305763824267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../CMGT/FMOD/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 638862757357168831
+  FileSizes:
+  - Name: 
+    Value: 386528
+  Exists: 1
 --- !u!114 &8796399631849386084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,3 +192,30 @@ MonoBehaviour:
   lastModified: 638857733191497444
   FileSizes: []
   Exists: 1
+--- !u!114 &8983688406910011947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Flower interaction
+  m_EditorClassIdentifier: 
+  Path: event:/Flower interaction
+  Guid:
+    Data1: -701044440
+    Data2: 1082791697
+    Data3: -1787238982
+    Data4: 801600355
+  Banks:
+  - {fileID: 7869915305763824267}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
