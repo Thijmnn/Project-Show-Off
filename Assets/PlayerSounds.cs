@@ -16,6 +16,6 @@ public class PlayerSounds : MonoBehaviour
     }
     public void PlayFootsteps()
     {
-
+        if (footsteps.isValid()
     }
 }
