@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8274274468009459259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/KIOMICRIES.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Designers/FMODUnity/Kiomi/Desktop/Desktop/KIOMICRIES.bank
+  Name: Desktop/KIOMICRIES
+  StudioPath: bank:/KIOMICRIES
+  lastModified: 638862929376849717
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7582768733332393061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,32 +65,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13609
---- !u!114 &-1576831587241757301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1128972740
-    data2: 4139414207
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Grass
-  - Path
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,28 +78,60 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7318258581429494546}
-  - {fileID: 7869915305763824267}
+  - {fileID: 4923014793995635872}
+  - {fileID: 6528632827751578417}
+  - {fileID: -8274274468009459259}
   EditorEvents:
-  - {fileID: 7775563436868655680}
-  - {fileID: 3642956584959030920}
-  - {fileID: 8983688406910011947}
-  - {fileID: 8785518153798547583}
+  - {fileID: 7728048085939912549}
+  - {fileID: 4565962546243684034}
+  - {fileID: 2301642098702332328}
+  - {fileID: 2399648720616322559}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7869915305763824267}
+  - {fileID: 6528632827751578417}
+  - {fileID: -8274274468009459259}
   StringsBanks:
-  - {fileID: 7318258581429494546}
+  - {fileID: 4923014793995635872}
   cacheVersion: 131848
-  cacheTime: 638862790777674536
+  cacheTime: 638862929376864736
   SerializableEventsDict:
   - key: event:/FireFlies/FireFlies Background
     index: 0
-  - key: event:/FireFlies/FireFlies Flying
-    index: 1
   - key: event:/Flower interaction
+    index: 1
+  - key: event:/Footsteps/Footstep
     index: 2
---- !u!114 &3642956584959030920
+  - key: event:/FireFlies/FireFlies Flying
+    index: 3
+--- !u!114 &2301642098702332328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footstep
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/Footstep
+  Guid:
+    Data1: 1088255124
+    Data2: 1267018322
+    Data3: 57853611
+    Data4: 2066630393
+  Banks:
+  - {fileID: 6528632827751578417}
+  - {fileID: -8274274468009459259}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2399648720616322559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +150,8 @@ MonoBehaviour:
     Data3: -750898559
     Data4: 780541791
   Banks:
-  - {fileID: 7869915305763824267}
+  - {fileID: 6528632827751578417}
+  - {fileID: -8274274468009459259}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -134,120 +159,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
---- !u!114 &7318258581429494546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../CMGT/FMOD/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638862790777674536
-  FileSizes:
-  - Name: 
-    Value: 1000
-  Exists: 1
---- !u!114 &7775563436868655680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FireFlies/FireFlies Background
-  m_EditorClassIdentifier: 
-  Path: event:/FireFlies/FireFlies Background
-  Guid:
-    Data1: 162271518
-    Data2: 1324620658
-    Data3: 332567183
-    Data4: -450440866
-  Banks:
-  - {fileID: 7869915305763824267}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 13556
---- !u!114 &7869915305763824267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../CMGT/FMOD/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-  lastModified: 638862790777662382
-  FileSizes:
-  - Name: 
-    Value: 679616
-  Exists: 1
---- !u!114 &8785518153798547583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps/Footsteps
-  Guid:
-    Data1: 1088255124
-    Data2: 1267018322
-    Data3: 57853611
-    Data4: 2066630393
-  Banks:
-  - {fileID: 7869915305763824267}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -1576831587241757301}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &8796399631849386084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODUnity/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638857733191497444
-  FileSizes: []
-  Exists: 1
---- !u!114 &8983688406910011947
+--- !u!114 &4565962546243684034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,7 +178,8 @@ MonoBehaviour:
     Data3: -1787238982
     Data4: 801600355
   Banks:
-  - {fileID: 7869915305763824267}
+  - {fileID: 6528632827751578417}
+  - {fileID: -8274274468009459259}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -274,3 +187,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &4923014793995635872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/KIOMICRIES.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Designers/FMODUnity/Kiomi/Desktop/KIOMICRIES.strings.bank
+  Name: KIOMICRIES.strings
+  StudioPath: bank:/KIOMICRIES.strings
+  lastModified: 638862890582987942
+  FileSizes:
+  - Name: 
+    Value: 1004
+  Exists: 1
+--- !u!114 &6528632827751578417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/KIOMICRIES.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Designers/FMODUnity/Kiomi/Desktop/KIOMICRIES.bank
+  Name: KIOMICRIES
+  StudioPath: bank:/KIOMICRIES
+  lastModified: 638862890582972914
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7728048085939912549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FireFlies/FireFlies Background
+  m_EditorClassIdentifier: 
+  Path: event:/FireFlies/FireFlies Background
+  Guid:
+    Data1: 162271518
+    Data2: 1324620658
+    Data3: 332567183
+    Data4: -450440866
+  Banks:
+  - {fileID: 6528632827751578417}
+  - {fileID: -8274274468009459259}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13556
+--- !u!114 &8796399631849386084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODUnity/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638857733191497444
+  FileSizes: []
+  Exists: 1
