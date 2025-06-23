@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-8274274468009459259
+=======
+--- !u!114 &-8647477161646076970
+>>>>>>> EngineerBranch
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,6 +14,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+<<<<<<< HEAD
   m_Name: bank:/Desktop/KIOMICRIES.bank
   m_EditorClassIdentifier: 
   Path: Assets/Designers/FMODUnity/Kiomi/Desktop/Desktop/KIOMICRIES.bank
@@ -17,6 +22,17 @@ MonoBehaviour:
   StudioPath: bank:/KIOMICRIES
   lastModified: 638862929376849717
   FileSizes: []
+=======
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Designers/FMODUnity/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638862703336183765
+  FileSizes:
+  - Name: 
+    Value: 770
+>>>>>>> EngineerBranch
   Exists: 1
 --- !u!114 &-7582768733332393061
 MonoBehaviour:
@@ -65,6 +81,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13609
+<<<<<<< HEAD
+=======
+--- !u!114 &-6261940291898479881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Designers/FMODUnity/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638862703336173766
+  FileSizes: []
+  Exists: 1
+>>>>>>> EngineerBranch
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +115,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: 4923014793995635872}
   - {fileID: 6528632827751578417}
   - {fileID: -8274274468009459259}
@@ -94,9 +132,23 @@ MonoBehaviour:
   - {fileID: 4923014793995635872}
   cacheVersion: 131848
   cacheTime: 638862929376864736
+=======
+  - {fileID: -8647477161646076970}
+  - {fileID: -6261940291898479881}
+  EditorEvents:
+  - {fileID: 803164346636874736}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -6261940291898479881}
+  StringsBanks:
+  - {fileID: -8647477161646076970}
+  cacheVersion: 131848
+  cacheTime: 638862703336183765
+>>>>>>> EngineerBranch
   SerializableEventsDict:
-  - key: event:/FireFlies/FireFlies Background
+  - key: event:/FireFlies
     index: 0
+<<<<<<< HEAD
   - key: event:/Flower interaction
     index: 1
   - key: event:/Footsteps/Footstep
@@ -104,6 +156,9 @@ MonoBehaviour:
   - key: event:/FireFlies/FireFlies Flying
     index: 3
 --- !u!114 &2301642098702332328
+=======
+--- !u!114 &803164346636874736
+>>>>>>> EngineerBranch
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,6 +168,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
   m_Name: event:/Footsteps/Footstep
   m_EditorClassIdentifier: 
   Path: event:/Footsteps/Footstep
@@ -152,12 +208,25 @@ MonoBehaviour:
   Banks:
   - {fileID: 6528632827751578417}
   - {fileID: -8274274468009459259}
+=======
+  m_Name: event:/FireFlies
+  m_EditorClassIdentifier: 
+  Path: event:/FireFlies
+  Guid:
+    Data1: -1528321554
+    Data2: 1169992615
+    Data3: -361935721
+    Data4: -1985841274
+  Banks:
+  - {fileID: -6261940291898479881}
+>>>>>>> EngineerBranch
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 6500
 --- !u!114 &4565962546243684034
 MonoBehaviour:
@@ -253,6 +322,9 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13556
+=======
+  Length: 13609
+>>>>>>> EngineerBranch
 --- !u!114 &8796399631849386084
 MonoBehaviour:
   m_ObjectHideFlags: 0
