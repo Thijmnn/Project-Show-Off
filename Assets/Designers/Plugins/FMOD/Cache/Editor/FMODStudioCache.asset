@@ -20,6 +20,32 @@ MonoBehaviour:
   - Name: 
     Value: 770
   Exists: 1
+--- !u!114 &-6631146615809417100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footstep/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1128972740
+    data2: 4139414207
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Grass
+  - Path
+  Exists: 1
 --- !u!114 &-6391843113317573359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,7 +73,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13609
---- !u!114 &-1576831587241757301
+--- !u!114 &-5011989968336975424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,23 +82,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Footsteps
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1128972740
-    data2: 4139414207
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Grass
-  - Path
+  Path: ../../../OneDrive/Documenten/CMGT/FMOD/Desktop/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638862845781455903
+  FileSizes: []
   Exists: 1
+--- !u!114 &-2894075419686594424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/HELP.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../OneDrive/Documenten/CMGT/FMOD/Desktop/Desktop/HELP.bank
+  Name: HELP
+  StudioPath: bank:/HELP
+  lastModified: 638862845781491005
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-799989211405178700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walking on Grass
+  m_EditorClassIdentifier: 
+  Path: event:/Walking on Grass
+  Guid:
+    Data1: 1974638919
+    Data2: 1203825911
+    Data3: 593959296
+    Data4: -2037257360
+  Banks:
+  - {fileID: -5011989968336975424}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,20 +149,22 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7318258581429494546}
-  - {fileID: 7869915305763824267}
+  - {fileID: 3084426058719273990}
+  - {fileID: -2894075419686594424}
+  - {fileID: -5011989968336975424}
   EditorEvents:
   - {fileID: 7775563436868655680}
   - {fileID: 3642956584959030920}
   - {fileID: 8983688406910011947}
-  - {fileID: 8785518153798547583}
+  - {fileID: -799989211405178700}
+  - {fileID: 6448739961840327166}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7869915305763824267}
+  - {fileID: -5011989968336975424}
   StringsBanks:
-  - {fileID: 7318258581429494546}
+  - {fileID: 3084426058719273990}
   cacheVersion: 131848
-  cacheTime: 638862790777674536
+  cacheTime: 638862845781491005
   SerializableEventsDict:
   - key: event:/FireFlies/FireFlies Background
     index: 0
@@ -107,6 +172,32 @@ MonoBehaviour:
     index: 1
   - key: event:/Flower interaction
     index: 2
+  - key: event:/help
+    index: 3
+  - key: event:/Walking on Grass
+    index: 4
+  - key: event:/Footsteps/Footstep
+    index: 5
+--- !u!114 &3084426058719273990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../OneDrive/Documenten/CMGT/FMOD/Desktop/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638862845781465875
+  FileSizes:
+  - Name: 
+    Value: 1106
+  Exists: 1
 --- !u!114 &3642956584959030920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +217,7 @@ MonoBehaviour:
     Data3: -750898559
     Data4: 780541791
   Banks:
-  - {fileID: 7869915305763824267}
+  - {fileID: -5011989968336975424}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -134,7 +225,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
---- !u!114 &7318258581429494546
+--- !u!114 &6448739961840327166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,17 +234,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footstep
   m_EditorClassIdentifier: 
-  Path: ../../CMGT/FMOD/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638862790777674536
-  FileSizes:
-  - Name: 
-    Value: 1000
-  Exists: 1
+  Path: event:/Footsteps/Footstep
+  Guid:
+    Data1: 1088255124
+    Data2: 1267018322
+    Data3: 57853611
+    Data4: 2066630393
+  Banks:
+  - {fileID: -5011989968336975424}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6631146615809417100}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7775563436868655680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +272,7 @@ MonoBehaviour:
     Data3: 332567183
     Data4: -450440866
   Banks:
-  - {fileID: 7869915305763824267}
+  - {fileID: -5011989968336975424}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -181,54 +280,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13556
---- !u!114 &7869915305763824267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../CMGT/FMOD/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-  lastModified: 638862790777662382
-  FileSizes:
-  - Name: 
-    Value: 679616
-  Exists: 1
---- !u!114 &8785518153798547583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps/Footsteps
-  Guid:
-    Data1: 1088255124
-    Data2: 1267018322
-    Data3: 57853611
-    Data4: 2066630393
-  Banks:
-  - {fileID: 7869915305763824267}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -1576831587241757301}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &8796399631849386084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +317,7 @@ MonoBehaviour:
     Data3: -1787238982
     Data4: 801600355
   Banks:
-  - {fileID: 7869915305763824267}
+  - {fileID: -5011989968336975424}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
