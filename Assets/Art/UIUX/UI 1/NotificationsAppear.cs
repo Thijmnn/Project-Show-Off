@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class NotificationsAppear : MonoBehaviour
 {
-
+    public static NotificationsAppear Instance { get; private set; }
     public GameObject noteRabbit, noteHedgehog, noteFrog;
     public GameObject noteFrame;
 
@@ -19,18 +19,21 @@ public class NotificationsAppear : MonoBehaviour
     [SerializeField]
     int frogLength = 10;
 
-    
- 
-    
-    public void showNoteRabbit()
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+
+    public void ShowNoteRabbit()
     {
         StartCoroutine(RabbitPower());
     }
-    public void showNoteHedgehog()
+    public void ShowNoteHedgehog()
     {
         StartCoroutine (HedgehogPower());
     }
-    public void showNoteFrog()
+    public void ShowNoteFrog()
     {
         StartCoroutine(FrogPowers());
     }

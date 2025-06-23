@@ -13,8 +13,6 @@ public class SpeedBoost1 : Wander
     public float boostDuration;
     public float moveSpeedIncrease;
 
-    //Notifications
-    public UnityEvent speedNotification;
     public override void GiveBoost()
     {
         base.GiveBoost();
@@ -41,7 +39,7 @@ public class SpeedBoost1 : Wander
         _playerMovement.newSpeed *= speedInc;
 
         //notifications
-        speedNotification.Invoke();
+        NotificationsAppear.Instance.ShowNoteRabbit();
 
         yield return new WaitForSeconds(boostDur);
 
