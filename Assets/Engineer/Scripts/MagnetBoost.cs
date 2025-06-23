@@ -40,7 +40,7 @@ public class MagnetBoost : Wander
         BoostGiven = true;
 
         //notifications
-        NotificationsAppear.Instance.showNoteRabbit();
+        NotificationsAppear.Instance.ShowNoteFrog();
 
         yield return new WaitForSeconds(boostDur);
 

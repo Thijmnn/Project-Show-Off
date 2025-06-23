@@ -39,7 +39,7 @@ public class SpeedBoost1 : Wander
         _playerMovement.newSpeed *= speedInc;
 
         //notifications
-        NotificationsAppear.Instance.showNoteRabbit();
+        NotificationsAppear.Instance.ShowNoteRabbit();
 
         yield return new WaitForSeconds(boostDur);
 

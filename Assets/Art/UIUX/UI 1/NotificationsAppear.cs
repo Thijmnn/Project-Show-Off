@@ -25,15 +25,15 @@ public class NotificationsAppear : MonoBehaviour
     }
 
 
-    public void showNoteRabbit()
+    public void ShowNoteRabbit()
     {
         StartCoroutine(RabbitPower());
     }
-    public void showNoteHedgehog()
+    public void ShowNoteHedgehog()
     {
         StartCoroutine (HedgehogPower());
     }
-    public void showNoteFrog()
+    public void ShowNoteFrog()
     {
         StartCoroutine(FrogPowers());
     }
