@@ -16,6 +16,10 @@ public class PlayerSounds : MonoBehaviour
     }
     public void PlayFootsteps()
     {
-        if (footsteps.isValid()
+        if (footsteps.isValid())
+        {
+            footsteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
+            footsteps.start();
+        }
     }
 }
