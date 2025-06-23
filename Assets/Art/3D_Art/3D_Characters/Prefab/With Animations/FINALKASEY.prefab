@@ -147,6 +147,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4363864719426085014}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5862132137314310565}
     - targetCorrespondingSourceObject: {fileID: -7381439899913241558, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       insertIndex: -1
@@ -326,3 +330,17 @@ MonoBehaviour:
   m_DefaultActionMap: MultiPlayerControlls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &5862132137314310565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8208394644406901780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 8208394644406901780}
