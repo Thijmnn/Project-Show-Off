@@ -47,6 +47,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13609
+--- !u!114 &-1576831587241757301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1128972740
+    data2: 4139414207
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Grass
+  - Path
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,13 +92,14 @@ MonoBehaviour:
   - {fileID: 7775563436868655680}
   - {fileID: 3642956584959030920}
   - {fileID: 8983688406910011947}
+  - {fileID: 8785518153798547583}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7869915305763824267}
   StringsBanks:
   - {fileID: 7318258581429494546}
   cacheVersion: 131848
-  cacheTime: 638862757357182683
+  cacheTime: 638862790777674536
   SerializableEventsDict:
   - key: event:/FireFlies/FireFlies Background
     index: 0
@@ -122,10 +149,10 @@ MonoBehaviour:
   Path: ../../CMGT/FMOD/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638862757357182683
+  lastModified: 638862790777674536
   FileSizes:
   - Name: 
-    Value: 900
+    Value: 1000
   Exists: 1
 --- !u!114 &7775563436868655680
 MonoBehaviour:
@@ -169,11 +196,39 @@ MonoBehaviour:
   Path: ../../CMGT/FMOD/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638862757357168831
+  lastModified: 638862790777662382
   FileSizes:
   - Name: 
-    Value: 386528
+    Value: 679616
   Exists: 1
+--- !u!114 &8785518153798547583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/Footsteps
+  Guid:
+    Data1: 1088255124
+    Data2: 1267018322
+    Data3: 57853611
+    Data4: 2066630393
+  Banks:
+  - {fileID: 7869915305763824267}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1576831587241757301}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8796399631849386084
 MonoBehaviour:
   m_ObjectHideFlags: 0
