@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-
+using System.Linq;
 public class Wander : MonoBehaviour
 {
     public float wanderRadius = 10f;
@@ -21,9 +21,14 @@ public class Wander : MonoBehaviour
 
     [HideInInspector] public BlowingScript _blowScript;
 
-    public bool BoostGiven;
+    [HideInInspector] public static bool BoostGiven;
 
     Animator _anim;
+
+
+    public GameObject trail;
+    public SkinnedMeshRenderer matRenderer;
+    [HideInInspector] public SkinnedMeshRenderer _playerRenderer;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -82,10 +87,12 @@ public class Wander : MonoBehaviour
         if(other.GetComponent<PlayerMovement>())
         {
             _playerMovement = other.GetComponentInParent<PlayerMovement>();
-            BlowrangeColl = other.GetComponentInChildren<BoxCollider>();
+            BlowrangeColl = other.GetComponentsInChildren<BoxCollider>()
+            .FirstOrDefault(c => c.gameObject != other.gameObject);
             _playerInput = other.GetComponent<PlayerInput>();
             _blowScript = other.GetComponentInChildren<BlowingScript>();
             playerInRange = true;
+            _playerRenderer = other.GetComponentInChildren<SkinnedMeshRenderer>();
         }
     }
 
@@ -109,10 +116,6 @@ public class Wander : MonoBehaviour
 
     public virtual void GiveBoost()
     {
-        if (BoostGiven)
-        {
-            return;
-        }
     }
 
 }
