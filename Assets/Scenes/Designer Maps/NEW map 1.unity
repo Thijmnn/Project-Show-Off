@@ -10454,7 +10454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &432161605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19151,7 +19151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &756018736
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29260,8 +29260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 1112338508}
-  player1: {fileID: 6194086790440854022, guid: 034e3c209feeb9a47a036b916989f825, type: 3}
-  player2: {fileID: 6194086790440854022, guid: 034e3c209feeb9a47a036b916989f825, type: 3}
+  player1: {fileID: 8208394644406901780, guid: 58bc0c6fcc57fe444916656abfe84ea3, type: 3}
+  player2: {fileID: 5661267410920916322, guid: 4afd642f564b10d4abdaa27fb14fc618, type: 3}
   spawnLoc1: {fileID: 659130559}
   spawnLoc2: {fileID: 245473242}
   joinText1: {fileID: 0}
@@ -47414,7 +47414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1665322442
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63284,6 +63284,7 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1328740712}
+  - {fileID: 2128680729}
   - {fileID: 10842565}
   - {fileID: 1127767883}
   - {fileID: 659130560}
@@ -63302,5 +63303,4 @@ SceneRoots:
   - {fileID: 1319479794}
   - {fileID: 1972254838}
   - {fileID: 2084685720}
-  - {fileID: 2128680729}
   - {fileID: 789829374}
