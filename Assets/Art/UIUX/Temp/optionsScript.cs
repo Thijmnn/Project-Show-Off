@@ -11,8 +11,8 @@ public class optionsScript : MonoBehaviour
     public InputActionReference menu;
     private PlayerInput playerInput;
 
-    public UnityEvent PopUpShowOne;
-    public UnityEvent PopUpShowTwo;
+    //public UnityEvent PopUpShowOne;
+    //public UnityEvent PopUpShowTwo;
 
 
     // Start is called before the first frame update
@@ -30,14 +30,14 @@ public class optionsScript : MonoBehaviour
             StartCoroutine(SwitchScreen());
         }
 
-        if(Input.GetKey(KeyCode.O))
-        {
-            PopUpShowOne.Invoke();
-        }
-        if (Input.GetKey(KeyCode.P))
-        {
-            PopUpShowTwo.Invoke();
-        }
+        //if(Input.GetKey(KeyCode.O))
+        //{
+        //    PopUpShowOne.Invoke();
+        //}
+        //if (Input.GetKey(KeyCode.P))
+        //{
+        //    PopUpShowTwo.Invoke();
+        //}
 
     }
 
