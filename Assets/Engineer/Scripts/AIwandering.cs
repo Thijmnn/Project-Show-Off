@@ -21,14 +21,11 @@ public class Wander : MonoBehaviour
 
     [HideInInspector] public BlowingScript _blowScript;
 
-    public MeshRenderer mesh;
-
     public bool BoostGiven;
 
     Animator _anim;
     private void Awake()
     {
-        mesh = GetComponent<MeshRenderer>();
         agent = GetComponent<NavMeshAgent>();
         wanderTime = Random.Range(minWanderTime, maxWanderTime);
     }
@@ -39,12 +36,14 @@ public class Wander : MonoBehaviour
     }
     public virtual void Update()
     {
-        if (!playerInRange){ Move(); }
+        if (!playerInRange){ Move(); _anim.SetBool("IsWalking", true); }
         else
         {
             InteractWithPlayer();
+            _anim.SetBool("IsWalking", false);
         }
-            
+           
+       
     }
 
 
