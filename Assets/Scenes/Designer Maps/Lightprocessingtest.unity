@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.31716973, g: 0.21765353, b: 0.44654083, a: 1}
+  m_FogColor: {r: 0.34027526, g: 0.34093457, b: 0.6981132, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.015
   m_LinearFogStart: 0
@@ -9778,7 +9778,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.573
+    m_Strength: 0.261
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 3.12
@@ -28567,6 +28567,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1092870385}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1093284172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4585617460495171723, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_Name
+      value: HegdeHogBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042826525932507967, guid: 604116f5181f78842addd9c5252d32cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 604116f5181f78842addd9c5252d32cd, type: 3}
 --- !u!4 &1093388082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6510853996377700007, guid: 0ce4b94f3588a2e479c033d254c09f4c,
@@ -44829,6 +44897,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4982441495087294073, guid: 58bc0c6fcc57fe444916656abfe84ea3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a46653e607f803f45a574c182e2827b7, type: 2}
     - target: {fileID: 8208394644406901780, guid: 58bc0c6fcc57fe444916656abfe84ea3,
         type: 3}
       propertyPath: m_Name
@@ -63914,3 +63987,4 @@ SceneRoots:
   - {fileID: 688041187}
   - {fileID: 1798015458}
   - {fileID: 1012755090}
+  - {fileID: 1093284172}
