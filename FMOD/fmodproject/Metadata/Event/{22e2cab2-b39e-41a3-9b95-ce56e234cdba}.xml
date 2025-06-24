@@ -8,7 +8,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{06bba7ed-bd08-41cd-bbaf-0c30611bce07}</destination>
+			<destination>{0dacae15-b601-4738-b7ce-912a91122925}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bd001c9c-de47-4fff-a471-2bc40a7aa745}</destination>
@@ -102,9 +102,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{a38b5e0e-2bb1-4162-83c9-9d9b667f3021}" />
 	<object class="MultiSound" id="{6abcb3b5-fa84-4578-89d4-e7bbf424fcd1}">
-		<property name="start">
-			<value>1</value>
-		</property>
+		<property name="name" />
 		<relationship name="sounds">
 			<destination>{f18d0aec-2d33-4ef4-89e7-86e7c07d2c8f}</destination>
 			<destination>{9d74f52e-bfce-422b-a64d-e9fc12a4e402}</destination>
@@ -132,6 +130,9 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{6733e103-27bc-4365-bb84-e855f30e3184}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{927b32b0-4fa7-46e2-8aaa-5bae83fcc25e}</destination>
 			<destination>{28a7d072-1d63-466b-82c0-5da32c6a37aa}</destination>
@@ -156,6 +157,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0a5ff7da-bc08-4453-b15c-28a7f2495ca0}">
+		<property name="volume">
+			<value>-22</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
