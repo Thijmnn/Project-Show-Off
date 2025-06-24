@@ -29,6 +29,7 @@ public class BubbleSpawner : MonoBehaviour
 
         if(bubblesLeft == 1)
         {
+            CutsceneTrigger.Instance.bubblepopCutscene = true;
             BubbleBehaviour lastBubble = FindObjectOfType<BubbleBehaviour>();
             Destroy(lastBubble.gameObject);
             bubblesLeft = 0;

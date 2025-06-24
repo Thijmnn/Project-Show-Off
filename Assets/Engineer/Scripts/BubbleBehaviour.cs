@@ -36,6 +36,11 @@ public class BubbleBehaviour : MonoBehaviour
     {
         _rb.drag = _rb.mass;
         _rb.WakeUp();
+
+        if(_rb.velocity.magnitude > 0.1f)
+        {
+
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
