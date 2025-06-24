@@ -1,3 +1,4 @@
+using FMODUnity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,9 @@ public class BubbleBehaviour : MonoBehaviour
     public GameObject animalSpawn;
 
     BlowingScript[] blowingScripts;
+
+    public StudioEventEmitter hoverEmitter;
+    public StudioEventEmitter mergeEmitter;
     private void Start()
     {
         overlapThreshold = 100 / overlap;
@@ -39,7 +43,11 @@ public class BubbleBehaviour : MonoBehaviour
 
         if(_rb.velocity.magnitude > 0.1f)
         {
-
+            hoverEmitter.enabled = true;
+        }
+        else if(_rb.velocity.magnitude < 0.1f)
+        {
+            hoverEmitter.enabled = false;
         }
     }
 
@@ -119,8 +127,10 @@ public class BubbleBehaviour : MonoBehaviour
         {
             blower.RemoveBubble(this.gameObject);
         }
+
+        StudioEventEmitter[] emitter = _other.GetComponents<StudioEventEmitter>();
         
-        
+        emitter[1].Play();
         Destroy(gameObject);
     }
 
@@ -133,6 +143,7 @@ public class BubbleBehaviour : MonoBehaviour
         {
             blower.RemoveBubble(_other);
         }
+        mergeEmitter.Play();
         Destroy(_other);
     }
 
