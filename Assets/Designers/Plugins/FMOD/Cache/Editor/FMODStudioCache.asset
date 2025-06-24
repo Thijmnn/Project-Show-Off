@@ -82,6 +82,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7000
+--- !u!114 &-6995699509698890164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laughter
+  m_EditorClassIdentifier: 
+  Path: event:/Laughter
+  Guid:
+    Data1: 1618423243
+    Data2: 1172343726
+    Data3: -864611954
+    Data4: 642067777
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-5802861030148214490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,10 +124,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638863656443884985
+  lastModified: 638863717741076285
   FileSizes:
   - Name: Desktop
-    Value: 2563744
+    Value: 2692800
   Exists: 1
 --- !u!114 &-4910125376655681142
 MonoBehaviour:
@@ -178,6 +205,7 @@ MonoBehaviour:
   - {fileID: 1420491488506181744}
   - {fileID: 5977466090721645990}
   - {fileID: 2060675369231002610}
+  - {fileID: -6995699509698890164}
   EditorParameters:
   - {fileID: -4910125376655681142}
   MasterBanks:
@@ -185,7 +213,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3892526754667718646}
   cacheVersion: 131848
-  cacheTime: 638863656443900118
+  cacheTime: 638863717741086287
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -203,6 +231,8 @@ MonoBehaviour:
     index: 6
   - key: event:/Windfan/Fan
     index: 7
+  - key: event:/Laughter
+    index: 8
 --- !u!114 &1420491488506181744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,10 +329,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638863656443900118
+  lastModified: 638863717741086287
   FileSizes:
   - Name: Desktop
-    Value: 1208
+    Value: 1248
   Exists: 1
 --- !u!114 &5804698109809402973
 MonoBehaviour:
