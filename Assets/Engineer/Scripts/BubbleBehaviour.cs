@@ -11,7 +11,6 @@ public class BubbleBehaviour : MonoBehaviour
     private BubbleBehaviour _bubbleBehaviour;
 
     Rigidbody _rb;
-    Collider _col;
 
     public int overlap;
 
@@ -26,7 +25,6 @@ public class BubbleBehaviour : MonoBehaviour
     {
         overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
-        _col = GetComponent<Collider>();
     }
 
     private void FixedUpdate()
@@ -37,18 +35,8 @@ public class BubbleBehaviour : MonoBehaviour
     public void Update()
     {
         _rb.drag = _rb.mass;
-        print(_rb.IsSleeping());
         _rb.WakeUp();
     }
-/*    private void OnTriggerStay(Collider other)
-    {
-        if (other.GetComponent<BubbleBehaviour>())
-        {
-            _bubbleBehaviour = other.GetComponent<BubbleBehaviour>();
-            CheckOverlap(_bubbleBehaviour, other.gameObject);
-        }
-        
-    }*/
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -116,58 +104,6 @@ public class BubbleBehaviour : MonoBehaviour
     }
 
 
-
-/*    private void CheckOverlap(BubbleBehaviour _bubbleBehaviour, GameObject other)
-    {
-        Vector3 distance = transform.position - other.transform.position;
-        float length = distance.magnitude;
-        float halfLength = (transform.localScale.x + other.transform.localScale.x) / 2;
-
-        if (length <= (halfLength / overlapThreshold))
-        {
-            if (other.transform.localScale.x > transform.localScale.x)
-            {
-                _bubbleBehaviour.canDestroy = true;
-                canDestroy = false;
-                SpawnAnimal();
-                if (canDestroy) { DestroyBubble(other); }
-               
-            }
-            else if (transform.localScale.x > other.transform.localScale.x)
-            {
-                _bubbleBehaviour.canDestroy = false;
-                canDestroy = true;
-                SpawnAnimal();
-                if (canDestroy) { DestroyOtherBubble(other); }
-                
-            }
-            else if (other.transform.localScale.x == transform.localScale.x)
-            {
-                if (DestroySelf == _bubbleBehaviour.DestroySelf)
-                {
-                    
-                    RollRandom();
-                    
-                }
-                else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
-                {
-                    _bubbleBehaviour.canDestroy = true;
-                    canDestroy = false;
-                    SpawnAnimal();
-                    if (canDestroy) { DestroyBubble(other); }
-                    
-                }
-                else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
-                {
-                    _bubbleBehaviour.canDestroy = false;
-                    canDestroy = true;
-                    SpawnAnimal();
-                    if (canDestroy) { DestroyOtherBubble(other); }
-                    
-                }
-            }
-        }
-    }*/
 
     private void DestroyBubble(GameObject _other)
     {

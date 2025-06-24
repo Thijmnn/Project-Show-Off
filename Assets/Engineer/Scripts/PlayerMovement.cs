@@ -34,6 +34,9 @@ public class PlayerMovement : MonoBehaviour
 
     FlowerAnimation _flowerAnimation;
 
+    [SerializeField]
+    private PlayerSounds playerSounds;
+
     private void Start()
     {
         originalSpeed = moveSpeed;
@@ -58,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         }
         Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
 
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed) , ref velocity, smoothTime);
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, new Vector3(_moveDirection.x * moveSpeed, 0, _moveDirection.y * moveSpeed), ref velocity, smoothTime);
 
         if (movementDirection.magnitude > 0.1f)
         {
@@ -78,7 +81,8 @@ public class PlayerMovement : MonoBehaviour
         if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
         {
             Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;
-            if (movementDirection.magnitude > 0.1f) {
+            if (movementDirection.magnitude > 0.1f)
+            {
                 anim.SetBool("IsRunning", true);
                 anim.SetBool("IsWalking", false);
             }
@@ -86,12 +90,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 anim.SetBool("IsRunning", false);
             }
-                moveSpeed = newSpeed;
+            moveSpeed = newSpeed;
         }
         else
         {
             anim.SetBool("IsRunning", false);
-            
+
             moveSpeed = originalSpeed;
         }
     }
@@ -104,5 +108,10 @@ public class PlayerMovement : MonoBehaviour
 
             _flowerAnimation.UpdateFlower();
         }
+    }
+    public void PlayFootstep()
+    {
+        print("diddy blud ");
+        playerSounds.PlayFootsteps();
     }
 }

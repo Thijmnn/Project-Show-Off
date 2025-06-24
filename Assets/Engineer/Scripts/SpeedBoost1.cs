@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class SpeedBoost1 : Wander
 {
-    public UnityEvent GiveSpeed;
+    [HideInInspector] public UnityEvent GiveSpeed;
     bool canInteract = true;
 
     float originalSpeed;
@@ -13,18 +13,16 @@ public class SpeedBoost1 : Wander
     public float boostDuration;
     public float moveSpeedIncrease;
 
-    //Notifications
-    public UnityEvent speedNotification;
+
     public override void GiveBoost()
     {
-        base.GiveBoost();
-        GiveSpeed.AddListener(IncreaseSpeed);
-        if (canInteract) { GiveSpeed?.Invoke(); canInteract = false; }
-        else
-        {
-            return;
-        }
-        
+        if (!canInteract || BoostGiven) return;
+
+        if (GiveSpeed.GetPersistentEventCount() == 0)
+            GiveSpeed.AddListener(IncreaseSpeed);
+
+        GiveSpeed?.Invoke();
+        canInteract = false;
     }
 
     private void IncreaseSpeed()
@@ -34,21 +32,54 @@ public class SpeedBoost1 : Wander
 
     private IEnumerator SpeedIncrease(float boostDur, float speedInc)
     {
+        if (BoostGiven) yield break;
         BoostGiven = true;
-        originalSprintSpeed = _playerMovement.newSpeed;
-        originalSpeed = _playerMovement.originalSpeed;
-        _playerMovement.originalSpeed *= speedInc;
-        _playerMovement.newSpeed *= speedInc;
+        try
+        {
+            originalSprintSpeed = _playerMovement.newSpeed;
+            originalSpeed = _playerMovement.originalSpeed;
+            _playerMovement.originalSpeed *= speedInc;
+            _playerMovement.newSpeed *= speedInc;
 
-        //notifications
-        speedNotification.Invoke();
+            //notifications
+            NotificationsAppear.Instance.ShowNoteRabbit();
 
-        yield return new WaitForSeconds(boostDur);
 
-        BoostGiven = false;
-        _playerMovement.newSpeed = originalSprintSpeed;
-        _playerMovement.originalSpeed = originalSpeed;
 
-        
+            Material outlineMat = matRenderer.materials.Length > 1 ? matRenderer.materials[1] : null;
+            if (outlineMat != null)
+            {
+                Material[] playerMats = _playerRenderer.materials;
+                Material[] updated = new Material[playerMats.Length + 1];
+
+                for (int i = 0; i < playerMats.Length; i++)
+                    updated[i] = playerMats[i];
+
+                updated[playerMats.Length] = outlineMat;
+                _playerRenderer.materials = updated;
+            }
+
+            trail.SetActive(false);
+            matRenderer.materials = new[] { matRenderer.materials[0] };
+
+            yield return new WaitForSeconds(boostDur);
+
+            Material[] revertMats = _playerRenderer.materials;
+            if (revertMats.Length > 1)
+            {
+                Material[] trimmed = new Material[revertMats.Length - 1];
+                for (int i = 0; i < trimmed.Length; i++)
+                    trimmed[i] = revertMats[i];
+                _playerRenderer.materials = trimmed;
+            }
+
+            _playerMovement.newSpeed = originalSprintSpeed;
+            _playerMovement.originalSpeed = originalSpeed;
+        }
+        finally
+        {
+            BoostGiven = false;
+        }
+
     }
 }
