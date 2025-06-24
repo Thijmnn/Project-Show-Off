@@ -14,6 +14,9 @@ public class PlayerSounds : MonoBehaviour
     private FMOD.Studio.EventInstance fan1;
     private FMOD.Studio.EventInstance fan2;
 
+    private Coroutine fadeOutFan1;
+    private Coroutine fadeOutFan2;
+
     private bool isFanPlaying = false;
 
     private void Awake()
@@ -52,10 +55,32 @@ public class PlayerSounds : MonoBehaviour
 
     private void PlayFanSounds()
     {
+        // Fan 1
+        if (fadeOutFan1 != null)
+        {
+            StopCoroutine(fadeOutFan1);
+            fadeOutFan1 = null;
+
+            fan1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            fan1.release();
+            fan1 = RuntimeManager.CreateInstance(fan1Ref);
+        }
+
         if (fan1.isValid())
         {
             fan1.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
             fan1.start();
+        }
+
+        // Fan 2
+        if (fadeOutFan2 != null)
+        {
+            StopCoroutine(fadeOutFan2);
+            fadeOutFan2 = null;
+
+            fan2.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            fan2.release();
+            fan2 = RuntimeManager.CreateInstance(fan2Ref);
         }
 
         if (fan2.isValid())
@@ -67,15 +92,51 @@ public class PlayerSounds : MonoBehaviour
         isFanPlaying = true;
     }
 
+    private class FMODInstanceWrapper
+    {
+        public FMOD.Studio.EventInstance instance;
+        public EventReference eventRef;
+
+        public FMODInstanceWrapper(FMOD.Studio.EventInstance inst, EventReference evRef)
+        {
+            instance = inst;
+            eventRef = evRef;
+        }
+    }
+
     private void StopFanSounds()
     {
         if (fan1.isValid())
-            fan1.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            fadeOutFan1 = StartCoroutine(FadeOutAndStop(fan1, fan1Ref, newInstance => fan1 = newInstance));
 
         if (fan2.isValid())
-            fan2.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            fadeOutFan2 = StartCoroutine(FadeOutAndStop(fan2, fan2Ref, newInstance => fan2 = newInstance));
 
         isFanPlaying = false;
+    
+
+}
+
+    private IEnumerator FadeOutAndStop(FMOD.Studio.EventInstance instance, EventReference eventRef, System.Action<FMOD.Studio.EventInstance> onRestart)
+    {
+        float currentVolume;
+        instance.getVolume(out currentVolume);
+        float elapsed = 0f;
+        float duration = 0.5f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float newVolume = Mathf.Lerp(currentVolume, 0f, elapsed / duration);
+            instance.setVolume(newVolume);
+            yield return null;
+        }
+
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.release();
+
+        var newInstance = RuntimeManager.CreateInstance(eventRef);
+        onRestart(newInstance);
     }
 
     public void PlayFootsteps()
@@ -88,7 +149,6 @@ public class PlayerSounds : MonoBehaviour
             footsteps.start();
         }
     }
-
     private void GroundSwitch()
     {
         RaycastHit hit;
