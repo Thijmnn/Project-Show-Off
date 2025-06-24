@@ -111,7 +111,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void PlayFootstep()
     {
-        print("diddy blud ");
         playerSounds.PlayFootsteps();
     }
+
 }
+
