@@ -29,6 +29,9 @@ public class BlowingScript : MonoBehaviour
     Animator animator;
 
     private List<GameObject> bubblesInTrigger = new List<GameObject>();
+
+    [SerializeField]
+    private PlayerSounds playerSounds;
     private void Awake()
     { 
         _playerMov = GetComponentInParent<PlayerMovement>();
