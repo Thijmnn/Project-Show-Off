@@ -51,6 +51,21 @@ MonoBehaviour:
       Data3: 1456379291
       Data4: -1160956702
     Path: event:/Footsteps/Footsteps
+  fan1Ref:
+    Guid:
+      Data1: -688242948
+      Data2: 1270624132
+      Data3: -194567548
+      Data4: -267332089
+    Path: event:/Windfan/Fan
+  fan2Ref:
+    Guid:
+      Data1: 986337473
+      Data2: 1084750429
+      Data3: -2112284540
+      Data4: 580217144
+    Path: event:/Windfan/Wind Partice
+  animator: {fileID: 4881556883046248918}
 --- !u!1001 &9019437512931320133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -259,6 +274,7 @@ MonoBehaviour:
   soundVortex: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
     type: 3}
   canSprint: 0
+  playerSounds: {fileID: 6149346075098096536}
 --- !u!1 &8208394644406901780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,

@@ -28,6 +28,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-8765393862097015965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wind/Winds
+  m_EditorClassIdentifier: 
+  Path: event:/Wind/Winds
+  Guid:
+    Data1: 1488192040
+    Data2: 1340099506
+    Data3: 362333315
+    Data4: -2021749059
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6800
 --- !u!114 &-7583222177025771785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +97,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638863137598184562
+  lastModified: 638863656443884985
   FileSizes:
   - Name: Desktop
-    Value: 678848
+    Value: 2563744
   Exists: 1
 --- !u!114 &-4910125376655681142
 MonoBehaviour:
@@ -147,6 +174,10 @@ MonoBehaviour:
   - {fileID: -7583222177025771785}
   - {fileID: 5804698109809402973}
   - {fileID: -8789238616481654107}
+  - {fileID: -8765393862097015965}
+  - {fileID: 1420491488506181744}
+  - {fileID: 5977466090721645990}
+  - {fileID: 2060675369231002610}
   EditorParameters:
   - {fileID: -4910125376655681142}
   MasterBanks:
@@ -154,7 +185,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3892526754667718646}
   cacheVersion: 131848
-  cacheTime: 638863137598194585
+  cacheTime: 638863656443900118
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -164,6 +195,68 @@ MonoBehaviour:
     index: 2
   - key: event:/Footsteps/Footsteps
     index: 3
+  - key: event:/Wind/Winds
+    index: 4
+  - key: event:/Music/Music Map 1
+    index: 5
+  - key: event:/Windfan/Wind Partice
+    index: 6
+  - key: event:/Windfan/Fan
+    index: 7
+--- !u!114 &1420491488506181744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music Map 1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music Map 1
+  Guid:
+    Data1: -402801136
+    Data2: 1322775616
+    Data3: -117956701
+    Data4: -1138762609
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85394
+--- !u!114 &2060675369231002610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Windfan/Fan
+  m_EditorClassIdentifier: 
+  Path: event:/Windfan/Fan
+  Guid:
+    Data1: -688242948
+    Data2: 1270624132
+    Data3: -194567548
+    Data4: -267332089
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2308
 --- !u!114 &3676058640534634916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,10 +299,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638863137598194585
+  lastModified: 638863656443900118
   FileSizes:
   - Name: Desktop
-    Value: 1002
+    Value: 1208
   Exists: 1
 --- !u!114 &5804698109809402973
 MonoBehaviour:
@@ -238,3 +331,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &5977466090721645990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Windfan/Wind Partice
+  m_EditorClassIdentifier: 
+  Path: event:/Windfan/Wind Partice
+  Guid:
+    Data1: 986337473
+    Data2: 1084750429
+    Data3: -2112284540
+    Data4: 580217144
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60577
