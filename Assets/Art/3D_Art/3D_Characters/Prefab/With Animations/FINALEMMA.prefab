@@ -103,6 +103,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5808119472351391869, guid: e870ab965b6984d41835d0a30d9cbb98,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4901e2e3dc2f4d4a8b21d62414de203, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -401,3 +406,4 @@ MonoBehaviour:
   soundVortex: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
     type: 3}
   canSprint: 0
+  playerSounds: {fileID: 0}

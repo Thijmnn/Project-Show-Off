@@ -74,6 +74,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9189344394135369346, guid: 0eb7681e5ba1b3148a8faf93566171b8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4901e2e3dc2f4d4a8b21d62414de203, type: 2}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -92,17 +97,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.6
+      value: -23.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 6.550003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.9
+      value: 20.529999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
@@ -139,6 +144,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5184124182530455748, guid: 0eb7681e5ba1b3148a8faf93566171b8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a46653e607f803f45a574c182e2827b7, type: 2}
     - target: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_Name
