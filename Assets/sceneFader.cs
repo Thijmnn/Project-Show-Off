@@ -7,6 +7,15 @@ public class sceneFader : MonoBehaviour
 {
     public Animator fadeAnimator;
     public bool playAnimation;
+
+    int sceneIndex;
+
+    private void Start()
+    {
+        int currentscene = SceneManager.GetActiveScene().buildIndex;
+        if (currentscene == SceneManager.sceneCount) { sceneIndex = 1; }
+        else { sceneIndex = SceneManager.GetActiveScene().buildIndex + 1; }
+    }
     public void TriggerFadeOut()
     {
         fadeAnimator.SetTrigger("FadeOutTrigger");
@@ -14,7 +23,7 @@ public class sceneFader : MonoBehaviour
 
     public void OnFadeOutComplete()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(sceneIndex);
     }
 
     private void Update()
@@ -24,5 +33,7 @@ public class sceneFader : MonoBehaviour
             TriggerFadeOut();
             playAnimation = false;
         }
+
+        
     }
 }
