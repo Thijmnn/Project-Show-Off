@@ -7626,6 +7626,11 @@ PrefabInstance:
       propertyPath: TriggerOnce
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5891857435416248944, guid: d75c7103ea9a0cd4a807dba200f3a498,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Flower/Flower interaction
+      objectReference: {fileID: 0}
     - target: {fileID: 7465929727508108089, guid: d75c7103ea9a0cd4a807dba200f3a498,
         type: 3}
       propertyPath: m_Name
@@ -12615,6 +12620,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891857435416248944, guid: d75c7103ea9a0cd4a807dba200f3a498,
+        type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891857435416248944, guid: d75c7103ea9a0cd4a807dba200f3a498,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Flower/Flower interaction
       objectReference: {fileID: 0}
     - target: {fileID: 7465929727508108089, guid: d75c7103ea9a0cd4a807dba200f3a498,
         type: 3}
@@ -27438,54 +27453,28 @@ PrefabInstance:
     - target: {fileID: 631710648878714293, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 980093310612066519, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 980093310612066519, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 7.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 980093310612066519, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 2.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 631710648878714293, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1026236117}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b5a036245ae4f741925d6cedc1a7e2b, type: 3}
---- !u!1 &1026236111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 631710648878714293, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1026015147}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1026236117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026236111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -431021043
-      Data2: 1326734555
-      Data3: 2093595567
-      Data4: -1784690883
-    Path: event:/Animals/Hedgehog/Hedgehog Sniffing
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1030504289
 GameObject:
   m_ObjectHideFlags: 0
@@ -27806,11 +27795,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6209449135275951001, guid: 38bd4c1af50c03e47b647420c17011d1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1399204088}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38bd4c1af50c03e47b647420c17011d1, type: 3}
 --- !u!1 &1041297638
 GameObject:
@@ -42119,43 +42104,6 @@ Transform:
   - {fileID: 2056225787}
   m_Father: {fileID: 2117835256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1399204082 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6209449135275951001, guid: 38bd4c1af50c03e47b647420c17011d1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1038812842}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1399204088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399204082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2002510325
-      Data2: 1148633734
-      Data3: -3237736
-      Data4: 1766259366
-    Path: event:/Animals/Frog croak
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 2.82
-  OverrideMaxDistance: 9.51
 --- !u!4 &1399818456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7445346866455965481, guid: a270967cee11e584b9778f210f7f5d55,
