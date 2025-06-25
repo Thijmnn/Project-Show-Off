@@ -1,81 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &-7862391473521847791
-=======
---- !u!114 &-7115299205863222227
->>>>>>> EngineerBranch
-=======
---- !u!114 &-9093645420730275208
->>>>>>> Sara
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Name: event:/Laugther/Guy
-  m_EditorClassIdentifier: 
-  Path: event:/Laugther/Guy
-  Guid:
-    Data1: 1663709816
-    Data2: 1102141697
-    Data3: 382141576
-    Data4: 1965294174
-  Banks:
-  - {fileID: -5802861030148214490}
-  IsStream: 0
-  Is3D: 0
-=======
-  m_Name: event:/Fireflies/Crickets
-  m_EditorClassIdentifier: 
-  Path: event:/Fireflies/Crickets
-  Guid:
-    Data1: 232139023
-    Data2: 1101429483
-    Data3: 1305690258
-    Data4: 993392413
-  Banks:
-  - {fileID: -4988298600685920608}
-  IsStream: 1
-  Is3D: 1
->>>>>>> Sara
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-<<<<<<< HEAD
-  Length: 4040
---- !u!114 &-5802861030148214490
-=======
-  m_Name: event:/Music/Music Map 1
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music Map 1
-  Guid:
-    Data1: -402801136
-    Data2: 1322775616
-    Data3: -117956701
-    Data4: -1138762609
-  Banks:
-  - {fileID: 6640317543702950334}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 85394
---- !u!114 &-6164169942515734803
->>>>>>> EngineerBranch
-=======
-  Length: 13556
---- !u!114 &-7954777693962775200
+--- !u!114 &-5272703117353606005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,91 +19,16 @@ MonoBehaviour:
     Data3: 1456379291
     Data4: -1160956702
   Banks:
-  - {fileID: -4988298600685920608}
+  - {fileID: 987136428346796807}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -5128065052832808068}
+  - {fileID: 5140706810381125214}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5128065052832808068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3975783923
-    data2: 4203251307
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Path
-  Exists: 1
---- !u!114 &-4988298600685920608
->>>>>>> Sara
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/fmodproject/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-<<<<<<< HEAD
-  lastModified: 638863767386187173
-=======
-  lastModified: 638864384046587534
->>>>>>> Sara
-  FileSizes:
-  - Name: Desktop
-    Value: 2682144
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &-5748041721640981533
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: parameter:/Footsteps
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3975783923
-    data2: 4203251307
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Path
-  Exists: 1
---- !u!114 &-6157095440397321470
->>>>>>> EngineerBranch
-=======
---- !u!114 &-4625609103253706072
+--- !u!114 &-4660662003387934144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,12 +43,12 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638864384046587534
+  lastModified: 638863804789553961
   FileSizes:
   - Name: Desktop
     Value: 1298
   Exists: 1
---- !u!114 &-3630775803676813290
+--- !u!114 &-4658484832088871868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,16 +58,179 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Laugther/Girl
+  m_Name: event:/Flower/Flower interaction
   m_EditorClassIdentifier: 
-  Path: event:/Laugther/Girl
+  Path: event:/Flower/Flower interaction
   Guid:
-    Data1: 1618423243
-    Data2: 1172343726
-    Data3: -864611954
-    Data4: 642067777
+    Data1: 853153919
+    Data2: 1098927833
+    Data3: 1342454913
+    Data4: -1518177116
   Banks:
-  - {fileID: -4988298600685920608}
+  - {fileID: 987136428346796807}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3680827641726941932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fireflies/Beating wings
+  m_EditorClassIdentifier: 
+  Path: event:/Fireflies/Beating wings
+  Guid:
+    Data1: 1367249245
+    Data2: 1275341098
+    Data3: -1890132596
+    Data4: -1994149113
+  Banks:
+  - {fileID: 987136428346796807}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7000
+--- !u!114 &-2222679391909994894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music Map 1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music Map 1
+  Guid:
+    Data1: -402801136
+    Data2: 1322775616
+    Data3: -117956701
+    Data4: -1138762609
+  Banks:
+  - {fileID: 987136428346796807}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85394
+--- !u!114 &-1268953507154200409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Windfan/Fan
+  m_EditorClassIdentifier: 
+  Path: event:/Windfan/Fan
+  Guid:
+    Data1: -688242948
+    Data2: 1270624132
+    Data3: -194567548
+    Data4: -267332089
+  Banks:
+  - {fileID: 987136428346796807}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2308
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -4660662003387934144}
+  - {fileID: 987136428346796807}
+  EditorEvents:
+  - {fileID: 8370794965651090952}
+  - {fileID: -2222679391909994894}
+  - {fileID: 1602610597250461410}
+  - {fileID: -3680827641726941932}
+  - {fileID: 321922026446022693}
+  - {fileID: -4658484832088871868}
+  - {fileID: -5272703117353606005}
+  - {fileID: 1189739125835919475}
+  - {fileID: 5830265848389320623}
+  - {fileID: -1268953507154200409}
+  EditorParameters:
+  - {fileID: 6817037602570080250}
+  MasterBanks:
+  - {fileID: 987136428346796807}
+  StringsBanks:
+  - {fileID: -4660662003387934144}
+  cacheVersion: 131848
+  cacheTime: 638864434284272875
+  SerializableEventsDict:
+  - key: event:/Fireflies/Crickets
+    index: 0
+  - key: event:/Music/Music Map 1
+    index: 1
+  - key: event:/Wind/Winds
+    index: 2
+  - key: event:/Fireflies/Beating wings
+    index: 3
+  - key: event:/Laugther/Guy
+    index: 4
+  - key: event:/Flower/Flower interaction
+    index: 5
+  - key: event:/Footsteps/Footsteps
+    index: 6
+  - key: event:/Windfan/Wind Partice
+    index: 7
+  - key: event:/Laugther/Girl
+    index: 8
+  - key: event:/Windfan/Fan
+    index: 9
+--- !u!114 &321922026446022693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laugther/Guy
+  m_EditorClassIdentifier: 
+  Path: event:/Laugther/Guy
+  Guid:
+    Data1: 1663709816
+    Data2: 1102141697
+    Data3: 382141576
+    Data4: 1965294174
+  Banks:
+  - {fileID: 987136428346796807}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -225,8 +238,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4040
---- !u!114 &-2283654469591911651
->>>>>>> Sara
+--- !u!114 &987136428346796807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/fmodproject/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638864434284272875
+  FileSizes:
+  - Name: Desktop
+    Value: 2682144
+  Exists: 1
+--- !u!114 &1189739125835919475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,15 +277,7 @@ MonoBehaviour:
     Data3: -2112284540
     Data4: 580217144
   Banks:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: -5802861030148214490}
-=======
-  - {fileID: 6640317543702950334}
->>>>>>> EngineerBranch
-=======
-  - {fileID: -4988298600685920608}
->>>>>>> Sara
+  - {fileID: 987136428346796807}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -261,113 +285,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 60577
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &-4591755367283070840
-=======
---- !u!114 &-5651895630822057526
->>>>>>> EngineerBranch
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Fireflies/Beating wings
-  m_EditorClassIdentifier: 
-  Path: event:/Fireflies/Beating wings
-  Guid:
-    Data1: 1367249245
-    Data2: 1275341098
-    Data3: -1890132596
-    Data4: -1994149113
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -5802861030148214490}
-=======
-  - {fileID: 6640317543702950334}
->>>>>>> EngineerBranch
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7000
-<<<<<<< HEAD
---- !u!114 &-4562040374502814495
-=======
---- !u!114 &-1689264552497491111
->>>>>>> Sara
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-<<<<<<< HEAD
-  m_Name: parameter:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-=======
-  m_Name: parameter:/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: parameter:/Footsteps
->>>>>>> Sara
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3975783923
-    data2: 4203251307
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Path
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &-3719746875116209154
-=======
---- !u!114 &-992872623546919623
->>>>>>> Sara
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-  m_Name: event:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps/Footsteps
-  Guid:
-    Data1: 585288370
-    Data2: 1101247390
-    Data3: 1456379291
-    Data4: -1160956702
-  Banks:
-  - {fileID: -5802861030148214490}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4562040374502814495}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2314387305704103392
+--- !u!114 &1602610597250461410
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,7 +304,7 @@ MonoBehaviour:
     Data3: 362333315
     Data4: -2021749059
   Banks:
-  - {fileID: -5802861030148214490}
+  - {fileID: 987136428346796807}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -394,7 +312,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6800
---- !u!114 &-1592894781406519089
+--- !u!114 &5140706810381125214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -403,135 +321,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Windfan/Fan
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps
   m_EditorClassIdentifier: 
-  Path: event:/Windfan/Fan
-  Guid:
-    Data1: -688242948
-    Data2: 1270624132
-    Data3: -194567548
-    Data4: -267332089
-  Banks:
-  - {fileID: -5802861030148214490}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2308
---- !u!114 &-817284596588161539
-=======
---- !u!114 &-5585538576509274587
->>>>>>> EngineerBranch
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Laugther/Guy
-  m_EditorClassIdentifier: 
-  Path: event:/Laugther/Guy
-  Guid:
-    Data1: 1663709816
-    Data2: 1102141697
-    Data3: 382141576
-    Data4: 1965294174
-  Banks:
-  - {fileID: 6640317543702950334}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-<<<<<<< HEAD
-  Length: 2000
---- !u!114 &-144264625710108822
-=======
-  Length: 4040
---- !u!114 &-3803342467553961593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps/Footsteps
-  Guid:
-    Data1: 585288370
-    Data2: 1101247390
-    Data3: 1456379291
-    Data4: -1160956702
-  Banks:
-  - {fileID: 6640317543702950334}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 6167911376370567170}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2801494789505401128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638863773414217335
-  FileSizes:
-  - Name: Desktop
-    Value: 1298
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3975783923
+    data2: 4203251307
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Path
   Exists: 1
---- !u!114 &-1686477857404679749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Windfan/Fan
-  m_EditorClassIdentifier: 
-  Path: event:/Windfan/Fan
-  Guid:
-    Data1: -688242948
-    Data2: 1270624132
-    Data3: -194567548
-    Data4: -267332089
-  Banks:
-  - {fileID: 6640317543702950334}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2308
---- !u!114 &-847776796667057964
->>>>>>> EngineerBranch
+--- !u!114 &5830265848389320623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -550,7 +357,7 @@ MonoBehaviour:
     Data3: -864611954
     Data4: 642067777
   Banks:
-  - {fileID: 6640317543702950334}
+  - {fileID: 987136428346796807}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -558,131 +365,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4040
-=======
-  m_Name: event:/Flower/Flower interaction
-  m_EditorClassIdentifier: 
-  Path: event:/Flower/Flower interaction
-  Guid:
-    Data1: 853153919
-    Data2: 1098927833
-    Data3: 1342454913
-    Data4: -1518177116
-  Banks:
-  - {fileID: -4988298600685920608}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
->>>>>>> Sara
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 3892526754667718646}
-  - {fileID: -5802861030148214490}
-  EditorEvents:
-  - {fileID: 4352178653523182207}
-  - {fileID: 4483662211922608721}
-  - {fileID: -2314387305704103392}
-  - {fileID: -4591755367283070840}
-  - {fileID: -817284596588161539}
-  - {fileID: -3719746875116209154}
-  - {fileID: -5748041721640981533}
-  - {fileID: -1592894781406519089}
-  - {fileID: -7862391473521847791}
-  - {fileID: -144264625710108822}
-  EditorParameters:
-  - {fileID: 1694370919749185834}
-  MasterBanks:
-  - {fileID: -5802861030148214490}
-  StringsBanks:
-  - {fileID: 3892526754667718646}
-  cacheVersion: 131848
-  cacheTime: 638863767386197178
-=======
-  - {fileID: -2801494789505401128}
-  - {fileID: 6640317543702950334}
-  EditorEvents:
-  - {fileID: 208826736439306529}
-  - {fileID: -7115299205863222227}
-  - {fileID: 4524884754126553409}
-  - {fileID: -5651895630822057526}
-  - {fileID: -5585538576509274587}
-  - {fileID: 2618474502726994782}
-  - {fileID: -3803342467553961593}
-  - {fileID: -6157095440397321470}
-  - {fileID: -847776796667057964}
-  - {fileID: -1686477857404679749}
-  EditorParameters:
-  - {fileID: -6164169942515734803}
-  MasterBanks:
-  - {fileID: 6640317543702950334}
-  StringsBanks:
-  - {fileID: -2801494789505401128}
-  cacheVersion: 131848
-  cacheTime: 638863773414217335
->>>>>>> EngineerBranch
-=======
-  - {fileID: -4625609103253706072}
-  - {fileID: -4988298600685920608}
-  EditorEvents:
-  - {fileID: -9093645420730275208}
-  - {fileID: 3108681169505842684}
-  - {fileID: 5380853930182892869}
-  - {fileID: 8258779611945344535}
-  - {fileID: 3859392626196063866}
-  - {fileID: -992872623546919623}
-  - {fileID: -7954777693962775200}
-  - {fileID: -2283654469591911651}
-  - {fileID: -3630775803676813290}
-  - {fileID: 4166721250890378843}
-  EditorParameters:
-  - {fileID: -1689264552497491111}
-  MasterBanks:
-  - {fileID: -4988298600685920608}
-  StringsBanks:
-  - {fileID: -4625609103253706072}
-  cacheVersion: 131848
-  cacheTime: 638864384046587534
->>>>>>> Sara
-  SerializableEventsDict:
-  - key: event:/Fireflies/Crickets
-    index: 0
-  - key: event:/Music/Music Map 1
-    index: 1
-  - key: event:/Wind/Winds
-    index: 2
-  - key: event:/Fireflies/Beating wings
-    index: 3
-  - key: event:/Laugther/Guy
-    index: 4
-  - key: event:/Flower/Flower interaction
-    index: 5
-  - key: event:/Footsteps/Footsteps
-    index: 6
-  - key: event:/Windfan/Wind Partice
-    index: 7
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - key: event:/Laugther/Guy
-    index: 8
-  - key: event:/Laugther/Girl
-    index: 9
---- !u!114 &1694370919749185834
+--- !u!114 &6817037602570080250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,40 +391,7 @@ MonoBehaviour:
   - Grass
   - Path
   Exists: 1
---- !u!114 &3892526754667718646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638863767386197178
-  FileSizes:
-  - Name: Desktop
-    Value: 1298
-  Exists: 1
---- !u!114 &4352178653523182207
-=======
-=======
->>>>>>> Sara
-  - key: event:/Laugther/Girl
-    index: 8
-  - key: event:/Windfan/Fan
-    index: 9
-<<<<<<< HEAD
---- !u!114 &208826736439306529
->>>>>>> EngineerBranch
-=======
---- !u!114 &3108681169505842684
->>>>>>> Sara
+--- !u!114 &8370794965651090952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -751,7 +401,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
   m_Name: event:/Fireflies/Crickets
   m_EditorClassIdentifier: 
   Path: event:/Fireflies/Crickets
@@ -761,11 +410,7 @@ MonoBehaviour:
     Data3: 1305690258
     Data4: 993392413
   Banks:
-<<<<<<< HEAD
-  - {fileID: -5802861030148214490}
-=======
-  - {fileID: 6640317543702950334}
->>>>>>> EngineerBranch
+  - {fileID: 987136428346796807}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -773,222 +418,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13556
-<<<<<<< HEAD
---- !u!114 &4483662211922608721
-=======
---- !u!114 &2618474502726994782
->>>>>>> EngineerBranch
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-<<<<<<< HEAD
-=======
->>>>>>> Sara
-  m_Name: event:/Music/Music Map 1
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music Map 1
-  Guid:
-    Data1: -402801136
-    Data2: 1322775616
-    Data3: -117956701
-    Data4: -1138762609
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -5802861030148214490}
-  IsStream: 1
-  Is3D: 0
-=======
-  m_Name: event:/Flower/Flower interaction
-  m_EditorClassIdentifier: 
-  Path: event:/Flower/Flower interaction
-  Guid:
-    Data1: 853153919
-    Data2: 1098927833
-    Data3: 1342454913
-    Data4: -1518177116
-  Banks:
-  - {fileID: 6640317543702950334}
-  IsStream: 0
-  Is3D: 1
->>>>>>> EngineerBranch
-=======
-  - {fileID: -4988298600685920608}
-  IsStream: 1
-  Is3D: 0
->>>>>>> Sara
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Length: 85394
-=======
-  Length: 2000
---- !u!114 &4524884754126553409
-=======
-  Length: 85394
---- !u!114 &3859392626196063866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Laugther/Guy
-  m_EditorClassIdentifier: 
-  Path: event:/Laugther/Guy
-  Guid:
-    Data1: 1663709816
-    Data2: 1102141697
-    Data3: 382141576
-    Data4: 1965294174
-  Banks:
-  - {fileID: -4988298600685920608}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4040
---- !u!114 &4166721250890378843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Windfan/Fan
-  m_EditorClassIdentifier: 
-  Path: event:/Windfan/Fan
-  Guid:
-    Data1: -688242948
-    Data2: 1270624132
-    Data3: -194567548
-    Data4: -267332089
-  Banks:
-  - {fileID: -4988298600685920608}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2308
---- !u!114 &5380853930182892869
->>>>>>> Sara
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Wind/Winds
-  m_EditorClassIdentifier: 
-  Path: event:/Wind/Winds
-  Guid:
-    Data1: 1488192040
-    Data2: 1340099506
-    Data3: 362333315
-    Data4: -2021749059
-  Banks:
-<<<<<<< HEAD
-  - {fileID: 6640317543702950334}
-=======
-  - {fileID: -4988298600685920608}
->>>>>>> Sara
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6800
-<<<<<<< HEAD
---- !u!114 &6167911376370567170
-=======
---- !u!114 &8258779611945344535
->>>>>>> Sara
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3975783923
-    data2: 4203251307
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Path
-  Exists: 1
---- !u!114 &6640317543702950334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/fmodproject/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638863773414207329
-  FileSizes:
-  - Name: Desktop
-    Value: 2682144
-  Exists: 1
->>>>>>> EngineerBranch
-=======
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Fireflies/Beating wings
-  m_EditorClassIdentifier: 
-  Path: event:/Fireflies/Beating wings
-  Guid:
-    Data1: 1367249245
-    Data2: 1275341098
-    Data3: -1890132596
-    Data4: -1994149113
-  Banks:
-  - {fileID: -4988298600685920608}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7000
->>>>>>> Sara
