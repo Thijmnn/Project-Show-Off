@@ -242,10 +242,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 232475001056189152}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d775a8c9d7404241926d76d38e781a6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3021905139527554947}
   m_SourcePrefab: {fileID: 100100000, guid: 8d775a8c9d7404241926d76d38e781a6, type: 3}
 --- !u!137 &4045859101257328214 stripped
 SkinnedMeshRenderer:
@@ -304,9 +300,9 @@ MonoBehaviour:
   _playerMovement: {fileID: 0}
   BlowrangeColl: {fileID: 0}
   _blowScript: {fileID: 0}
+  BoostGiven: 0
   trail: {fileID: 8044115511855402465}
   matRenderer: {fileID: 4045859101257328214}
-  _playerRenderer: {fileID: 0}
   matRenderer2: {fileID: 7319867160512584282}
   GiveRange:
     m_PersistentCalls:
@@ -356,37 +352,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 11.142675, y: 1, z: 11.114794}
   m_Center: {x: -0.027557664, y: 0, z: 0.011352063}
---- !u!114 &3021905139527554947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5212898002869505214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -431021043
-      Data2: 1326734555
-      Data3: 2093595567
-      Data4: -1784690883
-    Path: event:/Animals/Hedgehog/Hedgehog Sniffing
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 3.02
-  OverrideMaxDistance: 6.91
 --- !u!137 &7319867160512584282 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -6844377785242604619, guid: 8d775a8c9d7404241926d76d38e781a6,

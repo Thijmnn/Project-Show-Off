@@ -53,7 +53,6 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("BIGGER");
         if (collision.gameObject.GetComponent<BubbleBehaviour>())
         {
             _bubbleBehaviour = collision.gameObject.GetComponent<BubbleBehaviour>();
