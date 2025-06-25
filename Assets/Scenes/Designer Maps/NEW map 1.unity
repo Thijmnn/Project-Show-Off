@@ -1137,6 +1137,69 @@ Transform:
   - {fileID: 1249009672}
   m_Father: {fileID: 831557052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &36885905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36885906}
+  - component: {fileID: 36885907}
+  m_Layer: 0
+  m_Name: Laughter Girl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &36885906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36885905}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1742325, y: 4.834781, z: -10.052717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36885907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36885905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1618423243
+      Data2: 1172343726
+      Data3: -864611954
+      Data4: 642067777
+    Path: event:/Laugther/Girl
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &39868138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3045,6 +3108,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 604264301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127466820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1461115793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &127466826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127466820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 63319636
+      Data2: 1161197686
+      Data3: -356450411
+      Data4: 1284871634
+    Path: event:/Animals/Hedgehog/Hedgehog Sniffing
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &127765273
 GameObject:
   m_ObjectHideFlags: 0
@@ -18853,8 +18953,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 10.1
-  OverrideMaxDistance: 26
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 40
 --- !u!1 &728325817
 GameObject:
   m_ObjectHideFlags: 0
@@ -21413,6 +21513,69 @@ Transform:
   m_Children:
   - {fileID: 516081840}
   m_Father: {fileID: 1654532799}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &807108082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807108084}
+  - component: {fileID: 807108083}
+  m_Layer: 0
+  m_Name: Laughter Guy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &807108083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807108082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1663709816
+      Data2: 1102141697
+      Data3: 382141576
+      Data4: 1965294174
+    Path: event:/Laugther/Guy
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &807108084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807108082}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1742325, y: 4.8347816, z: -10.052717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &810480001
 PrefabInstance:
@@ -43640,12 +43803,16 @@ PrefabInstance:
     - target: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 127466826}
   m_SourcePrefab: {fileID: 100100000, guid: 19f868558a0930a42bae1b48e3390c4d, type: 3}
 --- !u!1 &1466138395
 GameObject:
@@ -44593,8 +44760,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 10.1
-  OverrideMaxDistance: 26
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 40
 --- !u!114 &1516276927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64513,3 +64680,5 @@ SceneRoots:
   - {fileID: 1461115793}
   - {fileID: 2113332685}
   - {fileID: 1947967905}
+  - {fileID: 807108084}
+  - {fileID: 36885906}

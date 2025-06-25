@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{cc690dd3-92dd-4b36-ad2e-d1de01819137}">
+		<property name="name">
+			<value>BunnyFrog hop</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a7d61f3c-7dee-49d7-987c-6bb70024d486}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{dd1da300-6f85-47b7-9882-1ceea2eb3b5a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{dd1da300-6f85-47b7-9882-1ceea2eb3b5a}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Grass</value>
+			<value>Path</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
