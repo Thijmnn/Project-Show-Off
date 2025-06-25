@@ -42,8 +42,7 @@ public class SpawnManager : MonoBehaviour
 
         
     }
-
-    public void OnPlayerJoined(PlayerInput newPlayer)
+    void OnPlayerJoined(PlayerInput newPlayer)
     {
         foreach (var player in FindObjectsOfType<PlayerInput>())
         {
