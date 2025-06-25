@@ -9,21 +9,27 @@ public class optionsScript : MonoBehaviour
 
     public UnityEvent optionsSwitch;
     public InputActionReference menu;
+    private PlayerInput playerInput;
 
+    //public UnityEvent PopUpShowOne;
+    //public UnityEvent PopUpShowTwo;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        playerInput = gameObject.GetComponentInParent<PlayerInput>();
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerInput[] playerInputs = FindObjectsOfType<PlayerInput>();
-
-        foreach (PlayerInput playerInput in playerInputs)
+        if(playerInput.actions["Menu"].triggered)
         {
-            if (playerInput.actions["Menu"].triggered)
-            {
-                StartCoroutine(SwitchScreen());
-            }
-
+            StartCoroutine(SwitchScreen());
         }
+
         //if(Input.GetKey(KeyCode.O))
         //{
         //    PopUpShowOne.Invoke();

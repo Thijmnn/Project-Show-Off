@@ -135,11 +135,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-<<<<<<< HEAD
   m_CollisionDetection: 0
-=======
-  m_CollisionDetection: 2
->>>>>>> EngineerBranch
 --- !u!114 &1706166978595667290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,11 +170,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -795795562
-      Data2: 1222149474
-      Data3: -165590086
-      Data4: -1611873800
-    Path: event:/Bubble/Bubble Floating
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -188,8 +184,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!114 &4968514086592683335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,11 +201,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 169558360
-      Data2: 1259368088
-      Data3: 505136307
-      Data4: 1051299006
-    Path: event:/Bubble/Bubble Merge
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -219,5 +215,5 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
