@@ -56,16 +56,22 @@ public class BlowingScript : MonoBehaviour
         RemoveBubble(other.gameObject);
     }
 
-    private void Update()
+ /*   private void Update()
     {
         BlowBubbles();
 
 
         Blowing();
 
+    }*/
+
+    private void FixedUpdate()
+    {
+        BlowBubbles();
+
+
+        Blowing();
     }
-
-
     private void Blowing()
     {
         if (fireEnabled && bubblesInTrigger.Count > 0)
