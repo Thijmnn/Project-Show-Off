@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7000
+--- !u!114 &-4648710991956080539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music Map 2
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music Map 2
+  Guid:
+    Data1: -1022984504
+    Data2: 1210486294
+    Data3: -532196431
+    Data4: -985326008
+  Banks:
+  - {fileID: 7221105110535279140}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85394
 --- !u!114 &-4373498093654237496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +246,7 @@ MonoBehaviour:
   - {fileID: -1335246386623676212}
   - {fileID: 5504517617941232617}
   - {fileID: -3845424173083122036}
+  - {fileID: -4648710991956080539}
   EditorParameters:
   - {fileID: -2304317666071428620}
   MasterBanks:
@@ -226,7 +254,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 8630848436635811500}
   cacheVersion: 131848
-  cacheTime: 638864572793566891
+  cacheTime: 638864612233309967
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -256,6 +284,8 @@ MonoBehaviour:
     index: 12
   - key: event:/Animals/Frog croak
     index: 13
+  - key: event:/Music/Music Map 2
+    index: 14
 --- !u!114 &367112633551527859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,10 +516,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638864572793556883
+  lastModified: 638864612233284888
   FileSizes:
   - Name: Desktop
-    Value: 2803520
+    Value: 3831584
   Exists: 1
 --- !u!114 &8439461747578108943
 MonoBehaviour:
@@ -533,8 +563,8 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638864572793566891
+  lastModified: 638864612233309967
   FileSizes:
   - Name: Desktop
-    Value: 1572
+    Value: 1616
   Exists: 1
