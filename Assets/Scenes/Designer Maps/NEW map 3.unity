@@ -39538,87 +39538,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268144924}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1269319108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1269319109}
-  - component: {fileID: 1269319110}
-  - component: {fileID: 1269319111}
-  m_Layer: 0
-  m_Name: Bubble Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1269319109
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269319108}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.8, y: 8.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1269319110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269319108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47985ec048e6491418e5eaedca2f3881, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves:
-  - bubbles:
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 8263882178787220522, guid: 14a5e56399a085049b343b490d4677fd, type: 3}
-    - {fileID: 63367533347611299, guid: 1119cd9beff5b494ea8781eff47461da, type: 3}
-    - {fileID: 4911683638924491058, guid: a61feeecf72b61847b687c8ffb55081b, type: 3}
-    - {fileID: 4911683638924491058, guid: a61feeecf72b61847b687c8ffb55081b, type: 3}
-    overlap: 60
-  spawnAreas:
-  - {fileID: 1269319111}
-  bubblesLeft: 0
-  bubbleHeight: -2
---- !u!65 &1269319111
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269319108}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 120, y: 1, z: 65}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1271173146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62442,6 +62361,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1647316344}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1651262631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651262634}
+  - component: {fileID: 1651262633}
+  - component: {fileID: 1651262632}
+  m_Layer: 0
+  m_Name: Bubble Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1651262632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651262631}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 95, y: 1, z: 50}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1651262633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651262631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47985ec048e6491418e5eaedca2f3881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - bubbles:
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 6202961863862777065, guid: a296488da6b26804fb815bee32d98a6a, type: 3}
+    - {fileID: 7376581372373475310, guid: 322092e318adce042bed6d1e5622360d, type: 3}
+    - {fileID: 4585617460495171723, guid: 604116f5181f78842addd9c5252d32cd, type: 3}
+    overlap: 60
+  spawnAreas:
+  - {fileID: 1651262632}
+  bubblesLeft: 0
+  bubbleHeight: 1.5
+--- !u!4 &1651262634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651262631}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1654903827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76715,7 +76715,7 @@ SceneRoots:
   - {fileID: 1127767883}
   - {fileID: 1236441395}
   - {fileID: 1163173284}
-  - {fileID: 1269319109}
+  - {fileID: 1651262634}
   - {fileID: 1959984108}
   - {fileID: 134107592}
   - {fileID: 1145901776}
