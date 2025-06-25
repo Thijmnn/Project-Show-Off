@@ -12,6 +12,7 @@ public class BubbleSpawner : MonoBehaviour
     public static BubbleSpawner Instance { get; private set; }
 
     public float bubbleHeight;
+
     private void Awake()
     {
         if (Instance == null)
