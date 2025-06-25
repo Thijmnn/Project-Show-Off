@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,16 +7,15 @@ public class PushBubbles : MonoBehaviour
 
     void Update()
     {
-        if (bubbles.Count > 0)
-        {
-            foreach (var bubble in bubbles)
-            {
-                Rigidbody rb = bubble.GetComponent<Rigidbody>();
+        // Remove any destroyed (null) GameObjects from the list
+        bubbles.RemoveAll(bubble => bubble == null);
 
-                if(rb != null)
-                {
-                    rb.AddForce(transform.forward);
-                }
+        foreach (var bubble in bubbles)
+        {
+            Rigidbody rb = bubble.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.AddForce(transform.forward);
             }
         }
     }
@@ -26,15 +24,13 @@ public class PushBubbles : MonoBehaviour
     {
         if (other.GetComponent<BubbleBehaviour>())
         {
-            bubbles.Add(other.gameObject);
+            if (!bubbles.Contains(other.gameObject)) // Prevent duplicates
+                bubbles.Add(other.gameObject);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (bubbles.Contains(other.gameObject))
-        {
-            bubbles.Remove(other.gameObject);
-        }
+        bubbles.Remove(other.gameObject);
     }
 }
