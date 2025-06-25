@@ -66,6 +66,69 @@ MonoBehaviour:
       Data4: 580217144
     Path: event:/Windfan/Wind Partice
   animator: {fileID: 4881556883046248918}
+--- !u!1 &8747086401017806398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6714969050262580467}
+  - component: {fileID: 8107865397614235071}
+  m_Layer: 0
+  m_Name: Laughter Guy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6714969050262580467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747086401017806398}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.2912674, y: 2.1081145, z: -17.812683}
+  m_LocalScale: {x: 0.7436603, y: 0.7436603, z: 0.7436603}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8836559297676035758}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8107865397614235071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747086401017806398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1663709816
+      Data2: 1102141697
+      Data3: 382141576
+      Data4: 1965294174
+    Path: event:/Laugther/Guy
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &9019437512931320133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,11 +137,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -9189344394135369346, guid: 0eb7681e5ba1b3148a8faf93566171b8,
-        type: 3}
-      propertyPath: m_Materials.Array.data[3]
-      value: 
-      objectReference: {fileID: 2100000, guid: e4901e2e3dc2f4d4a8b21d62414de203, type: 2}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -97,17 +155,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.94
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.55
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.53
+      value: 13.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
@@ -144,11 +202,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5184124182530455748, guid: 0eb7681e5ba1b3148a8faf93566171b8,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a46653e607f803f45a574c182e2827b7, type: 2}
     - target: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       propertyPath: m_Name
@@ -205,6 +258,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       insertIndex: 0
+      addedObject: {fileID: 6714969050262580467}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
+        type: 3}
+      insertIndex: 1
       addedObject: {fileID: 684328285695840477}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
@@ -281,7 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
   blowMulti: 15
-  soundVortex: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
+  soundVortex: {fileID: 5491109336980518946, guid: af274268aa3d74f4c96a1a9ee126f33e,
     type: 3}
   canSprint: 0
   playerSounds: {fileID: 6149346075098096536}
