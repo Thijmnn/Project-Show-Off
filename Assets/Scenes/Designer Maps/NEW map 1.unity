@@ -1137,6 +1137,69 @@ Transform:
   - {fileID: 1249009672}
   m_Father: {fileID: 831557052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &36885905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36885906}
+  - component: {fileID: 36885907}
+  m_Layer: 0
+  m_Name: Laughter Girl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &36885906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36885905}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1742325, y: 4.834781, z: -10.052717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36885907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36885905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1618423243
+      Data2: 1172343726
+      Data3: -864611954
+      Data4: 642067777
+    Path: event:/Laugther/Girl
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &39868138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3045,6 +3108,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 604264301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127466820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1461115793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &127466826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127466820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 63319636
+      Data2: 1161197686
+      Data3: -356450411
+      Data4: 1284871634
+    Path: event:/Animals/Hedgehog/Hedgehog Sniffing
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &127765273
 GameObject:
   m_ObjectHideFlags: 0
@@ -18853,8 +18953,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 10.1
-  OverrideMaxDistance: 26
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 40
 --- !u!1 &728325817
 GameObject:
   m_ObjectHideFlags: 0
@@ -21413,6 +21513,69 @@ Transform:
   m_Children:
   - {fileID: 516081840}
   m_Father: {fileID: 1654532799}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &807108082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807108084}
+  - component: {fileID: 807108083}
+  m_Layer: 0
+  m_Name: Laughter Guy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &807108083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807108082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1663709816
+      Data2: 1102141697
+      Data3: 382141576
+      Data4: 1965294174
+    Path: event:/Laugther/Guy
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &807108084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807108082}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1742325, y: 4.8347816, z: -10.052717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &810480001
 PrefabInstance:
@@ -38536,87 +38699,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 14993932}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1269319108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1269319109}
-  - component: {fileID: 1269319110}
-  - component: {fileID: 1269319111}
-  m_Layer: 0
-  m_Name: Bubble Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1269319109
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269319108}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1269319110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269319108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47985ec048e6491418e5eaedca2f3881, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves:
-  - bubbles:
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
-    - {fileID: 8263882178787220522, guid: 14a5e56399a085049b343b490d4677fd, type: 3}
-    - {fileID: 63367533347611299, guid: 1119cd9beff5b494ea8781eff47461da, type: 3}
-    - {fileID: 4911683638924491058, guid: a61feeecf72b61847b687c8ffb55081b, type: 3}
-    - {fileID: 4911683638924491058, guid: a61feeecf72b61847b687c8ffb55081b, type: 3}
-    overlap: 60
-  spawnAreas:
-  - {fileID: 1269319111}
-  bubblesLeft: 0
-  bubbleHeight: 1.5
---- !u!65 &1269319111
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269319108}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 95, y: 1, z: 50}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1275002950
 GameObject:
   m_ObjectHideFlags: 0
@@ -43640,12 +43722,16 @@ PrefabInstance:
     - target: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 127466826}
   m_SourcePrefab: {fileID: 100100000, guid: 19f868558a0930a42bae1b48e3390c4d, type: 3}
 --- !u!1 &1466138395
 GameObject:
@@ -44227,6 +44313,87 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48ccc7a6f733e04ba85d453a1f1a10c, type: 3}
+--- !u!1 &1498566930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498566933}
+  - component: {fileID: 1498566932}
+  - component: {fileID: 1498566931}
+  m_Layer: 0
+  m_Name: Bubble Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1498566931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498566930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 95, y: 1, z: 50}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1498566932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498566930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47985ec048e6491418e5eaedca2f3881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - bubbles:
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 4454004007046900474, guid: 8561dda8bcfb0614f91b09c1a724714d, type: 3}
+    - {fileID: 6202961863862777065, guid: a296488da6b26804fb815bee32d98a6a, type: 3}
+    - {fileID: 7376581372373475310, guid: 322092e318adce042bed6d1e5622360d, type: 3}
+    - {fileID: 4585617460495171723, guid: 604116f5181f78842addd9c5252d32cd, type: 3}
+    overlap: 60
+  spawnAreas:
+  - {fileID: 1498566931}
+  bubblesLeft: 0
+  bubbleHeight: 1.5
+--- !u!4 &1498566933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498566930}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498751812
 GameObject:
   m_ObjectHideFlags: 0
@@ -44593,8 +44760,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 10.1
-  OverrideMaxDistance: 26
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 40
 --- !u!114 &1516276927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64491,7 +64658,7 @@ SceneRoots:
   - {fileID: 1127767883}
   - {fileID: 659130560}
   - {fileID: 245473243}
-  - {fileID: 1269319109}
+  - {fileID: 1498566933}
   - {fileID: 1959984108}
   - {fileID: 584780247}
   - {fileID: 134107592}
@@ -64513,3 +64680,5 @@ SceneRoots:
   - {fileID: 1461115793}
   - {fileID: 2113332685}
   - {fileID: 1947967905}
+  - {fileID: 807108084}
+  - {fileID: 36885906}
