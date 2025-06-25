@@ -30,6 +30,8 @@ public class optionsScript : MonoBehaviour
             StartCoroutine(SwitchScreen());
         }
 
+
+        PlayerInput[] playerInputs = FindObjectsOfType<PlayerInput>()
         //if(Input.GetKey(KeyCode.O))
         //{
         //    PopUpShowOne.Invoke();
