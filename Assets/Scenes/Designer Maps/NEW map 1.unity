@@ -3108,43 +3108,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 604264301}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &127466820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1461115793}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &127466826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127466820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 63319636
-      Data2: 1161197686
-      Data3: -356450411
-      Data4: 1284871634
-    Path: event:/Animals/Hedgehog/Hedgehog Sniffing
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &127765273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7662,6 +7625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TriggerOnce
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891857435416248944, guid: d75c7103ea9a0cd4a807dba200f3a498,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Flower/Flower interaction
       objectReference: {fileID: 0}
     - target: {fileID: 7465929727508108089, guid: d75c7103ea9a0cd4a807dba200f3a498,
         type: 3}
@@ -12653,6 +12621,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5891857435416248944, guid: d75c7103ea9a0cd4a807dba200f3a498,
+        type: 3}
+      propertyPath: TriggerOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891857435416248944, guid: d75c7103ea9a0cd4a807dba200f3a498,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Flower/Flower interaction
+      objectReference: {fileID: 0}
     - target: {fileID: 7465929727508108089, guid: d75c7103ea9a0cd4a807dba200f3a498,
         type: 3}
       propertyPath: m_Name
@@ -15564,6 +15542,87 @@ PrefabInstance:
       addedObject: {fileID: 174150930}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3483aac0a0dea54c8a2c674bf7ce43e, type: 3}
+--- !u!1 &631850131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631850134}
+  - component: {fileID: 631850133}
+  - component: {fileID: 631850132}
+  m_Layer: 3
+  m_Name: BubbleFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &631850132
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631850131}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &631850133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631850131}
+  m_Material: {fileID: 13400000, guid: 0da47067f25536e4284d32429f792cbe, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &631850134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631850131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 109.97, y: 1, z: 65.4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &632637622
 GameObject:
   m_ObjectHideFlags: 0
@@ -27394,7 +27453,22 @@ PrefabInstance:
     - target: {fileID: 631710648878714293, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 980093310612066519, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 980093310612066519, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 7.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 980093310612066519, guid: 4b5a036245ae4f741925d6cedc1a7e2b,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 2.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43667,7 +43741,7 @@ PrefabInstance:
     - target: {fileID: 4835810132918081028, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.70676
+      value: 8.36
       objectReference: {fileID: 0}
     - target: {fileID: 4835810132918081028, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
@@ -43677,7 +43751,7 @@ PrefabInstance:
     - target: {fileID: 4835810132918081028, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.519723
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 4835810132918081028, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
@@ -43722,16 +43796,12 @@ PrefabInstance:
     - target: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5212898002869505214, guid: 19f868558a0930a42bae1b48e3390c4d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 127466826}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f868558a0930a42bae1b48e3390c4d, type: 3}
 --- !u!1 &1466138395
 GameObject:
@@ -64682,3 +64752,4 @@ SceneRoots:
   - {fileID: 1947967905}
   - {fileID: 807108084}
   - {fileID: 36885906}
+  - {fileID: 631850134}
