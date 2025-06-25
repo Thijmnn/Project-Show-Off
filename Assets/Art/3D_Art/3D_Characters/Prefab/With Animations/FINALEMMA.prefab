@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &8484642618750813965
+=======
+--- !u!1 &5195774457239017448
+>>>>>>> EngineerBranch
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,6 +12,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 14807490553552168}
   - component: {fileID: 526832050291175742}
   m_Layer: 0
@@ -73,6 +78,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2437534494757565744}
   - component: {fileID: 6043171725377614764}
+=======
+  - component: {fileID: 5190607717955754118}
+  - component: {fileID: 9035968888777119047}
+>>>>>>> EngineerBranch
   m_Layer: 0
   m_Name: PlayerSounds (1)
   m_TagString: Untagged
@@ -80,28 +89,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &2437534494757565744
+=======
+--- !u!4 &5190607717955754118
+>>>>>>> EngineerBranch
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 8732382801725352244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.924362, y: -2.5323646, z: -1.4710177}
+=======
+  m_GameObject: {fileID: 5195774457239017448}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.311776, y: -2.5323646, z: 26.75433}
+>>>>>>> EngineerBranch
   m_LocalScale: {x: 0.7903888, y: 0.7903888, z: 0.7903888}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5033630321654865880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &6043171725377614764
+=======
+--- !u!114 &9035968888777119047
+>>>>>>> EngineerBranch
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 8732382801725352244}
+=======
+  m_GameObject: {fileID: 5195774457239017448}
+>>>>>>> EngineerBranch
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fa89ceb90ff0404b8ab68f2fa6dfaa9, type: 3}
@@ -129,7 +157,11 @@ MonoBehaviour:
       Data4: 580217144
     Path: event:/Windfan/Wind Partice
   animator: {fileID: 6745014114347631463}
+<<<<<<< HEAD
 --- !u!1001 &4060102365882528537
+=======
+--- !u!1001 &2453449878017958969
+>>>>>>> EngineerBranch
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -140,17 +172,29 @@ PrefabInstance:
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 4.7331142
+=======
+      value: 36.65167
+>>>>>>> EngineerBranch
       objectReference: {fileID: 0}
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: -13.447
+=======
+      value: -41.002945
+>>>>>>> EngineerBranch
       objectReference: {fileID: 0}
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: 12.096895
+=======
+      value: 8.719948
+>>>>>>> EngineerBranch
       objectReference: {fileID: 0}
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
@@ -160,17 +204,29 @@ PrefabInstance:
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalRotation.x
+<<<<<<< HEAD
       value: -0
+=======
+      value: 0
+>>>>>>> EngineerBranch
       objectReference: {fileID: 0}
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
       value: -0
+=======
+      value: 0
+>>>>>>> EngineerBranch
       objectReference: {fileID: 0}
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
       value: -0
+=======
+      value: 0
+>>>>>>> EngineerBranch
       objectReference: {fileID: 0}
     - target: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
@@ -187,6 +243,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 2321528331233601416, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -217,6 +274,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -9.877
       objectReference: {fileID: 0}
+=======
+>>>>>>> EngineerBranch
     - target: {fileID: 5491109336980518946, guid: af274268aa3d74f4c96a1a9ee126f33e,
         type: 3}
       propertyPath: m_Name
@@ -227,11 +286,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af274268aa3d74f4c96a1a9ee126f33e, type: 3}
+<<<<<<< HEAD
 --- !u!4 &3925097931414861441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
     type: 3}
   m_PrefabInstance: {fileID: 4060102365882528537}
+=======
+--- !u!4 &3183123514227990945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1018057963324884376, guid: af274268aa3d74f4c96a1a9ee126f33e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2453449878017958969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7942152313008921627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5491109336980518946, guid: af274268aa3d74f4c96a1a9ee126f33e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2453449878017958969}
+>>>>>>> EngineerBranch
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4778800132703582259
 PrefabInstance:
@@ -347,6 +420,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e870ab965b6984d41835d0a30d9cbb98,
         type: 3}
       insertIndex: 0
+<<<<<<< HEAD
       addedObject: {fileID: 14807490553552168}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e870ab965b6984d41835d0a30d9cbb98,
         type: 3}
@@ -356,6 +430,13 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3925097931414861441}
+=======
+      addedObject: {fileID: 5190607717955754118}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e870ab965b6984d41835d0a30d9cbb98,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3183123514227990945}
+>>>>>>> EngineerBranch
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e870ab965b6984d41835d0a30d9cbb98,
         type: 3}
@@ -571,7 +652,7 @@ MonoBehaviour:
   sprintMulti: 2
   newSpeed: 0
   smoothTime: 0.01
-  playerSounds: {fileID: 0}
+  playerSounds: {fileID: 9035968888777119047}
 --- !u!54 &1914935078233231161
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -654,7 +735,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 1515760308967013342, guid: 7bb456df6b3e7a346934aa3d1a71199a, type: 3}
   blowMulti: 7
-  soundVortex: {fileID: 7243178704118417403, guid: a30322828c44ed640afeb901f8f4602b,
-    type: 3}
+  soundVortex: {fileID: 7942152313008921627}
   canSprint: 0
-  playerSounds: {fileID: 0}
+  playerSounds: {fileID: 9035968888777119047}
