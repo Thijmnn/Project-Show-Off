@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638863767386187173
+  lastModified: 638864464309247078
   FileSizes:
   - Name: Desktop
-    Value: 2682144
+    Value: 2797728
   Exists: 1
 --- !u!114 &-5748041721640981533
 MonoBehaviour:
@@ -74,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 60577
+--- !u!114 &-5157141561378673963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animals/Hedgehog Sniffing
+  m_EditorClassIdentifier: 
+  Path: event:/Animals/Hedgehog Sniffing
+  Guid:
+    Data1: -431021043
+    Data2: 1326734555
+    Data3: 2093595567
+    Data4: -1784690883
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-4591755367283070840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +209,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6800
+--- !u!114 &-1646791939408505013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/Bubble Merge
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/Bubble Merge
+  Guid:
+    Data1: 169558360
+    Data2: 1259368088
+    Data3: 505136307
+    Data4: 1051299006
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170
 --- !u!114 &-1592894781406519089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +263,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2308
+--- !u!114 &-1498996372658698125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animals/Hedgehog/Hedgehog Sniffing
+  m_EditorClassIdentifier: 
+  Path: event:/Animals/Hedgehog/Hedgehog Sniffing
+  Guid:
+    Data1: 63319636
+    Data2: 1161197686
+    Data3: -356450411
+    Data4: 1284871634
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-817284596588161539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +370,10 @@ MonoBehaviour:
   - {fileID: -1592894781406519089}
   - {fileID: -7862391473521847791}
   - {fileID: -144264625710108822}
+  - {fileID: -1646791939408505013}
+  - {fileID: 1787608560108243146}
+  - {fileID: -1498996372658698125}
+  - {fileID: -5157141561378673963}
   EditorParameters:
   - {fileID: 1694370919749185834}
   MasterBanks:
@@ -296,7 +381,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3892526754667718646}
   cacheVersion: 131848
-  cacheTime: 638863767386197178
+  cacheTime: 638864464309262113
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -318,6 +403,14 @@ MonoBehaviour:
     index: 8
   - key: event:/Laugther/Girl
     index: 9
+  - key: event:/Bubble/Bubble Merge
+    index: 10
+  - key: event:/Bubble/Bubble Floating
+    index: 11
+  - key: event:/Animals/Hedgehog/Hedgehog Sniffing
+    index: 12
+  - key: event:/Animals/Hedgehog Sniffing
+    index: 13
 --- !u!114 &1694370919749185834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +437,33 @@ MonoBehaviour:
   - Grass
   - Path
   Exists: 1
+--- !u!114 &1787608560108243146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/Bubble Floating
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/Bubble Floating
+  Guid:
+    Data1: -795795562
+    Data2: 1222149474
+    Data3: -165590086
+    Data4: -1611873800
+  Banks:
+  - {fileID: -5802861030148214490}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2220
 --- !u!114 &3892526754667718646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,10 +479,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638863767386197178
+  lastModified: 638864464309262113
   FileSizes:
   - Name: Desktop
-    Value: 1298
+    Value: 1572
   Exists: 1
 --- !u!114 &4352178653523182207
 MonoBehaviour:
