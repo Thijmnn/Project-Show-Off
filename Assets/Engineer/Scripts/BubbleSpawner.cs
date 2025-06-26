@@ -9,9 +9,12 @@ public class BubbleSpawner : MonoBehaviour
     int currentWaveIndex;
     public int bubblesLeft;
 
+    BlowingScript[] blowingScripts;
     public static BubbleSpawner Instance { get; private set; }
 
     public float bubbleHeight;
+
+    public GameObject endSceneObjects;
     private void Awake()
     {
         if (Instance == null)
@@ -23,18 +26,35 @@ public class BubbleSpawner : MonoBehaviour
             Destroy(Instance);
         }
     }
+
+    private void FixedUpdate()
+    {
+        blowingScripts = FindObjectsOfType<BlowingScript>();
+    }
+
     void Update()
     {
         WaveSpawner();
 
         if(bubblesLeft == 1)
         {
+            endSceneObjects.SetActive(true);
             CutsceneTrigger.Instance.bubblepopCutscene = true;
             BubbleBehaviour lastBubble = FindObjectOfType<BubbleBehaviour>();
+            foreach (BlowingScript blower in blowingScripts)
+            {
+                blower.RemoveBubble(lastBubble.gameObject);
+            }
             Destroy(lastBubble.gameObject);
+            
             bubblesLeft = 0;
             currentWaveIndex++;
             print("you popped a bubble"); 
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))  // for example, press R to respawn
+        {
+            DebugRespawnFirstWave();
         }
     }
 
@@ -117,5 +137,12 @@ public class BubbleSpawner : MonoBehaviour
             "100 = 100% overlap 1 = 1% overlapped" +
             "CANT BE 0 !!!!")]
         public int overlap;
+    }
+
+    public void DebugRespawnFirstWave()
+    {
+        currentWaveIndex = 0;
+        bubblesLeft = waves[currentWaveIndex].bubbles.Length;
+        SpawnNextWave();
     }
 }
