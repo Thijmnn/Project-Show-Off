@@ -143,7 +143,7 @@ MonoBehaviour:
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://grass\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"190484729\" type=\"8\" value=\"10,10\" />\n 
     <presetinput identifier=\"$randomseed\" uid=\"1546159787\" type=\"4\" value=\"4510\"
-    />\n  <presetinput identifier=\"GrassAmount\" uid=\"1782797089\" type=\"0\" value=\"0\"
+    />\n  <presetinput identifier=\"GrassAmount\" uid=\"1782797089\" type=\"0\" value=\"0.149\"
     />\n  <presetinput identifier=\"ScaleFlower2\" uid=\"1782812155\" type=\"0\"
     value=\"6.99\" />\n  <presetinput identifier=\"mask_randomFlower2\" uid=\"1782813005\"
     type=\"0\" value=\"1\" />\n  <presetinput identifier=\"mask_randomFlower1\" uid=\"1782827956\"
@@ -233,7 +233,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 0
+        Data: 0.149
         NumericalDescription:
           DefaultValue: 0.27
           MinValue: 0

@@ -45,7 +45,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.9521222, b: 0.6933962, a: 1}
-  m_Intensity: 55.62
+  m_Intensity: 20
   m_Range: 4.6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 6657339696193611972}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6944385, y: 1.8553752, z: -1.4250486}
+  m_LocalPosition: {x: 2.6944385, y: 1.94, z: -1.4250486}
   m_LocalScale: {x: 0.46500632, y: 0.46500632, z: 0.46500632}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -163,7 +163,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.9521222, b: 0.6933962, a: 1}
-  m_Intensity: 62.3
+  m_Intensity: 2
   m_Range: 7.6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -247,7 +247,7 @@ PrefabInstance:
     - target: {fileID: 2436047494058551003, guid: 78e6b1a4ce8ffdb4bbf608ae80ff1867,
         type: 3}
       propertyPath: m_Name
-      value: LampPost Variant
+      value: LampPost with light
       objectReference: {fileID: 0}
     - target: {fileID: 3063930878710742113, guid: 78e6b1a4ce8ffdb4bbf608ae80ff1867,
         type: 3}
