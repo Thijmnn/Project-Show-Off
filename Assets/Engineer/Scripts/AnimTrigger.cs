@@ -14,5 +14,12 @@ public class AnimTrigger : MonoBehaviour
     public void OutroAnimStart()
     {
         animator.enabled = true;
+        BlowingScript[] blows = FindObjectsOfType<BlowingScript>();
+        foreach(BlowingScript b in blows)
+        {
+            b.transform.parent.gameObject.SetActive(false);
+        }
+
+        Camera.main.gameObject.SetActive(false);
     }
 }
