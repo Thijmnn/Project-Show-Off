@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
+        if(playerInput == null) { return; }
         _moveDirection = playerInput.actions["Movement"].ReadValue<Vector2>();
         if (rb.velocity != Vector3.zero)
         {
@@ -78,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void IncreaseSpeed()
     {
+        if (playerInput == null) { return; }
         if (playerInput.actions["Sprint"].inProgress && _blow.canSprint)
         {
             Vector3 movementDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y).normalized;

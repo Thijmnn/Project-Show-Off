@@ -29,6 +29,7 @@ public class BubbleBehaviour : MonoBehaviour
     {
         overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
+        _rb.WakeUp();
     }
 
     private void FixedUpdate()
@@ -53,7 +54,6 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("BIGGER");
         if (collision.gameObject.GetComponent<BubbleBehaviour>())
         {
             _bubbleBehaviour = collision.gameObject.GetComponent<BubbleBehaviour>();
