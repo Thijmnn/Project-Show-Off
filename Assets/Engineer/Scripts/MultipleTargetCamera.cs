@@ -41,7 +41,7 @@ public class MultipleTargetCamera : MonoBehaviour
             transforms = FindObjectsOfType<Transform>();
             foreach(Transform t in transforms)
             {
-                if (t.TryGetComponent<PlayerMovement>(out PlayerMovement _player))
+                if (t.TryGetComponent<BlowingScript>(out BlowingScript _player))
                 {
                     if (!targets.Contains(_player.gameObject.transform))
                     {

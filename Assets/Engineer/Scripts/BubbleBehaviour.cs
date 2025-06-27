@@ -29,6 +29,7 @@ public class BubbleBehaviour : MonoBehaviour
     {
         overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
+        _rb.WakeUp();
     }
 
     private void FixedUpdate()
