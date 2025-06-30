@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4515460458897944782
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Skybox_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 6ec98e0e2b7ac1448bbac668f4aed9c0,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SkyBoxSubshader_d34c7c173c584cf297ca29e493ea0349_Ground_1436440754_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 5dd51e8eb9efa3d4682ed6509cc2cfa8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyBoxSubshader_d34c7c173c584cf297ca29e493ea0349_Horizon_612574719_Texture2D:
+        m_Texture: {fileID: 2800000, guid: be7948e602e18a64cbe981aa239967db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyBoxSubshader_d34c7c173c584cf297ca29e493ea0349_SkyTexture_2798943809_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ac684b14eedaad54198c760d6e0a80c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyBoxSubshader_d34c7c173c584cf297ca29e493ea0349_Sky_2612393079_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ac684b14eedaad54198c760d6e0a80c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star1:
+        m_Texture: {fileID: 2800000, guid: 061d166aba54b314fa3264f0574794e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star2:
+        m_Texture: {fileID: 2800000, guid: 8695a95ee782a4a4493a5adc769d9ffe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star3_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star3_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star3_3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Star3_4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarSubshader2_6f3536405a274337b4b6be61e3919ddc_Star1_3669414556_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 8ca7a22c35d1c9243944c0a1956faf2d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarSubshader3_0796dc4b23c0484c918f65ffeff63936_Star1_3669414556_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 8e2a291d990436f4b8cd5a2366a18f4b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarSubshader3_c7b3edb11ae143f5a8eeb0d6f0f78a37_Star1_3669414556_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 8e2a291d990436f4b8cd5a2366a18f4b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarSubshader3_e6506f72833e434c86a35bc81363099c_Star1_3669414556_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 8ca7a22c35d1c9243944c0a1956faf2d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarSubshader3_ec81a376a8e7411187dd61b0027c3ae1_Star1_3669414556_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 8695a95ee782a4a4493a5adc769d9ffe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarSubshader_080e26020109451499dc9388d58f68dc_Star1_3669414556_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 061d166aba54b314fa3264f0574794e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
+    - _NadithBlend: 0.81
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ZenithBlend: 0.25
+    m_Colors:
+    - _HorizonColor: {r: 0.5566038, g: 0.252047, b: 0.252047, a: 0}
+    - _ScrollingStar1: {r: 0.05, g: 0.05, b: 0, a: 0}
+    - _ScrollingStar2: {r: 0.5, g: 0.7, b: 0, a: 0}
+    - _ScrollingStar3: {r: 0.2, g: 0.01, b: 0, a: 0}
+    - _SkyColor1: {r: 0.23514527, g: 0.123420276, b: 0.6084906, a: 0}
+    - _SkyColor2: {r: 0, g: 0, b: 0, a: 0}
+    - _Star1Color: {r: 1, g: 0.9094411, b: 0.57075465, a: 1}
+    - _Star2Color: {r: 1, g: 0.79716986, b: 0.937995, a: 1}
+    - _Star3Color: {r: 0.7960784, g: 0.897388, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &8828153053810807035
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
