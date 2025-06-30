@@ -3,7 +3,17 @@ guid: d6852cf0bf114e84caff16cc74b042d1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TeaddyBearStar
+    second: {fileID: 2100000, guid: 1251d7578b62d734aa2701114f64e4a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TeddyBear
+    second: {fileID: 2100000, guid: 98b0ab77819acc2478785ee7c47ba10a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,7 +43,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Teadybear_Idle
+      name: Teddybear_Idle
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 0
