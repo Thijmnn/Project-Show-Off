@@ -24,7 +24,7 @@ public class sceneFader : MonoBehaviour
 
         if (currentScene == totalScenes - 1)
         {
-            nextScene = 0; // back to the first scene
+            nextScene = 2; // back to the first scene
         }
         else
         {
