@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "PlayerControls1",
     "maps": [
         {
             "name": "MultiPlayerControlls",
@@ -58,6 +58,42 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "SecretButton1",
+                    "type": "Button",
+                    "id": "4d3a1316-be58-421b-90eb-8fdaf4703d36",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecretButton2",
+                    "type": "Button",
+                    "id": "fa8d50a2-4e90-4041-8ded-481780a2a943",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecretButton3",
+                    "type": "Button",
+                    "id": "4d5d2618-c09f-48aa-a3a5-d5b4ca4eefbe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SecretButton4",
+                    "type": "Button",
+                    "id": "efe228ab-bd2d-4b58-8f9a-52084de950eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -324,6 +360,50 @@
                     "action": "NavMenu",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "effe605d-9df0-4c3a-b85a-eb9ecf918aa8",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecretButton1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe15cb55-6b34-46b1-b077-c63578cf776e",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecretButton2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "08f2d6ce-b405-4ece-b987-e7921945c797",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecretButton3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f6087d1-96c4-41dd-9ae7-d65de5242084",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SecretButton4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

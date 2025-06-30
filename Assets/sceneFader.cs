@@ -31,7 +31,7 @@ public class sceneFader : MonoBehaviour
             nextScene = currentScene + 1;
         }
 
-        SceneManager.LoadScene(nextScene);
+        LoadSceneAtIndex(nextScene);
     }
 
     private void Update()
@@ -43,5 +43,10 @@ public class sceneFader : MonoBehaviour
         }
 
         
+    }
+
+    public void LoadSceneAtIndex(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }
