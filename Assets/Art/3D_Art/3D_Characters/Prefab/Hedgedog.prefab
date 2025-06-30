@@ -75,7 +75,10 @@ MonoBehaviour:
   _playerMovement: {fileID: 0}
   BlowrangeColl: {fileID: 0}
   _blowScript: {fileID: 0}
-  mesh: {fileID: 0}
+  trail: {fileID: 0}
+  matRenderer: {fileID: 0}
+  _playerRenderer: {fileID: 0}
+  matRenderer2: {fileID: 0}
   GiveRange:
     m_PersistentCalls:
       m_Calls: []
@@ -250,9 +253,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2836138686270257080, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836138686270257080, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dcb3373c316e2aa45a8d37671ba40e8f, type: 2}
+    - target: {fileID: 2836138686270257080, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562d44b8904d6ff4687c749890eb6afc, type: 2}
     - target: {fileID: 4523417332775516162, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -265,9 +278,19 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: dcb3373c316e2aa45a8d37671ba40e8f, type: 2}
     - target: {fileID: 7242966495195274256, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242966495195274256, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e10c3efff0a4c94eae232fe96374e2d, type: 2}
+    - target: {fileID: 7242966495195274256, guid: 366acf110680bfb49ac026df6f0aa86f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562d44b8904d6ff4687c749890eb6afc, type: 2}
     - target: {fileID: 7727560463788807382, guid: 366acf110680bfb49ac026df6f0aa86f,
         type: 3}
       propertyPath: m_Layer
