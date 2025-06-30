@@ -16,17 +16,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 80a4a721037cd9042afbc74eef450be4,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75251
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80a4a721037cd9042afbc74eef450be4,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75251
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80a4a721037cd9042afbc74eef450be4,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75251
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80a4a721037cd9042afbc74eef450be4,
         type: 3}
@@ -492,9 +492,9 @@ MonoBehaviour:
   _playerMovement: {fileID: 0}
   BlowrangeColl: {fileID: 0}
   _blowScript: {fileID: 0}
-  BoostGiven: 0
   trail: {fileID: 337757817594469442}
   matRenderer: {fileID: 1097622419483907254}
+  _playerRenderer: {fileID: 0}
   GiveSpeed:
     m_PersistentCalls:
       m_Calls: []

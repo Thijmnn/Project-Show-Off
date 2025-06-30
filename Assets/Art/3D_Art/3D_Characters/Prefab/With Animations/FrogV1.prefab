@@ -96,17 +96,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1a8b2d1878eff854e9e3a263e56c22e0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5669
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1a8b2d1878eff854e9e3a263e56c22e0,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5669
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1a8b2d1878eff854e9e3a263e56c22e0,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5669
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1a8b2d1878eff854e9e3a263e56c22e0,
         type: 3}
@@ -487,9 +487,9 @@ MonoBehaviour:
   _playerMovement: {fileID: 0}
   BlowrangeColl: {fileID: 0}
   _blowScript: {fileID: 0}
-  BoostGiven: 0
   trail: {fileID: 7591773294740649112}
   matRenderer: {fileID: 699639537699141827}
+  _playerRenderer: {fileID: 0}
   GiveMagnet:
     m_PersistentCalls:
       m_Calls: []
