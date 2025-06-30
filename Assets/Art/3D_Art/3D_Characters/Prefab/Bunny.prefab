@@ -97,9 +97,7 @@ MonoBehaviour:
   _playerMovement: {fileID: 0}
   BlowrangeColl: {fileID: 0}
   _blowScript: {fileID: 0}
-  trail: {fileID: 0}
-  matRenderer: {fileID: 0}
-  _playerRenderer: {fileID: 0}
+  mesh: {fileID: 0}
   GiveSpeed:
     m_PersistentCalls:
       m_Calls: []
@@ -309,19 +307,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5089281789765897105, guid: 51567c998457edb4aa48371a72cde302,
         type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5089281789765897105, guid: 51567c998457edb4aa48371a72cde302,
-        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b3b33137ca3e9d141b1dbf36ee1a2356, type: 2}
-    - target: {fileID: 5089281789765897105, guid: 51567c998457edb4aa48371a72cde302,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1f271edbec3c56847b1e6d75d6dc179e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
