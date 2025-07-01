@@ -122,7 +122,7 @@ public class BubbleBehaviour : MonoBehaviour
         {
             foreach (Transform child in children)
             {
-                if (child != transform)
+                if (child != _other.transform)
                 {
                     child.gameObject.SetActive(false);
                 }
@@ -150,7 +150,7 @@ public class BubbleBehaviour : MonoBehaviour
         {
             foreach(Transform child in children)
             {
-                if(child != _other.transform)
+                if(child != transform)
                 {
                     child.gameObject.SetActive(false);
                 }
