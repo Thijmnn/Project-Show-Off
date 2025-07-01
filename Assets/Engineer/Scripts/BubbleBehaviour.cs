@@ -1,8 +1,5 @@
-using FMODUnity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -12,6 +9,7 @@ public class BubbleBehaviour : MonoBehaviour
     private BubbleBehaviour _bubbleBehaviour;
 
     Rigidbody _rb;
+    Collider _col;
 
 
     [HideInInspector] public bool canDestroy;
@@ -25,77 +23,35 @@ public class BubbleBehaviour : MonoBehaviour
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
-        _rb.WakeUp();
+        _col = GetComponent<Collider>();
     }
 
-    private void FixedUpdate()
+    private void OnTriggerStay(Collider other)
     {
-        blowingScripts = FindObjectsOfType<BlowingScript>();
-    }
-
-    public void Update()
-    {
-        _rb.drag = _rb.mass;
-        _rb.WakeUp();
-
-        if(_rb.velocity.magnitude > 0.1f)
+        if (other.GetComponent<BubbleBehaviour>())
         {
-            hoverEmitter.enabled = true;
+            _bubbleBehaviour = other.GetComponent<BubbleBehaviour>();
+            CheckOverlap(_bubbleBehaviour, other.gameObject);
         }
-        else if(_rb.velocity.magnitude < 0.1f)
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Wall"))
         {
-            hoverEmitter.enabled = false;
+            _col.isTrigger = false;
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if (collision.gameObject.GetComponent<BubbleBehaviour>())
+        if (other.CompareTag("Wall"))
         {
-            _bubbleBehaviour = collision.gameObject.GetComponent<BubbleBehaviour>();
-            if (collision.gameObject.transform.localScale.x > transform.localScale.x)
-            {
-                _bubbleBehaviour.canDestroy = true;
-                canDestroy = false;
-                SpawnAnimal();
-                if (canDestroy) { DestroyBubble(collision.gameObject); }
-
-            }
-            else if (transform.localScale.x > collision.gameObject.transform.localScale.x)
-            {
-                _bubbleBehaviour.canDestroy = false;
-                canDestroy = true;
-                SpawnAnimal();
-                if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
-
-            }
-            else if (collision.gameObject.transform.localScale.x == transform.localScale.x)
-            {
-                if (DestroySelf == _bubbleBehaviour.DestroySelf)
-                {
-
-                    RollRandom();
-
-                }
-                else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
-                {
-                    _bubbleBehaviour.canDestroy = true;
-                    canDestroy = false;
-                    SpawnAnimal();
-                    if (canDestroy) { DestroyBubble(collision.gameObject); }
-
-                }
-                else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
-                {
-                    _bubbleBehaviour.canDestroy = false;
-                    canDestroy = true;
-                    SpawnAnimal();
-                    if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
-
-                }
-            }
+            _col.isTrigger = true;
         }
     }
+
     private void RollRandom()
     {
         
@@ -115,7 +71,7 @@ public class BubbleBehaviour : MonoBehaviour
 
 
 
-    private void DestroyBubble(GameObject _other)
+    private void CheckOverlap(BubbleBehaviour _bubbleBehaviour, GameObject other)
     {
         Transform[] children = _other.GetComponentsInChildren<Transform>();
         if (children != null)
@@ -161,20 +117,79 @@ public class BubbleBehaviour : MonoBehaviour
         BubbleSpawner.Instance.bubblesLeft--;
         foreach (BlowingScript blower in blowingScripts)
         {
-            blower.RemoveBubble(_other);
+            if (other.transform.localScale.x > transform.localScale.x)
+            {
+                if (transform.localScale.x >= popThreshhold)
+                {
+                    Destroy(gameObject);
+                    Destroy(other);
+                    print("bubblePopped!");
+                }
+                else
+                {
+                    other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
+                    _rb.mass = transform.localScale.x;
+                    rig.AddForce(_rb.velocity);
+                    Destroy(gameObject);
+                }
+                
+            }
+            else if (transform.localScale.x > other.transform.localScale.x)
+            {
+                if (transform.localScale.x >= popThreshhold)
+                {
+                    Destroy(gameObject);
+                    Destroy(other);
+                    print("bubblePopped!");
+                }
+                else
+                { 
+                    transform.localScale = transform.localScale + (other.transform.localScale / 2);
+                    _rb.mass = transform.localScale.x;
+                    Destroy(other);
+                }
+                
+            }
+            else if (other.transform.localScale.x == transform.localScale.x)
+            {
+                if (DestroySelf == _bubbleBehaviour.DestroySelf)
+                {
+                    RollRandom();
+                }
+                else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
+                {
+                    
+                    if (transform.localScale.x >= popThreshhold)
+                    {
+                        Destroy(gameObject);
+                        Destroy(other);
+                        print("bubblePopped!");
+                    }
+                    else
+                    {
+                        rig.AddForce(_rb.velocity);
+                        other.transform.localScale = other.transform.localScale + (transform.localScale / 2);
+                        _rb.mass = transform.localScale.x;
+                        Destroy(gameObject);
+                    }
+                }
+                else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
+                {
+                    if (transform.localScale.x >= popThreshhold)
+                    {
+                        Destroy(other);
+                        Destroy(gameObject);
+                        print("bubblePopped!");
+                    }
+                    else
+                    {
+                        Destroy(other);
+                        transform.localScale = transform.localScale + (other.transform.localScale / 2);
+                        _rb.mass = transform.localScale.x;
+                    }
+                }
+            }
         }
-        mergeEmitter.Play();
-        Destroy(_other);
     }
 
-    private void SpawnAnimal()
-    {
-        if (animalSpawn != null) {
-            Instantiate(animalSpawn.transform, transform.position, Quaternion.identity);
-            animalSpawn = null;
-        }
-        
-    }
 }
-
-    
