@@ -68,10 +68,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638869125078747656
+  lastModified: 638869647546950145
   FileSizes:
   - Name: Desktop
-    Value: 1650
+    Value: 1750
   Exists: 1
 --- !u!114 &-8517994211106206148
 MonoBehaviour:
@@ -100,6 +100,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4040
+--- !u!114 &-8427994218395394410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Pop_hover_low
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Pop_hover_low
+  Guid:
+    Data1: 126949837
+    Data2: 1086485244
+    Data3: 258979485
+    Data4: -400820246
+  Banks:
+  - {fileID: -660021608293269213}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
 --- !u!114 &-8284470806416819936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,10 +330,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638869125078712402
+  lastModified: 638869647546929898
   FileSizes:
   - Name: Desktop
-    Value: 4992192
+    Value: 4998720
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -340,6 +367,8 @@ MonoBehaviour:
   - {fileID: -8517994211106206148}
   - {fileID: -9130153931008329669}
   - {fileID: 529571030129556518}
+  - {fileID: 4634537088465958467}
+  - {fileID: -8427994218395394410}
   EditorParameters:
   - {fileID: -9143746349323525055}
   MasterBanks:
@@ -347,7 +376,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8821014260760734906}
   cacheVersion: 131848
-  cacheTime: 638869125078747656
+  cacheTime: 638869647546950145
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -381,6 +410,10 @@ MonoBehaviour:
     index: 14
   - key: event:/Animals/Frog Croaks
     index: 15
+  - key: event:/UI/Pop_click_high
+    index: 16
+  - key: event:/UI/Pop_hover_low
+    index: 17
 --- !u!114 &11766895826662476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +550,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4634537088465958467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Pop_click_high
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Pop_click_high
+  Guid:
+    Data1: -756840620
+    Data2: 1271294592
+    Data3: -1722903367
+    Data4: -2128455379
+  Banks:
+  - {fileID: -660021608293269213}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
 --- !u!114 &5118651489849960926
 MonoBehaviour:
   m_ObjectHideFlags: 0
