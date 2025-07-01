@@ -13,9 +13,6 @@ public class BubbleBehaviour : MonoBehaviour
 
     Rigidbody _rb;
 
-    public int overlap;
-
-    private int overlapThreshold;
 
     [HideInInspector] public bool canDestroy;
 
@@ -27,7 +24,6 @@ public class BubbleBehaviour : MonoBehaviour
     public StudioEventEmitter mergeEmitter;
     private void Start()
     {
-        overlapThreshold = 100 / overlap;
         _rb = GetComponent<Rigidbody>();
         _rb.WakeUp();
     }
@@ -121,8 +117,20 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void DestroyBubble(GameObject _other)
     {
-        _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
-        _rb.mass = transform.localScale.x /2;
+        Transform[] children = _other.GetComponentsInChildren<Transform>();
+        if (children != null)
+        {
+            foreach (Transform child in children)
+            {
+                if (child != transform)
+                {
+                    child.gameObject.SetActive(false);
+                }
+            }
+        }
+
+        _other.transform.localScale = _other.transform.localScale + (transform.localScale / 3);
+        _rb.mass = transform.localScale.x /3;
         BubbleSpawner.Instance.bubblesLeft--;
         foreach(BlowingScript blower in blowingScripts)
         {
@@ -137,6 +145,17 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void DestroyOtherBubble(GameObject _other)
     {
+        Transform[] children = GetComponentsInChildren<Transform>();
+        if (children != null)
+        {
+            foreach(Transform child in children)
+            {
+                if(child != transform)
+                {
+                    child.gameObject.SetActive(false);
+                }
+            }
+        }
         transform.localScale = transform.localScale + (_other.transform.localScale / 2);
         _rb.mass = transform.localScale.x /2;
         BubbleSpawner.Instance.bubblesLeft--;
