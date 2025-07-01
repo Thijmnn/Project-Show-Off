@@ -12222,6 +12222,8 @@ GameObject:
   m_Component:
   - component: {fileID: 504564160}
   - component: {fileID: 504564159}
+  - component: {fileID: 504564162}
+  - component: {fileID: 504564161}
   m_Layer: 0
   m_Name: Cutscene1 Sam
   m_TagString: Untagged
@@ -12248,6 +12250,8 @@ PlayableDirector:
     value: {fileID: 206328817}
   - key: {fileID: 348450288088005459, guid: c1c92fb75bb26ae47a0a467fce0851ff, type: 2}
     value: {fileID: 1402001428}
+  - key: {fileID: -1040125193990482771, guid: c1c92fb75bb26ae47a0a467fce0851ff, type: 2}
+    value: {fileID: 504564161}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &504564160
@@ -12267,6 +12271,51 @@ Transform:
   - {fileID: 232810664}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &504564161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504564158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: fe05a7e7740744b4cab3172a940854e2, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 504564162}
+          m_TargetAssemblyTypeName: SwitchCam, Assembly-CSharp
+          m_MethodName: SwitchCamera
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &504564162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504564158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1de1cef286449f4084f6ca5adaa9693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 206328816}
+  spawner: {fileID: 1127767881}
+  UI: {fileID: 18055331}
 --- !u!1 &521162576
 GameObject:
   m_ObjectHideFlags: 0
@@ -35948,7 +35997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
