@@ -7,11 +7,20 @@ public class DisableMovement : MonoBehaviour
 
     public void freezeTime()
     {
-        Time.timeScale = 0f;
+        PlayerMovement[] movements = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
+
+        foreach (PlayerMovement movement in movements) { 
+        movement.enabled = false;
+        }
     }
 
     public void UnfreezeTime()
     {
-        Time.timeScale = 1f;
+        PlayerMovement[] movements = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
+
+        foreach (PlayerMovement movement in movements)
+        {
+            movement.enabled = true;
+        }
     }
 }
