@@ -379,6 +379,31 @@ PrefabInstance:
       propertyPath: EventStopTrigger
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 9145787257219715813, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/UI/Pop_hover_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145787257219715813, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 126949837
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145787257219715813, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1086485244
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145787257219715813, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 258979485
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145787257219715813, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -400820246
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5543,7 +5568,7 @@ Transform:
   m_GameObject: {fileID: 245473242}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4004707, y: 81.96118, z: -199.33885}
+  m_LocalPosition: {x: 1.4004707, y: 80.28, z: -199.33885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12977,7 +13002,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 584690372}
-  - component: {fileID: 584690373}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -13006,37 +13030,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &584690373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584690371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -756840620
-      Data2: 1271294592
-      Data3: -1722903367
-      Data4: -2128455379
-    Path: event:/UI/Pop_click_high
-  Event: 
-  EventPlayTrigger: 12
-  EventStopTrigger: 11
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &586575355
 GameObject:
   m_ObjectHideFlags: 0
@@ -15005,7 +14998,7 @@ Transform:
   m_GameObject: {fileID: 659130559}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.20047, y: 81.96118, z: -170.43886}
+  m_LocalPosition: {x: 18.20047, y: 79.977, z: -170.43886}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49290,6 +49283,7 @@ GameObject:
   - component: {fileID: 1580225874}
   - component: {fileID: 1580225873}
   - component: {fileID: 1580225876}
+  - component: {fileID: 1580225877}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -49447,6 +49441,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de027f453d776984f974b24402a573bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1580225877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580225871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f6234b8defc14ba10dc941decc961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionSound:
+    Guid:
+      Data1: -756840620
+      Data2: 1271294592
+      Data3: -1722903367
+      Data4: -2128455379
+    Path: event:/UI/Pop_click_high
+--- !u!1 &1582098532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582098533}
+  m_Layer: 0
+  m_Name: Shear2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582098533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582098532}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.38268346, y: 0, z: 0, w: 0.9238795}
+  m_LocalPosition: {x: -55.89787, y: -14.918942, z: -14.918941}
+  m_LocalScale: {x: 1, y: 1.4142135, z: 1.4142135}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1939114051}
+  m_Father: {fileID: 1410327174}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1582231289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50084,6 +50129,7 @@ GameObject:
   - component: {fileID: 1613158311}
   - component: {fileID: 1613158310}
   - component: {fileID: 1613158309}
+  - component: {fileID: 1613158312}
   m_Layer: 5
   m_Name: Quit to menu
   m_TagString: Untagged
@@ -50229,6 +50275,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613158307}
   m_CullTransparentMesh: 1
+--- !u!114 &1613158312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613158307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f6234b8defc14ba10dc941decc961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionSound:
+    Guid:
+      Data1: -756840620
+      Data2: 1271294592
+      Data3: -1722903367
+      Data4: -2128455379
+    Path: event:/UI/Pop_click_high
 --- !u!1 &1613253988
 GameObject:
   m_ObjectHideFlags: 0
@@ -55014,7 +55079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1855327054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55090,11 +55155,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -756840620
-      Data2: 1271294592
-      Data3: -1722903367
-      Data4: -2128455379
-    Path: event:/UI/Pop_click_high
+      Data1: 126949837
+      Data2: 1086485244
+      Data3: 258979485
+      Data4: -400820246
+    Path: event:/UI/Pop_hover_low
   Event: 
   EventPlayTrigger: 12
   EventStopTrigger: 11
@@ -57232,6 +57297,7 @@ GameObject:
   - component: {fileID: 1959672264}
   - component: {fileID: 1959672263}
   - component: {fileID: 1959672267}
+  - component: {fileID: 1959672268}
   m_Layer: 5
   m_Name: powrups
   m_TagString: Untagged
@@ -57380,11 +57446,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -756840620
-      Data2: 1271294592
-      Data3: -1722903367
-      Data4: -2128455379
-    Path: event:/UI/Pop_click_high
+      Data1: 126949837
+      Data2: 1086485244
+      Data3: 258979485
+      Data4: -400820246
+    Path: event:/UI/Pop_hover_low
   Event: 
   EventPlayTrigger: 12
   EventStopTrigger: 11
@@ -57396,6 +57462,25 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1959672268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959672262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f6234b8defc14ba10dc941decc961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionSound:
+    Guid:
+      Data1: -756840620
+      Data2: 1271294592
+      Data3: -1722903367
+      Data4: -2128455379
+    Path: event:/UI/Pop_click_high
 --- !u!1 &1959984106
 GameObject:
   m_ObjectHideFlags: 0
