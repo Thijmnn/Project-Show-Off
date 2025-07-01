@@ -121,8 +121,8 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void DestroyBubble(GameObject _other)
     {
-        _other.transform.localScale = _other.transform.localScale + (transform.localScale / 2);
-        _rb.mass = transform.localScale.x /2;
+        _other.transform.localScale = _other.transform.localScale + (transform.localScale / 3);
+        _rb.mass = transform.localScale.x /3;
         BubbleSpawner.Instance.bubblesLeft--;
         foreach(BlowingScript blower in blowingScripts)
         {
