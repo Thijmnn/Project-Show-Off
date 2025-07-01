@@ -13,11 +13,11 @@ public class NotificationsAppear : MonoBehaviour
    
 
     [SerializeField]
-    int rabbitLength = 5;
+    int rabbitLength = 20;
     [SerializeField]
-    int hedgehogLength = 5;
+    int hedgehogLength = 20;
     [SerializeField]
-    int frogLength = 5;
+    int frogLength = 10;
 
     private void Awake()
     {
@@ -51,9 +51,8 @@ public class NotificationsAppear : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
 
-        
+        yield return new WaitForSeconds(rabbitLength);
         Destroy(noteRabbitInstance);
-        Debug.Log("Speed boost done");
     }
     IEnumerator HedgehogPower()
     {
@@ -70,7 +69,6 @@ public class NotificationsAppear : MonoBehaviour
 
 
         Destroy(noteHedgehogInstance);
-        Debug.Log("fan boost done");
     }
     IEnumerator FrogPowers()
     {
@@ -86,7 +84,6 @@ public class NotificationsAppear : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         Destroy(noteFrogInstance);
-        Debug.Log("magnet done");
     }
 
 }

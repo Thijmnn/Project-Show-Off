@@ -76,7 +76,6 @@ public class BubbleSpawner : MonoBehaviour
         foreach (GameObject bubble in waves[currentWaveIndex].bubbles)
         {
             BubbleBehaviour _bubble = bubble.GetComponent<BubbleBehaviour>();
-            _bubble.overlap = waves[currentWaveIndex].overlap;
 
             Collider area = spawnAreas[Random.Range(0, spawnAreas.Count)];
             Bounds _bounds = area.bounds;

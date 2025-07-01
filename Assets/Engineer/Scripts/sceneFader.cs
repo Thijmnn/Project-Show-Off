@@ -24,14 +24,14 @@ public class sceneFader : MonoBehaviour
 
         if (currentScene == totalScenes - 1)
         {
-            nextScene = 0; // back to the first scene
+            nextScene = 2; // back to the first scene
         }
         else
         {
             nextScene = currentScene + 1;
         }
 
-        SceneManager.LoadScene(nextScene);
+        LoadSceneAtIndex(nextScene);
     }
 
     private void Update()
@@ -43,5 +43,10 @@ public class sceneFader : MonoBehaviour
         }
 
         
+    }
+
+    public void LoadSceneAtIndex(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }

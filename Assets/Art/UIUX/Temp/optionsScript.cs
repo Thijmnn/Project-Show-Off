@@ -10,6 +10,8 @@ public class optionsScript : MonoBehaviour
     public UnityEvent optionsSwitch;
     public InputActionReference menu;
 
+
+    public PlayerInput[] playerInputs;
     //public UnityEvent PopUpShowOne;
     //public UnityEvent PopUpShowTwo;
 
@@ -18,13 +20,13 @@ public class optionsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerInput[] playerInputs = FindObjectsOfType<PlayerInput>();
+        playerInputs = FindObjectsOfType<PlayerInput>();
 
         foreach (PlayerInput playerInput in playerInputs)
         {
             if (playerInput.actions["Menu"].triggered)
             {
-
+                StartCoroutine(SwitchScreen());
             }
         }
 
@@ -41,8 +43,11 @@ public class optionsScript : MonoBehaviour
 
     IEnumerator SwitchScreen()
     {
+        print("bigity");
         yield return new WaitForSeconds(0.2f);
+        
         optionsSwitch.Invoke();
         yield return new WaitForSeconds(0.2f);
+        print("higity");
     }
 }
