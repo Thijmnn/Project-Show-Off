@@ -24,9 +24,8 @@ public class AnimTrigger : MonoBehaviour
         Wander[] wanderers = FindObjectsOfType<Wander>();
         foreach (Wander wander in wanderers)
         {
-            wander.transform.gameObject.SetActive(true);
+            wander.transform.gameObject.SetActive(false);
         }
-
         UI.SetActive(false);
 
         Camera.main.gameObject.SetActive(false);
