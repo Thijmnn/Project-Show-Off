@@ -50,49 +50,57 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<BubbleBehaviour>())
+        BubbleBehaviour otherBubble = collision.gameObject.GetComponent<BubbleBehaviour>();
+        if (otherBubble == null) return;
+
+        // pick *one* bubble to decide the merge logic
+        if (this.GetInstanceID() > otherBubble.GetInstanceID())
         {
-            _bubbleBehaviour = collision.gameObject.GetComponent<BubbleBehaviour>();
-            if (collision.gameObject.transform.localScale.x > transform.localScale.x)
-            {
-                _bubbleBehaviour.canDestroy = true;
-                canDestroy = false;
-                SpawnAnimal();
-                if (canDestroy) { DestroyBubble(collision.gameObject); }
+            // only the higher-ID bubble decides
+            HandleMerge(otherBubble);
+        }
+    }
 
-            }
-            else if (transform.localScale.x > collision.gameObject.transform.localScale.x)
+    private void HandleMerge(BubbleBehaviour other)
+    {
+        float mySize = transform.localScale.x;
+        float otherSize = other.transform.localScale.x;
+
+        if (otherSize > mySize)
+        {
+            // other is bigger, I get destroyed
+            other.canDestroy = true;
+            canDestroy = false;
+            other.SpawnAnimal();
+            other.DestroyOtherBubble(gameObject);
+        }
+        else if (mySize > otherSize)
+        {
+            // I am bigger, destroy other
+            canDestroy = true;
+            other.canDestroy = false;
+            SpawnAnimal();
+            DestroyOtherBubble(other.gameObject);
+        }
+        else
+        {
+            // equal size, random decision
+            int roll = Random.Range(0, 2); // 0 or 1
+            if (roll == 0)
             {
-                _bubbleBehaviour.canDestroy = false;
+                // I survive
                 canDestroy = true;
+                other.canDestroy = false;
                 SpawnAnimal();
-                if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
-
+                DestroyOtherBubble(other.gameObject);
             }
-            else if (collision.gameObject.transform.localScale.x == transform.localScale.x)
+            else
             {
-                if (DestroySelf == _bubbleBehaviour.DestroySelf)
-                {
-
-                    RollRandom();
-
-                }
-                else if (DestroySelf && !_bubbleBehaviour.DestroySelf)
-                {
-                    _bubbleBehaviour.canDestroy = true;
-                    canDestroy = false;
-                    SpawnAnimal();
-                    if (canDestroy) { DestroyBubble(collision.gameObject); }
-
-                }
-                else if (_bubbleBehaviour.DestroySelf && !DestroySelf)
-                {
-                    _bubbleBehaviour.canDestroy = false;
-                    canDestroy = true;
-                    SpawnAnimal();
-                    if (canDestroy) { DestroyOtherBubble(collision.gameObject); }
-
-                }
+                // other survives
+                canDestroy = false;
+                other.canDestroy = true;
+                other.SpawnAnimal();
+                other.DestroyOtherBubble(gameObject);
             }
         }
     }
