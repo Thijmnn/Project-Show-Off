@@ -51,7 +51,6 @@ public class NotificationsAppear : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
 
-        yield return new WaitForSeconds(rabbitLength);
         Destroy(noteRabbitInstance);
     }
     IEnumerator HedgehogPower()

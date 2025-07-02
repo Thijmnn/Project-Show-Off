@@ -68,6 +68,8 @@ public class MagnetBoost : Wander
 
             yield return new WaitForSeconds(boostDur);
 
+            magnetic = false;
+
             Material[] revertMats = _playerRenderer.materials;
             if (revertMats.Length > 1)
             {
@@ -77,7 +79,6 @@ public class MagnetBoost : Wander
                 _playerRenderer.materials = trimmed;
             }
 
-            magnetic = false;
         }
         finally
         {

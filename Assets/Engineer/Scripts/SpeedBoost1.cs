@@ -64,6 +64,9 @@ public class SpeedBoost1 : Wander
 
             yield return new WaitForSeconds(boostDur);
 
+            _playerMovement.newSpeed = originalSprintSpeed;
+            _playerMovement.originalSpeed = originalSpeed;
+
             Material[] revertMats = _playerRenderer.materials;
             if (revertMats.Length > 1)
             {
@@ -72,9 +75,6 @@ public class SpeedBoost1 : Wander
                     trimmed[i] = revertMats[i];
                 _playerRenderer.materials = trimmed;
             }
-
-            _playerMovement.newSpeed = originalSprintSpeed;
-            _playerMovement.originalSpeed = originalSpeed;
         }
         finally
         {
