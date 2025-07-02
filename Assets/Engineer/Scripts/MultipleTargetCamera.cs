@@ -18,7 +18,10 @@ public class MultipleTargetCamera : MonoBehaviour
 
     private Camera cam;
     public static MultipleTargetCamera Instance { get; private set; }
-    
+
+    public Vector3 minPosition;  // Minimum XYZ values
+    public Vector3 maxPosition;  // Maximum XYZ values
+
     private void Awake()
     {
         if(Instance == null)
@@ -67,6 +70,13 @@ public class MultipleTargetCamera : MonoBehaviour
             Move();
             Zoom();
         }
+        // Clamp the camera's position
+        Vector3 clampedPosition = transform.position;
+        clampedPosition.x = Mathf.Clamp(transform.position.x, minPosition.x, maxPosition.x);
+        clampedPosition.y = Mathf.Clamp(transform.position.y, minPosition.y, maxPosition.y);
+        clampedPosition.z = Mathf.Clamp(transform.position.z, minPosition.z, maxPosition.z);
+
+        transform.position = clampedPosition;
     }
 
     void Move()
