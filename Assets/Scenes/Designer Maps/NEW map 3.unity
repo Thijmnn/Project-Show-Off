@@ -338,19 +338,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11511230}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 218375423}
-  m_Father: {fileID: 1727818329}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 400.00006, y: 225.00003}
-  m_SizeDelta: {x: 799.99994, y: 449.99997}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &11511232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10611,6 +10611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 330585549}
   CanMove: 0
+  UI: {fileID: 0}
 --- !u!1001 &331274219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34073,6 +34074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1115570083}
   CanMove: 0
+  UI: {fileID: 0}
 --- !u!114 &1115570082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64895,7 +64897,6 @@ RectTransform:
   - {fileID: 243297760}
   - {fileID: 1886914864}
   - {fileID: 64744836}
-  - {fileID: 11511231}
   - {fileID: 2007544611}
   - {fileID: 938760409}
   m_Father: {fileID: 0}
@@ -75926,6 +75927,7 @@ SceneRoots:
   - {fileID: 1298807928}
   - {fileID: 832575519}
   - {fileID: 690594267}
+  - {fileID: 11511231}
   - {fileID: 1727818329}
   - {fileID: 207119244}
   - {fileID: 10842565}

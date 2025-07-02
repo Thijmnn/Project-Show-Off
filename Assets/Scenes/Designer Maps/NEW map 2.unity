@@ -1437,7 +1437,6 @@ RectTransform:
   - {fileID: 861324744}
   - {fileID: 1512130952}
   - {fileID: 206880290}
-  - {fileID: 856964636}
   - {fileID: 1015240179}
   - {fileID: 187611513}
   m_Father: {fileID: 0}
@@ -18237,19 +18236,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856964635}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 877924285}
-  m_Father: {fileID: 18055337}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 400.00006, y: 225.00003}
-  m_SizeDelta: {x: 799.99994, y: 449.99997}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &856964637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44349,6 +44348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1855030200}
   CanMove: 0
+  UI: {fileID: 0}
 --- !u!114 &1855030199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52049,6 +52049,16 @@ PrefabInstance:
       objectReference: {fileID: 18055333}
     - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
         type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
       propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 206880289}
@@ -52057,6 +52067,31 @@ PrefabInstance:
       propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1512130951}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 18055333}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: MenuScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ButtonSelected, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5380778771844550281, guid: 7952de9e46046424fb8b638f08246b37,
         type: 3}
       propertyPath: m_Name
@@ -52112,8 +52147,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -54968,6 +55002,7 @@ SceneRoots:
   - {fileID: 38109445}
   - {fileID: 832575519}
   - {fileID: 420296925}
+  - {fileID: 856964636}
   - {fileID: 18055337}
   - {fileID: 18487330}
   - {fileID: 10842565}
