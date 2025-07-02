@@ -19,6 +19,7 @@ public class PlayerSounds : MonoBehaviour
 
     private bool isFanPlaying = false;
 
+
     private void Awake()
     {
         if (!_footsteps.IsNull)
@@ -147,7 +148,10 @@ public class PlayerSounds : MonoBehaviour
 
             GroundSwitch();
             footsteps.start();
+
         }
+
+    
     }
     private void GroundSwitch()
     {
