@@ -26,33 +26,6 @@ MonoBehaviour:
   - Grass
   - Path
   Exists: 1
---- !u!114 &-8941605192617684284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Pop_click_high
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Pop_click_high
-  Guid:
-    Data1: -756840620
-    Data2: 1271294592
-    Data3: -1722903367
-    Data4: -2128455379
-  Banks:
-  - {fileID: -7073872981854845022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 39
 --- !u!114 &-8633099743679048037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +160,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 60577
+--- !u!114 &-7503880488606567608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Hover
+  Guid:
+    Data1: -756840620
+    Data2: 1271294592
+    Data3: -1722903367
+    Data4: -2128455379
+  Banks:
+  - {fileID: -7073872981854845022}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 39
 --- !u!114 &-7073872981854845022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638870534423472075
+  lastModified: 638870538137139756
   FileSizes:
   - Name: Desktop
     Value: 6305120
@@ -389,33 +389,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 85394
---- !u!114 &-3720324687829376123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Pop_hover_low
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Pop_hover_low
-  Guid:
-    Data1: 126949837
-    Data2: 1086485244
-    Data3: 258979485
-    Data4: -400820246
-  Banks:
-  - {fileID: -7073872981854845022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 69
 --- !u!114 &-3697412571811288122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +627,6 @@ MonoBehaviour:
   - {fileID: 169435728337604351}
   - {fileID: -3623462405642246236}
   - {fileID: -3697412571811288122}
-  - {fileID: -8941605192617684284}
   - {fileID: 4797190501501371389}
   - {fileID: 3221704886223207223}
   - {fileID: 4963358940921093213}
@@ -666,8 +638,9 @@ MonoBehaviour:
   - {fileID: 2513844988192586582}
   - {fileID: -5825755851567633148}
   - {fileID: 7831038999109787306}
-  - {fileID: -3720324687829376123}
   - {fileID: 1790189109950103002}
+  - {fileID: -7503880488606567608}
+  - {fileID: 2590506662431867882}
   EditorParameters:
   - {fileID: 3371242661199141315}
   MasterBanks:
@@ -675,7 +648,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7005878569683033325}
   cacheVersion: 131848
-  cacheTime: 638870534423487458
+  cacheTime: 638870538137165552
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -703,16 +676,18 @@ MonoBehaviour:
     index: 11
   - key: event:/Windfan/Wind Partice
     index: 12
-  - key: event:/Music/Music Map 2
+  - key: event:/Music/Track 3v2
     index: 13
-  - key: event:/Laugther/Girl
+  - key: event:/Music/Music Map 2
     index: 14
-  - key: event:/Windfan/Fan
+  - key: event:/Laugther/Girl
     index: 15
-  - key: event:/UI/Pop_click_high
+  - key: event:/Windfan/Fan
     index: 16
-  - key: event:/UI/Pop_hover_low
+  - key: event:/UI/Hover
     index: 17
+  - key: event:/UI/Click
+    index: 18
 --- !u!114 &169435728337604351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,6 +823,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 109766
+--- !u!114 &2590506662431867882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click
+  Guid:
+    Data1: 126949837
+    Data2: 1086485244
+    Data3: 258979485
+    Data4: -400820246
+  Banks:
+  - {fileID: -7073872981854845022}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 69
 --- !u!114 &2859217970513009175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,10 +1235,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638870534423487458
+  lastModified: 638870538137165552
   FileSizes:
   - Name: Desktop
-    Value: 1802
+    Value: 1788
   Exists: 1
 --- !u!114 &7831038999109787306
 MonoBehaviour:
