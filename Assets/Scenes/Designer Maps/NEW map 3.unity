@@ -4142,6 +4142,16 @@ PrefabInstance:
       objectReference: {fileID: 1727818325}
     - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
         type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
       propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 64744835}
@@ -4150,6 +4160,31 @@ PrefabInstance:
       propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1886914863}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1727818325}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: MenuScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ButtonSelected, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326580535284628760, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5380778771844550281, guid: 7952de9e46046424fb8b638f08246b37,
         type: 3}
       propertyPath: m_Name
@@ -10611,6 +10646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 330585549}
   CanMove: 0
+  UI: {fileID: 0}
 --- !u!1001 &331274219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34073,6 +34109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1115570083}
   CanMove: 0
+  UI: {fileID: 0}
 --- !u!114 &1115570082
 MonoBehaviour:
   m_ObjectHideFlags: 0
