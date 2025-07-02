@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pulsate : MonoBehaviour
 {
-    float maxSize = 1;
-    float minSize = 0.7f;
+    float maxSize = 0.9f;
+    float minSize = 0.8f;
     bool max;
     Vector3 Scale;
     float size;
@@ -18,11 +18,11 @@ public class Pulsate : MonoBehaviour
         Scale = new Vector3(size,size,size);    
         if (!max)
         {
-            size += 0.5f * Time.deltaTime;
+            size += 0.1f * Time.deltaTime;
         }
         else if (max)
         {
-            size -= 0.5f * Time.deltaTime;
+            size -= 0.1f * Time.deltaTime;
         }
 
 
