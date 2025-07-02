@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 107484346915080948}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.020645, y: -2.382649, z: -4.0458193}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7436603, y: 0.7436603, z: 0.7436603}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66,6 +66,9 @@ MonoBehaviour:
       Data4: 580217144
     Path: event:/Windfan/Wind Partice
   animator: {fileID: 4881556883046248918}
+  footstepParticles: {fileID: 7243603066672345198, guid: 85babd80cfc76cd46a8ec967aec3fbfd,
+    type: 3}
+  leftFoot: {fileID: 4472328241046898869}
 --- !u!1 &2232431226272321090
 GameObject:
   m_ObjectHideFlags: 0
@@ -10086,6 +10089,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1784305660535879637}
   m_SourcePrefab: {fileID: 100100000, guid: 0eb7681e5ba1b3148a8faf93566171b8, type: 3}
+--- !u!4 &4472328241046898869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4378734175783032336, guid: 0eb7681e5ba1b3148a8faf93566171b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 9019437512931320133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7252098478293917039 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7381439899913241558, guid: 0eb7681e5ba1b3148a8faf93566171b8,
