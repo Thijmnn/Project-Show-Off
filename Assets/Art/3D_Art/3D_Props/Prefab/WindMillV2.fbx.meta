@@ -3,7 +3,37 @@ guid: d2206f5047a310b4b9e616e9d6a24518
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hay
+    second: {fileID: 2100000, guid: fd17187f53e35d644b01e3195600387b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: b34c4f1e1f54df042aca145fbbfb3954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Panza
+    second: {fileID: 2100000, guid: c677671fd8fed7c4fa943c12da588474, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 53183ce69ff079347a0a002b355583e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone
+    second: {fileID: 2100000, guid: c6b9f61398b531a498cc2d8dc904724e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: e4fe8720553cab34a891fead3f7e4063, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +67,7 @@ ModelImporter:
       takeName: Plane.001|Cube.025Action
       internalID: -2474060064453474246
       firstFrame: 0
-      lastFrame: 0.31
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -45,7 +75,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -73,7 +103,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
