@@ -148,10 +148,10 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638870590665105939
+  lastModified: 638870601987042575
   FileSizes:
   - Name: Desktop
-    Value: 4998720
+    Value: 6305120
   Exists: 1
 --- !u!114 &-5711010800933956930
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 85394
---- !u!114 &-3473879345113974622
+--- !u!114 &-3952712316791251068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,23 +244,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Pop_click_high
+  m_Name: event:/Music/Track 3v2
   m_EditorClassIdentifier: 
-  Path: event:/UI/Pop_click_high
+  Path: event:/Music/Track 3v2
   Guid:
-    Data1: -756840620
-    Data2: 1271294592
-    Data3: -1722903367
-    Data4: -2128455379
+    Data1: 1195416770
+    Data2: 1101204628
+    Data3: -793861236
+    Data4: 1554834013
   Banks:
   - {fileID: -5785781644506638898}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 600
+  Length: 109766
 --- !u!114 &-3246729193092703240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2308
---- !u!114 &-338039521396936455
+--- !u!114 &-624697535967075844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,14 +353,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Pop_hover_low
+  m_Name: event:/UI/Hover
   m_EditorClassIdentifier: 
-  Path: event:/UI/Pop_hover_low
+  Path: event:/UI/Hover
   Guid:
-    Data1: 126949837
-    Data2: 1086485244
-    Data3: 258979485
-    Data4: -400820246
+    Data1: -756840620
+    Data2: 1271294592
+    Data3: -1722903367
+    Data4: -2128455379
   Banks:
   - {fileID: -5785781644506638898}
   IsStream: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 548
+  Length: 39
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +391,6 @@ MonoBehaviour:
   - {fileID: -7656712383268029847}
   - {fileID: -5630587985591168531}
   - {fileID: -3246729193092703240}
-  - {fileID: -3473879345113974622}
   - {fileID: 3590879032232073954}
   - {fileID: 3437122701860814794}
   - {fileID: 2859217970513009175}
@@ -402,8 +401,10 @@ MonoBehaviour:
   - {fileID: -7635041782517771998}
   - {fileID: -5711010800933956930}
   - {fileID: 3324802646866952586}
-  - {fileID: -338039521396936455}
   - {fileID: -1681651741220994965}
+  - {fileID: -624697535967075844}
+  - {fileID: -3952712316791251068}
+  - {fileID: 3312620252581244392}
   EditorParameters:
   - {fileID: -6489589999140387234}
   MasterBanks:
@@ -411,7 +412,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3042575598642101800}
   cacheVersion: 131848
-  cacheTime: 638870590665128079
+  cacheTime: 638870601987042575
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -423,32 +424,34 @@ MonoBehaviour:
     index: 3
   - key: event:/Animals/Hedgehog/Hedgehog Sniffing
     index: 4
-  - key: event:/UI/Pop_click_high
-    index: 5
   - key: event:/Bubble/Bubble Merge
-    index: 6
+    index: 5
   - key: event:/Fireflies/Beating wings
-    index: 7
+    index: 6
   - key: event:/Laugther/Guy
-    index: 8
+    index: 7
   - key: event:/Flower/Flower interaction
-    index: 9
+    index: 8
   - key: event:/Bubble/Bubble Floating
-    index: 10
+    index: 9
   - key: event:/Footsteps/Footsteps
-    index: 11
+    index: 10
   - key: event:/Animals/Frog Croaks
-    index: 12
+    index: 11
   - key: event:/Windfan/Wind Partice
-    index: 13
+    index: 12
   - key: event:/Music/Music Map 2
-    index: 14
+    index: 13
   - key: event:/Laugther/Girl
-    index: 15
-  - key: event:/UI/Pop_hover_low
-    index: 16
+    index: 14
   - key: event:/Windfan/Fan
+    index: 15
+  - key: event:/UI/Hover
+    index: 16
+  - key: event:/Music/Track 3v2
     index: 17
+  - key: event:/UI/Click
+    index: 18
 --- !u!114 &894667178564933764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,11 +548,38 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638870590665128079
+  lastModified: 638870601987042575
   FileSizes:
   - Name: Desktop
-    Value: 1750
+    Value: 1788
   Exists: 1
+--- !u!114 &3312620252581244392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click
+  Guid:
+    Data1: 126949837
+    Data2: 1086485244
+    Data3: 258979485
+    Data4: -400820246
+  Banks:
+  - {fileID: -5785781644506638898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 69
 --- !u!114 &3324802646866952586
 MonoBehaviour:
   m_ObjectHideFlags: 0
