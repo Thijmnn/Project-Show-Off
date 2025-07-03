@@ -105,7 +105,7 @@
                 "m_Node": {
                     "m_Id": "04dfea276b5d4762b613e18fc61ffc3a"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -287,13 +287,13 @@
                 "m_Node": {
                     "m_Id": "d1357ba193a1466f8cf25c4c32e34c7f"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 4
             },
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "d7253a3c40f84f06a041b4bfed982db4"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 4
             }
         },
         {
@@ -308,6 +308,20 @@
                     "m_Id": "7273571475ca495aa72b3c69cf1c52ea"
                 },
                 "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "f7ac3a73149a42af81271dfba5be3225"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "3f1453a788724f1aba6a7ff659095175"
+                },
+                "m_SlotId": 0
             }
         },
         {
@@ -425,10 +439,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1074.5,
-            "y": -133.5,
-            "width": 152.99993896484376,
-            "height": 173.00003051757813
+            "x": -1250.4998779296875,
+            "y": -870.4998779296875,
+            "width": 153.0001220703125,
+            "height": 172.99993896484376
         }
     },
     "m_Slots": [
@@ -1052,10 +1066,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -864.5,
-            "y": -469.4999694824219,
-            "width": 208.0,
-            "height": 301.9999694824219
+            "x": -852.5000610351563,
+            "y": -833.4999389648438,
+            "width": 207.99993896484376,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -1522,7 +1536,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Z",
     "m_StageCapability": 3,
-    "m_Value": 0.0,
+    "m_Value": -0.1599999964237213,
     "m_DefaultValue": 0.0,
     "m_Labels": [
         "Z"
@@ -1731,10 +1745,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1941.5,
-            "y": -418.0,
+            "x": -2098.5,
+            "y": -420.0,
             "width": 208.0,
-            "height": 314.5000305175781
+            "height": 314.5
         }
     },
     "m_Slots": [
@@ -1792,7 +1806,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"da961a5d670fb2841a9db0a685c2f684\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"2cd75666a88c8da45946ad83f1cb04a6\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -2059,10 +2073,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -621.5000610351563,
-            "y": -478.0000305175781,
-            "width": 212.50003051757813,
-            "height": 340.0
+            "x": -620.5001220703125,
+            "y": -755.5,
+            "width": 212.50006103515626,
+            "height": 339.9999694824219
         }
     },
     "m_Slots": [
@@ -2360,8 +2374,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1453.0626220703125,
-            "y": -390.0625915527344,
+            "x": -1483.5,
+            "y": -322.5,
             "width": 119.0,
             "height": 149.0
         }
@@ -2570,8 +2584,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1311.0,
-            "y": -390.5,
+            "x": -1293.5001220703125,
+            "y": -351.5,
             "width": 131.0,
             "height": 149.0
         }
@@ -2908,7 +2922,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Y",
     "m_StageCapability": 3,
-    "m_Value": 0.0,
+    "m_Value": 0.30000001192092898,
     "m_DefaultValue": 0.0,
     "m_Labels": [
         "Y"
