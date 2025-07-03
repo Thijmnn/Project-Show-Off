@@ -1,36 +1,42 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Controls;
 
 public class LoadingScreenCountdown : MonoBehaviour
 {
     public sceneFader sceneFader;
+    private InputAction anyButtonAction;
+
+    private void Awake()
+    {
+        // Bind a "catch all" button press
+        anyButtonAction = new InputAction(type: InputActionType.Button, binding: "<Gamepad>/buttonSouth");
+        anyButtonAction.AddBinding("<Gamepad>/buttonNorth");
+        anyButtonAction.AddBinding("<Gamepad>/buttonWest");
+        anyButtonAction.AddBinding("<Gamepad>/buttonEast");
+        anyButtonAction.AddBinding("<Gamepad>/start");
+        anyButtonAction.AddBinding("<Gamepad>/select");
+        anyButtonAction.AddBinding("<Gamepad>/dpad");
+        anyButtonAction.AddBinding("<Gamepad>/leftShoulder");
+        anyButtonAction.AddBinding("<Gamepad>/rightShoulder");
+        anyButtonAction.AddBinding("<Gamepad>/leftTrigger");
+        anyButtonAction.AddBinding("<Gamepad>/rightTrigger");
+
+        anyButtonAction.performed += ctx => OnAnyButtonPressed();
+    }
 
     private void OnEnable()
     {
-        // Subscribe to *all* button events on the current gamepad
-        InputSystem.onEvent += OnInputEvent;
+        anyButtonAction.Enable();
     }
 
     private void OnDisable()
     {
-        InputSystem.onEvent -= OnInputEvent;
+        anyButtonAction.Disable();
     }
 
-    private void OnInputEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr eventPtr, InputDevice device)
+    private void OnAnyButtonPressed()
     {
-        if (!(device is Gamepad gamepad))
-            return;
-
-        foreach (var control in gamepad.allControls)
-        {
-            if (control is ButtonControl button && button.wasPressedThisFrame)
-            {
-                sceneFader.TriggerFadeOut();
-                // Optionally disable listening after the first button
-                InputSystem.onEvent -= OnInputEvent;
-                break;
-            }
-        }
+        sceneFader.TriggerFadeOut();
+        anyButtonAction.Disable(); // optional to prevent repeat
     }
 }
