@@ -6579,10 +6579,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets: []
   offset: {x: 0, y: 30, z: -15}
-  smoothTime: 0.8
+  smoothTime: 0.5
   minZoom: 95
-  maxZoom: 40
-  zoomLimiter: 15
+  maxZoom: 50
+  zoomLimiter: 10
 --- !u!95 &330585549
 Animator:
   serializedVersion: 5
