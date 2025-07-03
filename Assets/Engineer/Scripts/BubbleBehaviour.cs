@@ -23,6 +23,9 @@ public class BubbleBehaviour : MonoBehaviour
 
     public StudioEventEmitter hoverEmitter;
     public StudioEventEmitter mergeEmitter;
+
+    
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -149,15 +152,28 @@ public class BubbleBehaviour : MonoBehaviour
         }
         mergeEmitter.Play();
 
-        foreach (var mat in GetComponent<Renderer>().materials)
+        var renderer = GetComponent<Renderer>();
+
+        var materials = renderer.materials;
+        var newMaterials = new List<Material>();
+
+        for (int i = 0; i < materials.Length; i++)
         {
-            if (mat.name.Contains("Nightmare"))
+            var mat = materials[i];
+
+            // Keep all materials *except* Nightmare ones after index 0
+            if (i == 0 || !mat.name.Contains("Nightmare"))
             {
-                print(mat.name + gameObject.name + " " + mat.mainTextureScale);
-                mat.mainTextureScale = new Vector2(1,1);
-                print(mat.name + gameObject.name + " " + mat.mainTextureScale);
+                newMaterials.Add(mat);
+            }
+            else
+            {
+                Debug.Log($"Removed material {mat.name} on {gameObject.name}");
             }
         }
+
+        // Apply the filtered materials back
+        renderer.materials = newMaterials.ToArray();
 
         Destroy(_other);
 
