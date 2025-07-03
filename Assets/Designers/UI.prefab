@@ -465,11 +465,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 126949837
-      Data2: 1086485244
-      Data3: 258979485
-      Data4: -400820246
-    Path: event:/UI/Pop_hover_low
+      Data1: 2011573724
+      Data2: 1264788553
+      Data3: 283488134
+      Data4: -638836430
+    Path: event:/UI/Hover
   Event: 
   EventPlayTrigger: 12
   EventStopTrigger: 11
@@ -653,11 +653,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionSound:
     Guid:
-      Data1: -756840620
-      Data2: 1271294592
-      Data3: -1722903367
-      Data4: -2128455379
-    Path: event:/UI/Pop_click_high
+      Data1: 2011573724
+      Data2: 1264788553
+      Data3: 283488134
+      Data4: -638836430
+    Path: event:/UI/Hover
 --- !u!1 &1488575990608735711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,11 +1283,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionSound:
     Guid:
-      Data1: -756840620
-      Data2: 1271294592
-      Data3: -1722903367
-      Data4: -2128455379
-    Path: event:/UI/Pop_click_high
+      Data1: 2011573724
+      Data2: 1264788553
+      Data3: 283488134
+      Data4: -638836430
+    Path: event:/UI/Hover
 --- !u!1 &4161653141166786741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,11 +1951,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 126949837
-      Data2: 1086485244
-      Data3: 258979485
-      Data4: -400820246
-    Path: event:/UI/Pop_hover_low
+      Data1: 2011573724
+      Data2: 1264788553
+      Data3: 283488134
+      Data4: -638836430
+    Path: event:/UI/Hover
   Event: 
   EventPlayTrigger: 12
   EventStopTrigger: 11
@@ -1981,11 +1981,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionSound:
     Guid:
-      Data1: -756840620
-      Data2: 1271294592
-      Data3: -1722903367
-      Data4: -2128455379
-    Path: event:/UI/Pop_click_high
+      Data1: 2011573724
+      Data2: 1264788553
+      Data3: 283488134
+      Data4: -638836430
+    Path: event:/UI/Hover
 --- !u!1 &7815302130627783746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,6 +2525,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9133916604336441894}
     m_Modifications:
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -120979792
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1199996873
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1792080556
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -314633344
+      objectReference: {fileID: 0}
     - target: {fileID: 3531191169859222151, guid: 7952de9e46046424fb8b638f08246b37,
         type: 3}
       propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2858,6 +2878,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4024516980551323201}
     m_Modifications:
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -120979792
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1199996873
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1792080556
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031210721162340832, guid: 7952de9e46046424fb8b638f08246b37,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -314633344
+      objectReference: {fileID: 0}
     - target: {fileID: 3531191169859222151, guid: 7952de9e46046424fb8b638f08246b37,
         type: 3}
       propertyPath: optionsSwitch.m_PersistentCalls.m_Calls.Array.size

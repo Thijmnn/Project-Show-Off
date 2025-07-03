@@ -9,7 +9,10 @@ public class Pulsate : MonoBehaviour
     bool max;
     Vector3 Scale;
     float size;
-
+    private void Start()
+    {
+        Scale = new Vector3(0.8f, 0.8f, 0.8f);
+    }
 
     private void Update()
     {
