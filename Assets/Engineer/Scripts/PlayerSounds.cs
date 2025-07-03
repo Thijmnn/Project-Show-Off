@@ -179,4 +179,25 @@ public class PlayerSounds : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        if (fan1.isValid())
+        {
+            fan1.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            fan1.release();
+        }
+
+        if (fan2.isValid())
+        {
+            fan2.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            fan2.release();
+        }
+
+        if (footsteps.isValid())
+        {
+            footsteps.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            footsteps.release();
+        }
+    }
+
 }
