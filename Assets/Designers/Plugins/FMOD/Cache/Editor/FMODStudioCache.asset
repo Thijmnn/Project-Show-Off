@@ -338,7 +338,7 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638871496161834575
+  lastModified: 638871508063651814
   FileSizes:
   - Name: Desktop
     Value: 6305600
@@ -404,8 +404,8 @@ MonoBehaviour:
   - {fileID: -7571037034640928204}
   - {fileID: -8646297682864642920}
   - {fileID: 4259826349953558444}
-  - {fileID: -5135497231865430659}
-  - {fileID: 3461866523250576217}
+  - {fileID: 2609028727759653204}
+  - {fileID: 1660983401710762088}
   EditorParameters:
   - {fileID: 3557153018572623187}
   MasterBanks:
@@ -413,7 +413,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3578796001454208215}
   cacheVersion: 131848
-  cacheTime: 638871496161858266
+  cacheTime: 638871508063735183
   SerializableEventsDict:
   - key: event:/Fireflies/Crickets
     index: 0
@@ -455,6 +455,33 @@ MonoBehaviour:
     index: 18
   - key: event:/UI/Hover
     index: 19
+--- !u!114 &1660983401710762088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Hover
+  Guid:
+    Data1: 2011573724
+    Data2: 1264788553
+    Data3: 283488134
+    Data4: -638836430
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38
 --- !u!114 &1803970538964506084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +536,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7280
+--- !u!114 &2609028727759653204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click
+  Guid:
+    Data1: -120979792
+    Data2: 1199996873
+    Data3: 1792080556
+    Data4: -314633344
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72
 --- !u!114 &2972041288341497576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +659,7 @@ MonoBehaviour:
   Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638871496161858266
+  lastModified: 638871508063735183
   FileSizes:
   - Name: Desktop
     Value: 1902
