@@ -584,10 +584,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6601610603317478488}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb7681e5ba1b3148a8faf93566171b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4846526427464031744}
     - targetCorrespondingSourceObject: {fileID: 6520598622985652942, guid: 0eb7681e5ba1b3148a8faf93566171b8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 444556900050674914}
+      addedObject: {fileID: 1330327743440669396}
   m_SourcePrefab: {fileID: 100100000, guid: 0eb7681e5ba1b3148a8faf93566171b8, type: 3}
 --- !u!1 &2834641340899044235 stripped
 GameObject:
@@ -595,7 +599,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 9019437512931320133}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &444556900050674914
+--- !u!95 &1330327743440669396
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -663,7 +667,7 @@ MonoBehaviour:
   sprintMulti: 0
   newSpeed: 0
   smoothTime: 0.5
-  playerSounds: {fileID: 4213180688040203975}
+  playerSounds: {fileID: 4846526427464031744}
 --- !u!54 &6601610603317478488
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -691,6 +695,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4846526427464031744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8208394644406901780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa89ceb90ff0404b8ab68f2fa6dfaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _footsteps:
+    Guid:
+      Data1: 585288370
+      Data2: 1101247390
+      Data3: 1456379291
+      Data4: -1160956702
+    Path: event:/Footsteps/Footsteps
+  fan1Ref:
+    Guid:
+      Data1: -688242948
+      Data2: 1270624132
+      Data3: -194567548
+      Data4: -267332089
+    Path: event:/Windfan/Fan
+  fan2Ref:
+    Guid:
+      Data1: 986337473
+      Data2: 1084750429
+      Data3: -2112284540
+      Data4: 580217144
+    Path: event:/Windfan/Wind Partice
+  animator: {fileID: 4881556883046248918}
 --- !u!4 &8836559297676035758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0eb7681e5ba1b3148a8faf93566171b8,
