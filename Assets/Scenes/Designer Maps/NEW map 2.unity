@@ -1809,6 +1809,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &26170934
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26170931}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6807267
+  m_Height: 2.7487254
+  m_Direction: 1
+  m_Center: {x: -0.0109730195, y: 0.8743618, z: 2.5493269e-10}
 --- !u!1001 &28620653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46561,6 +46584,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 26170933}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d2206f5047a310b4b9e616e9d6a24518,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 26170934}
   m_SourcePrefab: {fileID: 100100000, guid: d2206f5047a310b4b9e616e9d6a24518, type: 3}
 --- !u!1001 &1652247585
 PrefabInstance:
@@ -57870,7 +57897,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: e9525eb3a923dd14f8786bb0792239cc, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: eecfe8b2a2e89404980f06e0c418d6c3, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1959984108
 Transform:
