@@ -1501,7 +1501,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5661267410920916322, guid: 5b976eba9b413764b90fd6e79935aa34,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 432033280}
   m_SourcePrefab: {fileID: 100100000, guid: 5b976eba9b413764b90fd6e79935aa34, type: 3}
 --- !u!4 &78590293 stripped
 Transform:
@@ -6121,6 +6125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 317005791}
+  - component: {fileID: 317005792}
   m_Layer: 0
   m_Name: Ending
   m_TagString: Untagged
@@ -6153,6 +6158,20 @@ Transform:
   - {fileID: 1406080586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &317005792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317005790}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1001 &321612393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6842,7 +6861,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8208394644406901780, guid: 7a8369eb0fa8ca24388b50c790b28bd8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648780898}
   m_SourcePrefab: {fileID: 100100000, guid: 7a8369eb0fa8ca24388b50c790b28bd8, type: 3}
 --- !u!4 &340583183 stripped
 Transform:
@@ -8286,6 +8309,46 @@ Transform:
   - {fileID: 543052339}
   m_Father: {fileID: 1565361933}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &432033279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5661267410920916322, guid: 5b976eba9b413764b90fd6e79935aa34,
+    type: 3}
+  m_PrefabInstance: {fileID: 78590292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &432033280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432033279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa89ceb90ff0404b8ab68f2fa6dfaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _footsteps:
+    Guid:
+      Data1: 585288370
+      Data2: 1101247390
+      Data3: 1456379291
+      Data4: -1160956702
+    Path: event:/Footsteps/Footsteps
+  fan1Ref:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fan2Ref:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  animator: {fileID: 0}
 --- !u!4 &433407082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8796736104632610585, guid: d48ccc7a6f733e04ba85d453a1f1a10c,
@@ -13439,6 +13502,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2052792810}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &648780895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8208394644406901780, guid: 7a8369eb0fa8ca24388b50c790b28bd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 340583182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &648780898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648780895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa89ceb90ff0404b8ab68f2fa6dfaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _footsteps:
+    Guid:
+      Data1: 585288370
+      Data2: 1101247390
+      Data3: 1456379291
+      Data4: -1160956702
+    Path: event:/Footsteps/Footsteps
+  fan1Ref:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  fan2Ref:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  animator: {fileID: 0}
 --- !u!1 &649878264
 GameObject:
   m_ObjectHideFlags: 0
@@ -13914,6 +14017,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 668800487}
+    - targetCorrespondingSourceObject: {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 668800491}
+    - targetCorrespondingSourceObject: {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 668800490}
   m_SourcePrefab: {fileID: 100100000, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
 --- !u!4 &668800485 stripped
 Transform:
@@ -13948,6 +14059,51 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &668800490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668800486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 514323745
+      Data2: 1111098279
+      Data3: 12180916
+      Data4: -2126723442
+    Path: event:/Bubble/Bubble Pop  Ending
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &668800491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668800486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &669327850
 GameObject:
   m_ObjectHideFlags: 0

@@ -18356,6 +18356,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 743926701}
+    - targetCorrespondingSourceObject: {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 743926703}
+    - targetCorrespondingSourceObject: {fileID: 2427074556201549640, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 743926702}
   m_SourcePrefab: {fileID: 100100000, guid: fa083d13de9d9ca4aacbf94ed2cd1ed8, type: 3}
 --- !u!4 &743926699 stripped
 Transform:
@@ -18390,6 +18398,51 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &743926702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743926700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 514323745
+      Data2: 1111098279
+      Data3: 12180916
+      Data4: -2126723442
+    Path: event:/Bubble/Bubble Pop  Ending
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &743926703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743926700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1001 &748151641
 PrefabInstance:
   m_ObjectHideFlags: 0
