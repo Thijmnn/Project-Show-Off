@@ -179,7 +179,7 @@ public class PlayerSounds : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         if (fan1.isValid())
         {
