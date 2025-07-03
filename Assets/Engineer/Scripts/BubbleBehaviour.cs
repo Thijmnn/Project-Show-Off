@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
 public class BubbleBehaviour : MonoBehaviour
@@ -46,6 +47,8 @@ public class BubbleBehaviour : MonoBehaviour
         {
             hoverEmitter.enabled = false;
         }
+
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -124,35 +127,6 @@ public class BubbleBehaviour : MonoBehaviour
     }
 
 
-
-    private void DestroyBubble(GameObject _other)
-    {
-        Transform[] children = _other.GetComponentsInChildren<Transform>();
-        if (children != null)
-        {
-            foreach (Transform child in children)
-            {
-                if (child != _other.transform)
-                {
-                    child.gameObject.SetActive(false);
-                }
-            }
-        }
-
-        _other.transform.localScale = _other.transform.localScale + (transform.localScale / 3);
-        _rb.mass = transform.localScale.x /3;
-        BubbleSpawner.Instance.bubblesLeft--;
-        foreach(BlowingScript blower in blowingScripts)
-        {
-            blower.RemoveBubble(this.gameObject);
-        }
-
-        StudioEventEmitter[] emitter = _other.GetComponents<StudioEventEmitter>();
-        
-        emitter[1].Play();
-        Destroy(gameObject);
-    }
-
     private void DestroyOtherBubble(GameObject _other)
     {
         Transform[] children = GetComponentsInChildren<Transform>();
@@ -174,7 +148,20 @@ public class BubbleBehaviour : MonoBehaviour
             blower.RemoveBubble(_other);
         }
         mergeEmitter.Play();
+
+        foreach (var mat in GetComponent<Renderer>().materials)
+        {
+            if (mat.name.Contains("Nightmare"))
+            {
+                print(mat.name + gameObject.name + " " + mat.mainTextureScale);
+                mat.mainTextureScale = new Vector2(1,1);
+                print(mat.name + gameObject.name + " " + mat.mainTextureScale);
+            }
+        }
+
         Destroy(_other);
+
+
     }
 
     private void SpawnAnimal()
