@@ -71,7 +71,7 @@ public class BubbleBehaviour : MonoBehaviour
             // other is bigger, I get destroyed
             other.canDestroy = true;
             canDestroy = false;
-            other.SpawnAnimal();
+            SpawnAnimal();
             other.DestroyOtherBubble(gameObject);
         }
         else if (mySize > otherSize)
@@ -79,7 +79,7 @@ public class BubbleBehaviour : MonoBehaviour
             // I am bigger, destroy other
             canDestroy = true;
             other.canDestroy = false;
-            SpawnAnimal();
+            other.SpawnAnimal();
             DestroyOtherBubble(other.gameObject);
         }
         else
@@ -91,6 +91,7 @@ public class BubbleBehaviour : MonoBehaviour
                 // I survive
                 canDestroy = true;
                 other.canDestroy = false;
+                other.SpawnAnimal();
                 SpawnAnimal();
                 DestroyOtherBubble(other.gameObject);
             }
@@ -100,6 +101,7 @@ public class BubbleBehaviour : MonoBehaviour
                 canDestroy = false;
                 other.canDestroy = true;
                 other.SpawnAnimal();
+                SpawnAnimal();
                 other.DestroyOtherBubble(gameObject);
             }
         }
