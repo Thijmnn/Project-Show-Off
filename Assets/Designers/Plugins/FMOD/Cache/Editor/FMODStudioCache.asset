@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8499004541050334219
+--- !u!114 &-8808630560388155964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27,406 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13556
---- !u!114 &-7061529598214718429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Music Map 2
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music Map 2
-  Guid:
-    Data1: -1022984504
-    Data2: 1210486294
-    Data3: -532196431
-    Data4: -985326008
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 85394
---- !u!114 &-6903891349170128361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Music Map 1
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music Map 1
-  Guid:
-    Data1: -402801136
-    Data2: 1322775616
-    Data3: -117956701
-    Data4: -1138762609
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 85394
---- !u!114 &-5331461059874845740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Bubble/Bubble Merge
-  m_EditorClassIdentifier: 
-  Path: event:/Bubble/Bubble Merge
-  Guid:
-    Data1: 169558360
-    Data2: 1259368088
-    Data3: 505136307
-    Data4: 1051299006
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 170
---- !u!114 &-4820578022041715895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Flower/Flower interaction
-  m_EditorClassIdentifier: 
-  Path: event:/Flower/Flower interaction
-  Guid:
-    Data1: 853153919
-    Data2: 1098927833
-    Data3: 1342454913
-    Data4: -1518177116
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-4739770102760662031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Hover
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Hover
-  Guid:
-    Data1: -756840620
-    Data2: 1271294592
-    Data3: -1722903367
-    Data4: -2128455379
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 39
---- !u!114 &-3584281123959357394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps
-  m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: parameter:/Footsteps
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3975783923
-    data2: 4203251307
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Path
-  Exists: 1
---- !u!114 &-3034173513545682220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Click
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Click
-  Guid:
-    Data1: 126949837
-    Data2: 1086485244
-    Data3: 258979485
-    Data4: -400820246
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 69
---- !u!114 &-1036354384472198231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Bubble/Bubble Floating
-  m_EditorClassIdentifier: 
-  Path: event:/Bubble/Bubble Floating
-  Guid:
-    Data1: -795795562
-    Data2: 1222149474
-    Data3: -165590086
-    Data4: -1611873800
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2220
---- !u!114 &-419585151531290792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/fmodproject/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638870584696230603
-  FileSizes:
-  - Name: Desktop
-    Value: 6305120
-  Exists: 1
---- !u!114 &-358570651195283878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Wind/Winds
-  m_EditorClassIdentifier: 
-  Path: event:/Wind/Winds
-  Guid:
-    Data1: 1488192040
-    Data2: 1340099506
-    Data3: 362333315
-    Data4: -2021749059
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6800
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 3578796001454208215}
-  - {fileID: -419585151531290792}
-  EditorEvents:
-  - {fileID: -8499004541050334219}
-  - {fileID: -6903891349170128361}
-  - {fileID: 8990854913742810405}
-  - {fileID: -358570651195283878}
-  - {fileID: 4550508616395281897}
-  - {fileID: -4739770102760662031}
-  - {fileID: -5331461059874845740}
-  - {fileID: 5190599295403892405}
-  - {fileID: 4126966367684669967}
-  - {fileID: -4820578022041715895}
-  - {fileID: -1036354384472198231}
-  - {fileID: 81099500219170395}
-  - {fileID: 777678563451439363}
-  - {fileID: 6171173101422412784}
-  - {fileID: 4952156027020356769}
-  - {fileID: -7061529598214718429}
-  - {fileID: 1667976007487303549}
-  - {fileID: -3034173513545682220}
-  - {fileID: 8210083013276868278}
-  EditorParameters:
-  - {fileID: -3584281123959357394}
-  MasterBanks:
-  - {fileID: -419585151531290792}
-  StringsBanks:
-  - {fileID: 3578796001454208215}
-  cacheVersion: 131848
-  cacheTime: 638870584696240420
-  SerializableEventsDict:
-  - key: event:/Fireflies/Crickets
-    index: 0
-  - key: event:/Music/Music Map 1
-    index: 1
-  - key: event:/Music/Music Map 3
-    index: 2
-  - key: event:/Wind/Winds
-    index: 3
-  - key: event:/Animals/Hedgehog/Hedgehog Sniffing
-    index: 4
-  - key: event:/UI/Hover
-    index: 5
-  - key: event:/Bubble/Bubble Merge
-    index: 6
-  - key: event:/Fireflies/Beating wings
-    index: 7
-  - key: event:/Laugther/Guy
-    index: 8
-  - key: event:/Flower/Flower interaction
-    index: 9
-  - key: event:/Bubble/Bubble Floating
-    index: 10
-  - key: event:/Footsteps/Footsteps
-    index: 11
-  - key: event:/Animals/Frog Croaks
-    index: 12
-  - key: event:/Windfan/Wind Partice
-    index: 13
-  - key: event:/Music/Track 3v2
-    index: 14
-  - key: event:/Music/Music Map 2
-    index: 15
-  - key: event:/Laugther/Girl
-    index: 16
-  - key: event:/UI/Click
-    index: 17
-  - key: event:/Windfan/Fan
-    index: 18
---- !u!114 &81099500219170395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps/Footsteps
-  Guid:
-    Data1: 585288370
-    Data2: 1101247390
-    Data3: 1456379291
-    Data4: -1160956702
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 7633956159719078753}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &777678563451439363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Animals/Frog Croaks
-  m_EditorClassIdentifier: 
-  Path: event:/Animals/Frog Croaks
-  Guid:
-    Data1: 1374144445
-    Data2: 1284298075
-    Data3: -1049671027
-    Data4: 1200669443
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3165
---- !u!114 &1667976007487303549
+--- !u!114 &-8646297682864642920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -453,27 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4040
---- !u!114 &3578796001454208215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638870584696240420
-  FileSizes:
-  - Name: Desktop
-    Value: 1788
-  Exists: 1
---- !u!114 &4126966367684669967
+--- !u!114 &-8425629279512944711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,14 +64,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Laugther/Guy
+  m_Name: event:/Wind/Winds
   m_EditorClassIdentifier: 
-  Path: event:/Laugther/Guy
+  Path: event:/Wind/Winds
   Guid:
-    Data1: 1663709816
-    Data2: 1102141697
-    Data3: 382141576
-    Data4: 1965294174
+    Data1: 1488192040
+    Data2: 1340099506
+    Data3: 362333315
+    Data4: -2021749059
   Banks:
   - {fileID: -419585151531290792}
   IsStream: 0
@@ -499,8 +80,35 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4040
---- !u!114 &4550508616395281897
+  Length: 6800
+--- !u!114 &-7571037034640928204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music Map 2
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music Map 2
+  Guid:
+    Data1: -1022984504
+    Data2: 1210486294
+    Data3: -532196431
+    Data4: -985326008
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85394
+--- !u!114 &-7461941678624187747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,7 +135,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
---- !u!114 &4952156027020356769
+--- !u!114 &-5225119793804877090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -537,51 +145,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Track 3v2
+  m_Name: event:/Bubble/Bubble Merge
   m_EditorClassIdentifier: 
-  Path: event:/Music/Track 3v2
+  Path: event:/Bubble/Bubble Merge
   Guid:
-    Data1: 1195416770
-    Data2: 1101204628
-    Data3: -793861236
-    Data4: 1554834013
+    Data1: 169558360
+    Data2: 1259368088
+    Data3: 505136307
+    Data4: 1051299006
   Banks:
   - {fileID: -419585151531290792}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 109766
---- !u!114 &5190599295403892405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Fireflies/Beating wings
-  m_EditorClassIdentifier: 
-  Path: event:/Fireflies/Beating wings
-  Guid:
-    Data1: 1367249245
-    Data2: 1275341098
-    Data3: -1890132596
-    Data4: -1994149113
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7000
---- !u!114 &6171173101422412784
+  Length: 170
+--- !u!114 &-5135497231865430659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,14 +172,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Windfan/Wind Partice
+  m_Name: event:/UI/Click
   m_EditorClassIdentifier: 
-  Path: event:/Windfan/Wind Partice
+  Path: event:/UI/Click
   Guid:
-    Data1: 986337473
-    Data2: 1084750429
-    Data3: -2112284540
-    Data4: 580217144
+    Data1: -120979792
+    Data2: 1199996873
+    Data3: 1792080556
+    Data4: -314633344
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72
+--- !u!114 &-3993976986993340549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music Map 1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music Map 1
+  Guid:
+    Data1: -402801136
+    Data2: 1322775616
+    Data3: -117956701
+    Data4: -1138762609
   Banks:
   - {fileID: -419585151531290792}
   IsStream: 1
@@ -607,8 +215,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 60577
---- !u!114 &7633956159719078753
+  Length: 85394
+--- !u!114 &-3466318194678461158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -634,34 +242,7 @@ MonoBehaviour:
   - Grass
   - Path
   Exists: 1
---- !u!114 &8210083013276868278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Windfan/Fan
-  m_EditorClassIdentifier: 
-  Path: event:/Windfan/Fan
-  Guid:
-    Data1: -688242948
-    Data2: 1270624132
-    Data3: -194567548
-    Data4: -267332089
-  Banks:
-  - {fileID: -419585151531290792}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2308
---- !u!114 &8990854913742810405
+--- !u!114 &-2286986268793403769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -688,3 +269,506 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 96052
+--- !u!114 &-1773475718202081444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Flower/Flower interaction
+  m_EditorClassIdentifier: 
+  Path: event:/Flower/Flower interaction
+  Guid:
+    Data1: 853153919
+    Data2: 1098927833
+    Data3: 1342454913
+    Data4: -1518177116
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-850796718460845689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Windfan/Wind Partice
+  m_EditorClassIdentifier: 
+  Path: event:/Windfan/Wind Partice
+  Guid:
+    Data1: 986337473
+    Data2: 1084750429
+    Data3: -2112284540
+    Data4: 580217144
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60577
+--- !u!114 &-419585151531290792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/fmodproject/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638871508063651814
+  FileSizes:
+  - Name: Desktop
+    Value: 6305600
+  Exists: 1
+--- !u!114 &-29686123699556491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Animals/Frog Croaks
+  m_EditorClassIdentifier: 
+  Path: event:/Animals/Frog Croaks
+  Guid:
+    Data1: 1374144445
+    Data2: 1284298075
+    Data3: -1049671027
+    Data4: 1200669443
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3165
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 3578796001454208215}
+  - {fileID: -419585151531290792}
+  EditorEvents:
+  - {fileID: -8808630560388155964}
+  - {fileID: -3993976986993340549}
+  - {fileID: 1934621693521486997}
+  - {fileID: -2286986268793403769}
+  - {fileID: -8425629279512944711}
+  - {fileID: -7461941678624187747}
+  - {fileID: -5225119793804877090}
+  - {fileID: 8735823378917059450}
+  - {fileID: 4032956126401657652}
+  - {fileID: -1773475718202081444}
+  - {fileID: 1803970538964506084}
+  - {fileID: 2972041288341497576}
+  - {fileID: -29686123699556491}
+  - {fileID: -850796718460845689}
+  - {fileID: 6067098163916317096}
+  - {fileID: -7571037034640928204}
+  - {fileID: -8646297682864642920}
+  - {fileID: 4259826349953558444}
+  - {fileID: 2609028727759653204}
+  - {fileID: 1660983401710762088}
+  EditorParameters:
+  - {fileID: 3557153018572623187}
+  MasterBanks:
+  - {fileID: -419585151531290792}
+  StringsBanks:
+  - {fileID: 3578796001454208215}
+  cacheVersion: 131848
+  cacheTime: 638871508063735183
+  SerializableEventsDict:
+  - key: event:/Fireflies/Crickets
+    index: 0
+  - key: event:/Music/Music Map 1
+    index: 1
+  - key: event:/Bubble/Bubble Pop  Ending
+    index: 2
+  - key: event:/Music/Music Map 3
+    index: 3
+  - key: event:/Wind/Winds
+    index: 4
+  - key: event:/Animals/Hedgehog/Hedgehog Sniffing
+    index: 5
+  - key: event:/Bubble/Bubble Merge
+    index: 6
+  - key: event:/Fireflies/Beating wings
+    index: 7
+  - key: event:/Laugther/Guy
+    index: 8
+  - key: event:/Flower/Flower interaction
+    index: 9
+  - key: event:/Bubble/Bubble Floating
+    index: 10
+  - key: event:/Footsteps/Footsteps
+    index: 11
+  - key: event:/Animals/Frog Croaks
+    index: 12
+  - key: event:/Windfan/Wind Partice
+    index: 13
+  - key: event:/Music/Track 3v2
+    index: 14
+  - key: event:/Music/Music Map 2
+    index: 15
+  - key: event:/Laugther/Girl
+    index: 16
+  - key: event:/Windfan/Fan
+    index: 17
+  - key: event:/UI/Click
+    index: 18
+  - key: event:/UI/Hover
+    index: 19
+--- !u!114 &1660983401710762088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Hover
+  Guid:
+    Data1: 2011573724
+    Data2: 1264788553
+    Data3: 283488134
+    Data4: -638836430
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38
+--- !u!114 &1803970538964506084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/Bubble Floating
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/Bubble Floating
+  Guid:
+    Data1: -795795562
+    Data2: 1222149474
+    Data3: -165590086
+    Data4: -1611873800
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2220
+--- !u!114 &1934621693521486997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bubble/Bubble Pop  Ending
+  m_EditorClassIdentifier: 
+  Path: event:/Bubble/Bubble Pop  Ending
+  Guid:
+    Data1: 514323745
+    Data2: 1111098279
+    Data3: 12180916
+    Data4: -2126723442
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7280
+--- !u!114 &2609028727759653204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click
+  Guid:
+    Data1: -120979792
+    Data2: 1199996873
+    Data3: 1792080556
+    Data4: -314633344
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72
+--- !u!114 &2972041288341497576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/Footsteps
+  Guid:
+    Data1: 585288370
+    Data2: 1101247390
+    Data3: 1456379291
+    Data4: -1160956702
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3466318194678461158}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3461866523250576217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Hover
+  Guid:
+    Data1: 2011573724
+    Data2: 1264788553
+    Data3: 283488134
+    Data4: -638836430
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38
+--- !u!114 &3557153018572623187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: parameter:/Footsteps
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3975783923
+    data2: 4203251307
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Path
+  Exists: 1
+--- !u!114 &3578796001454208215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/fmodproject/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638871508063735183
+  FileSizes:
+  - Name: Desktop
+    Value: 1902
+  Exists: 1
+--- !u!114 &4032956126401657652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laugther/Guy
+  m_EditorClassIdentifier: 
+  Path: event:/Laugther/Guy
+  Guid:
+    Data1: 1663709816
+    Data2: 1102141697
+    Data3: 382141576
+    Data4: 1965294174
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4040
+--- !u!114 &4259826349953558444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Windfan/Fan
+  m_EditorClassIdentifier: 
+  Path: event:/Windfan/Fan
+  Guid:
+    Data1: -688242948
+    Data2: 1270624132
+    Data3: -194567548
+    Data4: -267332089
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2308
+--- !u!114 &6067098163916317096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Track 3v2
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Track 3v2
+  Guid:
+    Data1: 1195416770
+    Data2: 1101204628
+    Data3: -793861236
+    Data4: 1554834013
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 109766
+--- !u!114 &8735823378917059450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fireflies/Beating wings
+  m_EditorClassIdentifier: 
+  Path: event:/Fireflies/Beating wings
+  Guid:
+    Data1: 1367249245
+    Data2: 1275341098
+    Data3: -1890132596
+    Data4: -1994149113
+  Banks:
+  - {fileID: -419585151531290792}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7000

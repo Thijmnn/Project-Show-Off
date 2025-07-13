@@ -37,6 +37,7 @@ public class Wander : MonoBehaviour
 
     private void Start()
     {
+        BoostGiven = false;
         _anim = GetComponent<Animator>();
     }
     public virtual void Update()
